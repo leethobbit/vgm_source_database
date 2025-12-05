@@ -1,0 +1,13 @@
+---
+globs: **/views.py
+alwaysApply: false
+description: Advises using Django's class-based views for handling requests. Class-based views provide a structured way to handle different HTTP methods.
+---
+- Use Django's class-based views for request handling
+- Implement error handling at the view level and use Django's built-in error handling mechanisms
+- Keep business logic in models and forms; keep views light and focused on request handling
+- All DetailView classes should use appropriate template names
+- Use standard Django form handling patterns for CreateView and UpdateView
+- On form success: Use Django's redirect patterns (e.g., `redirect()` or `get_success_url()`)
+- On validation errors: Re-render form template (automatic with Django)
+- Return JSON responses when needed for Alpine.js AJAX requests

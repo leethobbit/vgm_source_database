@@ -1,0 +1,16 @@
+---
+globs: **/views.py
+alwaysApply: false
+description: Ensures all Create, Edit (Update), and Delete views utilize modal popup forms with Alpine.js for consistent user experience. This rule promotes a unified interface pattern across all form interactions.
+---
+- All CreateView, UpdateView, and DeleteView classes MAY use modal popup forms for better UX
+- Modal templates should be named with the pattern: `{app_name}/{model_name}_form_modal.html` for Create/Update views and `{app_name}/{model_name}_delete_modal.html` for Delete views
+- Set `template_name` attribute to the modal template path (e.g., `template_name = "monsters/monster_form_modal.html"`)
+- Modal templates must use TailwindCSS classes for styling and Alpine.js for interactivity
+- Use Alpine.js `x-show` or `x-if` directives to control modal visibility
+- Forms in modals should use standard Django form submission or Alpine.js `@submit` with fetch for AJAX
+- Include CSRF token in all modal forms using `{% csrf_token %}`
+- For successful form submissions, return JSON responses or use standard Django redirects
+- Modal forms should include Cancel button that closes the modal using Alpine.js state management
+- Use TailwindCSS utility classes for form styling and layout
+- Ensure modal body has appropriate scrolling for long forms using TailwindCSS classes (e.g., `max-h-[70vh] overflow-y-auto`)

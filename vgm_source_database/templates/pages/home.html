@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Dashboard{% endblock title %}
+
+{% block content %}
+<div class="mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider mb-4 text-glow-cyan">Dashboard</h1>
+</div>
+
+<!-- Stats Block -->
+<div class="mb-8">
+  <h2 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-4">Statistics</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="card-neon">
+      <h5 class="text-lg font-mono uppercase tracking-wider text-neon-cyan mb-2">Sound Sources</h5>
+      <p class="text-4xl font-bold text-neon-green mb-4">{{ stats.sound_sources }}</p>
+      <div class="flex gap-2">
+        <a href="{% url 'sources:soundsource_list' %}" class="btn-primary">View All</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'sources:soundsource_create' %}" class="btn-success">Create Sound Source</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-neon">
+      <h5 class="text-lg font-mono uppercase tracking-wider text-neon-cyan mb-2">Games</h5>
+      <p class="text-4xl font-bold text-neon-green mb-4">{{ stats.games }}</p>
+      <div class="flex gap-2">
+        <a href="{% url 'games:game_list' %}" class="btn-primary">View All</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'games:game_create' %}" class="btn-success">Create Game</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-neon">
+      <h5 class="text-lg font-mono uppercase tracking-wider text-neon-cyan mb-2">Songs</h5>
+      <p class="text-4xl font-bold text-neon-green mb-4">{{ stats.songs }}</p>
+      <div class="flex gap-2">
+        <a href="{% url 'songs:song_list' %}" class="btn-primary">View All</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'songs:song_create' %}" class="btn-success">Create Song</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-neon">
+      <h5 class="text-lg font-mono uppercase tracking-wider text-neon-cyan mb-2">Products</h5>
+      <p class="text-4xl font-bold text-neon-green mb-4">{{ stats.products }}</p>
+      <div class="flex gap-2">
+        <a href="{% url 'sources:product_list' %}" class="btn-primary">View All</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'sources:product_create' %}" class="btn-success">Create Product</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-neon">
+      <h5 class="text-lg font-mono uppercase tracking-wider text-neon-cyan mb-2">Companies</h5>
+      <p class="text-4xl font-bold text-neon-green mb-4">{{ stats.companies }}</p>
+      <div class="flex gap-2">
+        <a href="{% url 'sources:company_list' %}" class="btn-primary">View All</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'sources:company_create' %}" class="btn-success">Create Company</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-neon">
+      <h5 class="text-lg font-mono uppercase tracking-wider text-neon-cyan mb-2">People</h5>
+      <p class="text-4xl font-bold text-neon-green mb-4">{{ stats.people }}</p>
+      <div class="flex gap-2">
+        <a href="{% url 'songs:person_list' %}" class="btn-primary">View All</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'songs:person_create' %}" class="btn-success">Create Person</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quick Actions -->
+<div class="mb-8">
+  <h2 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-4">Quick Actions</h2>
+  <div class="flex flex-wrap gap-4">
+    {% if user.is_authenticated %}
+      <a href="{% url 'sources:company_create' %}" class="btn-success">Create Company</a>
+      <a href="{% url 'sources:product_create' %}" class="btn-success">Create Product</a>
+      <a href="{% url 'sources:bank_create' %}" class="btn-success">Create Bank</a>
+      <a href="{% url 'sources:soundsource_create' %}" class="btn-success">Create Sound Source</a>
+      <a href="{% url 'games:game_create' %}" class="btn-success">Create Game</a>
+      <a href="{% url 'games:gametag_create' %}" class="btn-success">Create Tag</a>
+      <a href="{% url 'songs:song_create' %}" class="btn-success">Create Song</a>
+      <a href="{% url 'songs:person_create' %}" class="btn-success">Create Person</a>
+    {% else %}
+      <p class="text-gray-400 font-mono">Please <a href="{% url 'account_login' %}" class="text-neon-cyan hover:text-neon-pink">sign in</a> to create new items.</p>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Recent Activity -->
+<div>
+  <h2 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-4">Recent Activity</h2>
+  {% if recent_activity %}
+    <div class="space-y-2">
+      {% for item in recent_activity %}
+        <a href="{{ item.url }}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-4 hover:border-neon-cyan transition-colors duration-300">
+          <div class="flex justify-between items-start mb-2">
+            <h5 class="text-lg font-mono text-neon-cyan">{{ item.name }}</h5>
+            <small class="text-gray-400 font-mono">{{ item.timestamp|timesince }} ago</small>
+          </div>
+          <div class="flex gap-2 flex-wrap">
+            <span class="inline-block px-2 py-1 bg-[#16213e] border border-neon-blue text-neon-blue text-xs font-mono uppercase tracking-wider rounded">{{ item.type }}</span>
+            <span class="inline-block px-2 py-1 bg-[#16213e] border {% if item.action == 'Created' %}border-neon-green text-neon-green{% else %}border-neon-cyan text-neon-cyan{% endif %} text-xs font-mono uppercase tracking-wider rounded">{{ item.action }}</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-gray-400 font-mono">No recent activity to display.</p>
+  {% endif %}
+</div>
+{% endblock content %}

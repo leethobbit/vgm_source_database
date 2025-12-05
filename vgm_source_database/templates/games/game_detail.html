@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ game.title }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">{{ game.title }}</h1>
+  <div class="flex gap-4">
+    <a href="{% url 'games:game_list' %}" class="btn-primary">Back to List</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'games:game_update' game.pk %}" class="btn-info">Edit</a>
+      <a href="{% url 'songs:song_create' %}?game={{ game.pk }}" class="btn-success">Add Song</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="mb-6 card-neon">
+  {% if game.release_date %}
+    <p class="font-mono"><span class="text-neon-cyan font-bold uppercase tracking-wider">Release Date:</span> <span class="text-gray-100">{{ game.release_date|date:"F d, Y" }}</span></p>
+  {% elif game.release_year %}
+    <p class="font-mono"><span class="text-neon-cyan font-bold uppercase tracking-wider">Release Year:</span> <span class="text-gray-100">{{ game.release_year }}</span></p>
+  {% endif %}
+</div>
+
+{% if game.tags.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Tags</h3>
+    <div class="flex flex-wrap gap-2">
+      {% for tag in game.tags.all %}
+        <a href="{% url 'games:gametag_detail' tag.slug %}" class="inline-block px-2 py-1 bg-[#16213e] border border-neon-blue text-neon-blue text-xs font-mono uppercase tracking-wider rounded hover:border-neon-cyan transition-colors">{{ tag.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if game.album_artists.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Album Artists / Sound Team</h3>
+    <ul class="space-y-2">
+      {% for artist in game.album_artists.all %}
+        <li class="font-mono"><a href="{% url 'songs:person_detail' artist.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ artist.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% if game.notes %}
+  <div class="mb-6 card-neon">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Notes</h3>
+    <p class="text-gray-100 font-mono whitespace-pre-line">{{ game.notes|linebreaks }}</p>
+  </div>
+{% endif %}
+
+{% if game.songs.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Songs</h3>
+    <div class="overflow-x-auto">
+      <table class="min-w-full border-collapse">
+        <thead>
+          <tr class="bg-[#1a1a2e] border-2 border-[#0f3460]">
+            <th class="px-4 py-3 text-left font-mono text-neon-cyan font-bold uppercase tracking-wider border-r border-[#0f3460]">Song</th>
+            <th class="px-4 py-3 text-left font-mono text-neon-cyan font-bold uppercase tracking-wider">Sources</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for song in game.songs.all %}
+            <tr class="bg-[#1a1a2e] border-2 border-[#0f3460] hover:border-neon-cyan transition-colors duration-300">
+              <td class="px-4 py-3 border-r border-[#0f3460]">
+                <a href="{% url 'songs:song_detail' song.pk %}" class="text-neon-cyan hover:text-neon-pink font-mono font-bold transition-colors">
+                  {% if song.track_number %}{{ song.track_number }}. {% endif %}{{ song.title }}
+                </a>
+              </td>
+              <td class="px-4 py-3 text-gray-300 font-mono text-sm">
+                {% if song.sound_sources.all %}
+                  {% for source in song.sound_sources.all %}
+                    <a href="{% url 'sources:soundsource_detail' source.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ source.name }}</a>{% if not forloop.last %}, {% endif %}
+                  {% endfor %}
+                {% else %}
+                  <span class="text-gray-500">-</span>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endif %}
+
+<div class="text-gray-400 text-sm font-mono space-y-1">
+  <p>Created: {{ game.created_at|date:"F d, Y" }}</p>
+  <p>Last updated: {{ game.updated_at|date:"F d, Y" }}</p>
+</div>
+{% endblock content %}

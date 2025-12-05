@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ song.title }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">{{ song.title }}</h1>
+  <div class="flex gap-4">
+    <a href="{% url 'songs:song_list' %}" class="btn-primary">Back to List</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'songs:song_update' song.pk %}" class="btn-info">Edit</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="mb-6 card-neon">
+  <p class="font-mono mb-2"><span class="text-neon-cyan font-bold uppercase tracking-wider">Game:</span> <a href="{% url 'games:game_detail' song.game.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ song.game.title }}</a></p>
+  {% if song.track_number %}
+    <p class="font-mono"><span class="text-neon-cyan font-bold uppercase tracking-wider">Track Number:</span> <span class="text-gray-100">{{ song.track_number }}</span></p>
+  {% endif %}
+</div>
+
+{% if song.composers.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Composers</h3>
+    <ul class="space-y-2">
+      {% for composer in song.composers.all %}
+        <li class="font-mono"><a href="{% url 'songs:person_detail' composer.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ composer.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% if song.arrangers.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Arrangers</h3>
+    <ul class="space-y-2">
+      {% for arranger in song.arrangers.all %}
+        <li class="font-mono"><a href="{% url 'songs:person_detail' arranger.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ arranger.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% if song.notes %}
+  <div class="mb-6 card-neon">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Notes</h3>
+    <p class="text-gray-100 font-mono whitespace-pre-line">{{ song.notes|linebreaks }}</p>
+  </div>
+{% endif %}
+
+<div class="text-gray-400 text-sm font-mono space-y-1">
+  <p>Created: {{ song.created_at|date:"F d, Y" }}</p>
+  <p>Last updated: {{ song.updated_at|date:"F d, Y" }}</p>
+</div>
+{% endblock content %}

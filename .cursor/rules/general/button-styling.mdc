@@ -1,0 +1,22 @@
+---
+globs: **/*.html
+alwaysApply: true
+description: Ensures consistent button styling across all templates using Tailwind CSS button classes based on action type with modern dark theme.
+---
+- All "Create" view buttons must use the `btn-success` class (emerald-600 background)
+- All "View" view buttons must use the `btn-primary` class (blue-600 background)
+- All "Edit" view buttons must use the `btn-info` class (cyan-600 background)
+- All "Delete" view buttons must use the `btn-danger` class (red-600 background)
+- Button classes should be applied consistently across all templates
+- When creating buttons for actions, use the appropriate class based on the action type:
+  - Create actions: `btn-success` (emerald green with modern styling)
+  - View actions: `btn-primary` (blue with modern styling)
+  - Edit/Update actions: `btn-info` (cyan with modern styling)
+  - Delete actions: `btn-danger` (red with modern styling)
+- These classes are defined in the Tailwind CSS configuration and provide modern dark theme styling with subtle hover effects
+- This applies to all buttons in templates, including:
+  - Sidebar buttons
+  - Form action buttons
+  - Table action buttons
+  - Modal buttons
+  - Navigation buttons for CRUD operations

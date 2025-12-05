@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Companies{% endblock title %}
+
+{% block content %}
+<div class="mb-4">
+  <a href="{% url 'home' %}" class="text-neon-cyan hover:text-neon-pink font-mono transition-colors">← Back to homepage</a>
+</div>
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">Companies</h1>
+  {% if user.is_authenticated %}
+    <a href="{% url 'sources:company_create' %}" class="btn-success">Create Company</a>
+  {% endif %}
+</div>
+
+{% if companies %}
+  <div class="overflow-x-auto">
+    <table class="min-w-full border-collapse">
+      <thead>
+        <tr class="bg-[#1a1a2e] border-2 border-[#0f3460]">
+          <th class="px-4 py-3 text-left font-mono text-neon-cyan font-bold uppercase tracking-wider border-r border-[#0f3460]">Name</th>
+          <th class="px-4 py-3 text-left font-mono text-neon-cyan font-bold uppercase tracking-wider border-r border-[#0f3460]">Notes</th>
+          <th class="px-4 py-3 text-center font-mono text-neon-cyan font-bold uppercase tracking-wider">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for company in companies %}
+          <tr class="bg-[#1a1a2e] border-2 border-[#0f3460] hover:border-neon-cyan transition-colors duration-300">
+            <td class="px-4 py-3 border-r border-[#0f3460]">
+              <a href="{% url 'sources:company_detail' company.pk %}" class="text-neon-cyan hover:text-neon-pink font-mono font-bold transition-colors">{{ company.name }}</a>
+            </td>
+            <td class="px-4 py-3 border-r border-[#0f3460] text-gray-400 font-mono text-sm">
+              {% if company.notes %}{{ company.notes|truncatewords:20 }}{% else %}-{% endif %}
+            </td>
+            <td class="px-4 py-3 text-center">
+              <div class="flex gap-2 justify-center">
+                {% if user.is_authenticated %}
+                  <a href="{% url 'sources:company_update' company.pk %}" class="btn-info text-sm py-1 px-2">Edit</a>
+                  <a href="{% url 'sources:company_delete' company.pk %}" class="btn-danger text-sm py-1 px-2">Delete</a>
+                {% else %}
+                  <span class="text-gray-500 font-mono text-sm">-</span>
+                {% endif %}
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p class="text-gray-400 font-mono">No companies found.</p>
+{% endif %}
+{% endblock content %}

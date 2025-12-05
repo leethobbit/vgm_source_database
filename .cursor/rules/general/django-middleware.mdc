@@ -1,0 +1,7 @@
+---
+description: Recommends utilizing Django's middleware for handling request and response processing. Middleware allows for global actions to be performed on requests and responses.
+globs: **/middleware.py
+---
+- Utilize Django's middleware for request/response processing
+- Use middleware judiciously to handle cross-cutting concerns like authentication, logging, and caching.
+- Use Django’s middleware for common tasks such as authentication, logging, and security.

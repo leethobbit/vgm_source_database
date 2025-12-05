@@ -1,0 +1,23 @@
+# Example Product fixtures
+# Note: These reference Company PKs from sources_companies.yaml
+
+- model: vgm_source_database.sources.Product
+  pk: 1
+  fields:
+    name: "SC-55"
+    company: 1  # Roland Corporation
+    notes: "Sound Canvas 55, a popular MIDI sound module"
+
+- model: vgm_source_database.sources.Product
+  pk: 2
+  fields:
+    name: "SC-88"
+    company: 1  # Roland Corporation
+    notes: "Sound Canvas 88, successor to SC-55"
+
+- model: vgm_source_database.sources.Product
+  pk: 3
+  fields:
+    name: "MU50"
+    company: 2  # Yamaha Corporation
+    notes: ""

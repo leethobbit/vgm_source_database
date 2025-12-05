@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ person.name }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">{{ person.name }}</h1>
+  <div class="flex gap-4">
+    <a href="{% url 'songs:person_list' %}" class="btn-primary">Back to List</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'songs:person_update' person.pk %}" class="btn-info">Edit</a>
+    {% endif %}
+  </div>
+</div>
+
+{% if person.notes %}
+  <div class="mb-6 card-neon">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Notes</h3>
+    <p class="text-gray-100 font-mono whitespace-pre-line">{{ person.notes|linebreaks }}</p>
+  </div>
+{% endif %}
+
+{% if person.products.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Preferred Products</h3>
+    <div class="space-y-2">
+      {% for product in person.products.all %}
+        <a href="{% url 'sources:product_detail' product.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ product }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if person.composed_songs.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Composed Songs</h3>
+    <div class="space-y-2">
+      {% for song in person.composed_songs.all %}
+        <a href="{% url 'songs:song_detail' song.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ song.game.title }} - {{ song.title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if person.arranged_songs.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Arranged Songs</h3>
+    <div class="space-y-2">
+      {% for song in person.arranged_songs.all %}
+        <a href="{% url 'songs:song_detail' song.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ song.game.title }} - {{ song.title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if person.album_credits.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Album Credits</h3>
+    <div class="space-y-2">
+      {% for game in person.album_credits.all %}
+        <a href="{% url 'games:game_detail' game.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ game.title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+<div class="text-gray-400 text-sm font-mono space-y-1">
+  <p>Created: {{ person.created_at|date:"F d, Y" }}</p>
+  <p>Last updated: {{ person.updated_at|date:"F d, Y" }}</p>
+</div>
+{% endblock content %}

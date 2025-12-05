@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ sound_source.name }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">{{ sound_source.name }}</h1>
+  <div class="flex gap-4">
+    <a href="{% url 'sources:soundsource_list' %}" class="btn-primary">Back to List</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'sources:soundsource_update' sound_source.pk %}" class="btn-info">Edit</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="mb-6 card-neon">
+  {% if sound_source.bank %}
+    <p class="font-mono"><span class="text-neon-cyan font-bold uppercase tracking-wider">Bank:</span> <a href="{% url 'sources:bank_detail' sound_source.bank.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ sound_source.bank }}</a></p>
+  {% elif sound_source.product %}
+    <p class="font-mono"><span class="text-neon-cyan font-bold uppercase tracking-wider">Product:</span> <a href="{% url 'sources:product_detail' sound_source.product.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ sound_source.product }}</a></p>
+  {% endif %}
+</div>
+
+{% if sound_source.notes %}
+  <div class="mb-6 card-neon">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Notes</h3>
+    <p class="text-gray-100 font-mono whitespace-pre-line">{{ sound_source.notes|linebreaks }}</p>
+  </div>
+{% endif %}
+
+{% if sound_source.discoverers.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Discoverers</h3>
+    <ul class="space-y-2">
+      {% for discoverer in sound_source.discoverers.all %}
+        <li class="font-mono text-gray-100">{{ discoverer.username }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% if sound_source.games.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Games</h3>
+    <div class="space-y-2">
+      {% for game in sound_source.games.all %}
+        <a href="{% url 'games:game_detail' game.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ game.title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if sound_source.songs.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Songs</h3>
+    <div class="space-y-2">
+      {% for song in sound_source.songs.all %}
+        <a href="{% url 'songs:song_detail' song.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ song.game.title }} - {{ song.title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+<div class="text-gray-400 text-sm font-mono space-y-1">
+  <p>Created: {{ sound_source.created_at|date:"F d, Y" }}</p>
+  <p>Last updated: {{ sound_source.updated_at|date:"F d, Y" }}</p>
+</div>
+{% endblock content %}

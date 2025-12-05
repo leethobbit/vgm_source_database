@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+description: Ensure proper function documentation.
+when: Writing or modifying functions.
+---
+Include:
+    - Function purpose
+    - Parameter descriptions
+    - Return value description
+    - Usage examples when complex

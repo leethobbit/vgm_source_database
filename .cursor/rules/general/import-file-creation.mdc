@@ -1,0 +1,185 @@
+---
+description: Best practices for creating YAML import files for VGM Source Database models, ensuring proper handling of null vs empty string values based on field constraints.
+globs: **/fixtures/**/*.yaml
+alwaysApply: false
+---
+
+# Import File Creation Best Practices - VGM Source Database
+
+## Field Value Handling
+
+### CharField and TextField Fields
+- **Fields with `blank=True` but NOT `null=True`**: MUST use empty string `""`, NOT `null`
+  - These fields allow blank values in forms but the database column does NOT allow NULL
+  - Use: `field: ""` (empty string)
+  - Never use: `field: null` or `field: ` (empty, which YAML parses as null)
+  - Examples in VGM models: `description`, `notes`, `slug` (auto-generated if blank)
+
+### ForeignKey Fields
+- **Fields with `null=True` and `blank=True`**: CAN use `null` for empty values
+  - These fields allow NULL in the database
+  - Use: `field: null` for empty foreign keys
+  - Examples in VGM models: `bank`, `product` (in SoundSource - at least one must be set)
+- **Fields without `null=True`**: MUST have a value
+  - Examples: `game` (in Song), `company` (in Product), `product` (in Bank)
+
+### Required Fields
+- Fields without `blank=True`: MUST have a value, cannot be empty or null
+- Always provide explicit values for required fields
+- Examples: `name` (all models), `title` (Game, Song)
+
+## YAML Format Guidelines
+
+### Empty String Values
+```yaml
+# Correct - empty string for CharField/TextField with blank=True but not null=True
+description: ""
+notes: ""
+
+# Incorrect - these will cause database constraint violations
+description: null
+notes:  # Empty, parsed as null by YAML
+```
+
+### Null Values (for ForeignKeys with null=True)
+```yaml
+# Correct - null for ForeignKey with null=True
+bank: null
+product: null
+
+# Also acceptable - empty string works but null is clearer for ForeignKeys
+bank: ""
+```
+
+### ManyToMany Fields
+```yaml
+# Use list of primary keys
+tags: [1, 2, 3]  # GameTag PKs
+composers: [1]  # Person PKs
+games: []  # Empty list if no relationships
+```
+
+### Date Fields
+```yaml
+# Use ISO format: YYYY-MM-DD
+release_date: "1995-03-11"
+release_date: null  # If optional
+```
+
+### Multi-line Text Fields
+```yaml
+# Use YAML block scalar for multi-line text
+notes: |
+  First paragraph of notes.
+  
+  Second paragraph with more details.
+```
+
+## VGM Model-Specific Examples
+
+### GameTag
+```yaml
+- model: vgm_source_database.games.GameTag
+  pk: 1
+  fields:
+    name: "Action"
+    slug: "action"
+    description: ""  # Empty string, not null
+```
+
+### Game
+```yaml
+- model: vgm_source_database.games.Game
+  pk: 1
+  fields:
+    title: "Chrono Trigger"
+    release_date: "1995-03-11"
+    release_year: 1995
+    album_artists: [1, 2]  # Person PKs
+    tags: [1, 2]  # GameTag PKs
+    notes: ""  # Empty string, not null
+```
+
+### Song
+```yaml
+- model: vgm_source_database.songs.Song
+  pk: 1
+  fields:
+    title: "Main Theme"
+    game: 1  # Required ForeignKey
+    composers: [1]  # Person PKs
+    arrangers: []
+    track_number: 1
+    notes: ""  # Empty string, not null
+```
+
+### SoundSource
+```yaml
+- model: vgm_source_database.sources.SoundSource
+  pk: 1
+  fields:
+    name: "Piano 1"
+    bank: 1  # At least one of bank OR product required
+    product: null  # Can be null if bank is set
+    discoverers: []  # User PKs
+    games: [1]  # Game PKs
+    songs: [1, 2]  # Song PKs
+    notes: ""  # Empty string, not null
+```
+
+## Validation Checklist
+
+Before creating or updating import files:
+
+1. **Check Model Definition**: Review the model to identify:
+   - Fields with `blank=True` but NOT `null=True` → use `""`
+   - Fields with `null=True` → can use `null`
+   - Required fields → must have values
+
+2. **Verify Field Types**:
+   - `CharField` with `blank=True` → empty string `""`
+   - `TextField` with `blank=True` → empty string `""`
+   - `ForeignKey` with `null=True` → `null` or empty string
+   - `ForeignKey` without `null=True` → must have value
+   - `ManyToManyField` → list of PKs `[1, 2, 3]` or empty list `[]`
+   - `DateField` → ISO format `"YYYY-MM-DD"` or `null`
+
+3. **Respect Dependencies**: Import in order:
+   - GameTag → Game → Person → Song
+   - Company → Product → Bank → SoundSource
+
+4. **Test Import**: Always test import with `--dry-run` first:
+   ```bash
+   python manage.py import_data --dry-run
+   ```
+
+## Common Mistakes to Avoid
+
+- ❌ Using `null` for CharField/TextField with `blank=True` but not `null=True`
+- ❌ Leaving fields empty (YAML parses as `null`)
+- ❌ Not checking model field definitions before creating import data
+- ❌ Assuming all `blank=True` fields can use `null`
+- ❌ Violating unique constraints (e.g., duplicate GameTag name, duplicate (title, game) for Song)
+- ❌ Referencing non-existent ForeignKeys
+- ❌ Creating SoundSource without bank OR product
+
+## Management Commands
+
+### Export Data
+```bash
+python manage.py export_data
+python manage.py export_data --app games
+python manage.py export_data --output-dir fixtures
+```
+
+### Import Data
+```bash
+python manage.py import_data
+python manage.py import_data --dry-run  # Validate first
+python manage.py import_data --file fixtures/games_games.yaml
+```
+
+## Related Documentation
+- See `ai_docs/IMPORT_EXPORT_GUIDE.md` for comprehensive documentation
+- See `django-models.mdc` for model field definitions
+- See `django-form-handling.mdc` for form validation patterns

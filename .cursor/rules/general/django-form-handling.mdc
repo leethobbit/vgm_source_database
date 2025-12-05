@@ -1,0 +1,8 @@
+---
+globs: **/forms.py
+description: Specifies that Django forms should be used when handling form inputs in Python files named forms.py. This rule ensures consistent form handling practices within the project.
+alwaysApply: false
+---
+- Implement Django forms for form handling
+- Use Django's form validation for all form requests
+- Forms can be submitted via standard Django POST or via Alpine.js AJAX requests

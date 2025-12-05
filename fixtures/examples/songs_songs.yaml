@@ -1,0 +1,33 @@
+# Example Song fixtures
+# Note: These reference Game PKs from games_games.yaml
+# Note: These reference Person PKs from songs_people.yaml
+
+- model: vgm_source_database.songs.Song
+  pk: 1
+  fields:
+    title: "Chrono Trigger"
+    game: 1  # Chrono Trigger game PK
+    composers: [1]  # Yasunori Mitsuda
+    arrangers: []
+    track_number: 1
+    notes: "Main theme of Chrono Trigger"
+
+- model: vgm_source_database.songs.Song
+  pk: 2
+  fields:
+    title: "Corridors of Time"
+    game: 1  # Chrono Trigger game PK
+    composers: [1]  # Yasunori Mitsuda
+    arrangers: []
+    track_number: 5
+    notes: ""
+
+- model: vgm_source_database.songs.Song
+  pk: 3
+  fields:
+    title: "Terra's Theme"
+    game: 2  # Final Fantasy VI game PK
+    composers: [2]  # Nobuo Uematsu
+    arrangers: []
+    track_number: 1
+    notes: "Opening theme of Final Fantasy VI"

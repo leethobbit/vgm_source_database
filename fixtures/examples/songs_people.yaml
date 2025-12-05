@@ -1,0 +1,23 @@
+# Example Person fixtures
+# These are referenced by Games (album_artists) and Songs (composers, arrangers)
+
+- model: vgm_source_database.songs.Person
+  pk: 1
+  fields:
+    name: "Yasunori Mitsuda"
+    products: []  # Product PKs (if any)
+    notes: "Japanese composer known for Chrono Trigger and Xenogears"
+
+- model: vgm_source_database.songs.Person
+  pk: 2
+  fields:
+    name: "Nobuo Uematsu"
+    products: []
+    notes: "Composer of Final Fantasy series"
+
+- model: vgm_source_database.songs.Person
+  pk: 3
+  fields:
+    name: "Koji Kondo"
+    products: []
+    notes: ""

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ company.name }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">{{ company.name }}</h1>
+  <div class="flex gap-4">
+    <a href="{% url 'sources:company_list' %}" class="btn-primary">Back to List</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'sources:company_update' company.pk %}" class="btn-info">Edit</a>
+      <a href="{% url 'sources:product_create' %}?company={{ company.pk }}" class="btn-success">Add Product</a>
+    {% endif %}
+  </div>
+</div>
+
+{% if company.notes %}
+  <div class="mb-6 card-neon">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Notes</h3>
+    <p class="text-gray-100 font-mono whitespace-pre-line">{{ company.notes|linebreaks }}</p>
+  </div>
+{% endif %}
+
+{% if company.products.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Products</h3>
+    <div class="space-y-2">
+      {% for product in company.products.all %}
+        <a href="{% url 'sources:product_detail' product.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ product.name }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+<div class="text-gray-400 text-sm font-mono space-y-1">
+  <p>Created: {{ company.created_at|date:"F d, Y" }}</p>
+  <p>Last updated: {{ company.updated_at|date:"F d, Y" }}</p>
+</div>
+{% endblock content %}

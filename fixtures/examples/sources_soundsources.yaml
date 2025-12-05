@@ -1,0 +1,38 @@
+# Example SoundSource fixtures
+# Note: These reference Bank/Product PKs, Game PKs, Song PKs, and User PKs
+# Note: At least one of bank OR product must be set
+
+- model: vgm_source_database.sources.SoundSource
+  pk: 1
+  fields:
+    name: "Piano 1"
+    bank: 1  # Preset A bank
+    product: null  # Not needed when bank is set
+    discoverers: []  # User PKs (if any users exist)
+    games: [1]  # Chrono Trigger
+    songs: [1, 2]  # Multiple songs
+    notes: |
+      Classic piano sound used in Chrono Trigger.
+      Identified in SC-55 Preset A bank.
+
+- model: vgm_source_database.sources.SoundSource
+  pk: 2
+  fields:
+    name: "Orchestra Hit"
+    bank: null
+    product: 1  # SC-55 (no specific bank)
+    discoverers: []
+    games: [1, 2]  # Multiple games
+    songs: []
+    notes: ""
+
+- model: vgm_source_database.sources.SoundSource
+  pk: 3
+  fields:
+    name: "Strings"
+    bank: 3  # GM bank
+    product: null
+    discoverers: []
+    games: [2]  # Final Fantasy VI
+    songs: [3]  # Terra's Theme
+    notes: "String section sound"

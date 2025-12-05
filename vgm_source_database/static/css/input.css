@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply dark;
+  }
+  
+  body {
+    @apply bg-[#111827] text-gray-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Modern dark theme buttons */
+  .btn-success {
+    @apply px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md transition-colors duration-200 shadow-sm hover:shadow;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-200 shadow-sm hover:shadow;
+  }
+  
+  .btn-info {
+    @apply px-4 py-2 bg-cyan-600 hover:bg-cyan-700 text-white font-medium rounded-md transition-colors duration-200 shadow-sm hover:shadow;
+  }
+  
+  .btn-danger {
+    @apply px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-md transition-colors duration-200 shadow-sm hover:shadow;
+  }
+  
+  /* Cards with modern styling */
+  .card-neon {
+    @apply bg-[#374151] border border-[#4b5563] rounded-lg p-6 shadow-medium;
+  }
+  
+  /* Alerts with modern styling */
+  .alert {
+    @apply p-4 rounded-lg border font-sans;
+  }
+  
+  .alert-debug {
+    @apply bg-[#1f2937] border-blue-500/50 text-blue-400;
+  }
+  
+  .alert-info {
+    @apply bg-[#1f2937] border-cyan-500/50 text-cyan-400;
+  }
+  
+  .alert-success {
+    @apply bg-[#1f2937] border-emerald-500/50 text-emerald-400;
+  }
+  
+  .alert-warning {
+    @apply bg-[#1f2937] border-amber-500/50 text-amber-400;
+  }
+  
+  .alert-error {
+    @apply bg-[#1f2937] border-red-500/50 text-red-400;
+  }
+  
+  /* Navigation */
+  .nav-link {
+    @apply text-gray-300 hover:text-blue-400 transition-colors duration-200 font-sans;
+  }
+  
+  .nav-link.active {
+    @apply text-blue-400 border-b-2 border-blue-500;
+  }
+  
+  /* Forms */
+  .form-input {
+    @apply bg-[#374151] border border-[#4b5563] text-gray-100 rounded-md px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-200;
+  }
+  
+  .form-label {
+    @apply text-gray-300 font-medium text-sm mb-2 block;
+  }
+}
+
+@layer utilities {
+  /* Removed glow utilities for modern theme */
+}

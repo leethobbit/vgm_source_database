@@ -1,0 +1,23 @@
+# Example GameTag fixtures
+# These are example fixtures for the GameTag model
+
+- model: vgm_source_database.games.GameTag
+  pk: 1
+  fields:
+    name: "Action"
+    slug: "action"
+    description: "Action-oriented games with fast-paced gameplay"
+
+- model: vgm_source_database.games.GameTag
+  pk: 2
+  fields:
+    name: "RPG"
+    slug: "rpg"
+    description: "Role-playing games with character progression"
+
+- model: vgm_source_database.games.GameTag
+  pk: 3
+  fields:
+    name: "Platformer"
+    slug: "platformer"
+    description: ""

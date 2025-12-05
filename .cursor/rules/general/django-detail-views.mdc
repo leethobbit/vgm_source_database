@@ -1,0 +1,48 @@
+---
+description: Rules for creating DetailViews with TailwindCSS styling and Alpine.js interactivity.
+globs: **/views.py
+---
+- All DetailView classes should use appropriate template names
+- Detail view templates should extend base.html for consistent layout
+- Detail view templates must use TailwindCSS utility classes for styling
+- Use standard Django URL patterns and links for navigation
+- "Back to List" buttons in detail views should use standard Django links or Alpine.js for enhanced interactivity
+- Detail views should include a header with title and "Back to List" button
+- Use TailwindCSS card/styling patterns for organizing detail information
+- Use Alpine.js for interactive elements within detail views (e.g., expandable sections, tabs)
+
+Example DetailView pattern:
+```python
+class MyModelDetailView(DetailView):
+    """Detail view for MyModel."""
+    
+    model = MyModel
+    context_object_name = "mymodel"
+    template_name = "app/mymodel_detail.html"
+```
+
+Example detail template pattern:
+```html
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold">{{ mymodel.name }}</h1>
+    <a href="{% url 'core:mymodel_list' %}" 
+       class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+      Back to List
+    </a>
+  </div>
+  
+  <div class="mt-6">
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">Details</h2>
+      <div class="space-y-4">
+        <!-- Content here -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+```

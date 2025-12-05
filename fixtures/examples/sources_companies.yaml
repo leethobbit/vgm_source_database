@@ -1,0 +1,13 @@
+# Example Company fixtures
+
+- model: vgm_source_database.sources.Company
+  pk: 1
+  fields:
+    name: "Roland Corporation"
+    notes: "Japanese manufacturer of electronic musical instruments"
+
+- model: vgm_source_database.sources.Company
+  pk: 2
+  fields:
+    name: "Yamaha Corporation"
+    notes: ""

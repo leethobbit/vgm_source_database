@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Delete Person{% endblock title %}
+
+{% block content %}
+<h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider mb-6 text-glow-cyan">Delete Person</h1>
+
+<div class="card-neon">
+  <p class="mb-4 text-gray-300 font-mono">Are you sure you want to delete the person <strong class="text-neon-cyan">{{ object.name }}</strong>?</p>
+  <p class="mb-6 text-gray-400 font-mono text-sm">This action cannot be undone.</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <div class="flex gap-4">
+      <button type="submit" class="btn-danger">Delete</button>
+      <a href="{% url 'songs:person_detail' object.pk %}" class="btn-neon-yellow">Cancel</a>
+    </div>
+  </form>
+</div>
+{% endblock content %}

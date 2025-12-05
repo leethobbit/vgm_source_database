@@ -1,0 +1,17 @@
+services:
+  docs:
+    image: vgm_source_database_local_docs
+    container_name: vgm_source_database_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - /app/.venv
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./vgm_source_database:/app/vgm_source_database:z
+    ports:
+      - '9000:9000'
+    command: /start-docs

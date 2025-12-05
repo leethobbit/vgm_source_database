@@ -1,0 +1,137 @@
+---
+description: DEPRECATED - This rule was for HTMX partial loading patterns. Not applicable to Alpine.js stack. Alpine.js handles client-side interactivity, and Django views should provide full context for standard page loads.
+globs: **/views.py
+alwaysApply: false
+---
+# DEPRECATED - HTMX View Context Consistency
+
+**NOTE: This rule is not applicable to the current stack (Django + Alpine.js + TailwindCSS).**
+
+This rule was designed for HTMX partial loading patterns. With Alpine.js, we use standard Django views that provide full context for page loads. Alpine.js handles client-side interactivity without requiring partial view patterns.
+
+## The Problem
+
+- HTMX requests load partial templates via dedicated views (e.g., `DashboardHomeView`)
+- Full page reloads use wrapper views (e.g., `DashboardView`) that include partial templates directly
+- If the wrapper view doesn't provide the same context as the partial view, template variables will be missing on page refresh
+
+## The Solution
+
+### Pattern: Dual View Structure
+
+For every partial view, ensure there's a corresponding wrapper view that provides the same context:
+
+1. **Partial View** (HTMX): Handles HTMX requests and returns partial template
+2. **Wrapper View** (Full Page): Handles full page loads and includes the partial template
+
+### Rules
+
+- **Context Consistency**: The wrapper view's `get_context_data()` must include ALL context variables that the partial view provides
+- **Template Inclusion**: When a template uses `{% include %}` to load a partial, the including view must provide all context needed by that partial
+- **No Duplication**: Both views should use the same logic/calculations for context data to ensure consistency
+
+### Example Pattern
+
+```python
+class DashboardView(TemplateView):
+    """Dashboard view with HTMX support for content swapping."""
+    
+    template_name = "core/dashboard.html"
+    
+    def get_context_data(self, **kwargs):
+        """Get context data for dashboard.
+        
+        Returns:
+            Context dictionary with dashboard data.
+        """
+        context = super().get_context_data(**kwargs)
+        user = self.request.user
+        if user.is_authenticated:
+            # Provide ALL context that partial views need
+            context["character_count"] = Character.objects.filter(owner=user).count()
+            context["monster_count"] = self._get_monster_count(user)
+            context["campaign_count"] = self._get_campaign_count(user)
+            context["session_count"] = self._get_session_count(user)
+        else:
+            context["character_count"] = 0
+            context["monster_count"] = 0
+            context["campaign_count"] = 0
+            context["session_count"] = 0
+        return context
+
+
+class DashboardHomeView(TemplateView):
+    """Home content for dashboard."""
+    
+    template_name = "core/partials/dashboard_home.html"
+    
+    def get_context_data(self, **kwargs):
+        """Get context data for dashboard home.
+        
+        Returns:
+            Context dictionary with dashboard home data.
+        """
+        context = super().get_context_data(**kwargs)
+        user = self.request.user
+        if user.is_authenticated:
+            # Same context as DashboardView
+            context["character_count"] = Character.objects.filter(owner=user).count()
+            context["monster_count"] = self._get_monster_count(user)
+            context["campaign_count"] = self._get_campaign_count(user)
+            context["session_count"] = self._get_session_count(user)
+        else:
+            context["character_count"] = 0
+            context["monster_count"] = 0
+            context["campaign_count"] = 0
+            context["session_count"] = 0
+        return context
+```
+
+### Template Pattern
+
+```html
+<!-- dashboard.html -->
+<div class="dashboard-container">
+  <!-- ... navbar and sidebar ... -->
+  
+  <div id="main-content">
+    {% include "core/partials/dashboard_home.html" %}
+  </div>
+</div>
+```
+
+```html
+<!-- dashboard_home.html (partial) -->
+<div class="dashboard-home">
+  <h1>Welcome</h1>
+  <ul>
+    <li>{{ character_count }} characters</li>
+    <li>{{ monster_count }} monsters</li>
+    <li>{{ campaign_count }} campaigns</li>
+    <li>{{ session_count }} sessions</li>
+  </ul>
+</div>
+```
+
+## Checklist
+
+When creating or updating views:
+
+- [ ] Identify if the view has a partial template version (for HTMX)
+- [ ] Identify if there's a wrapper view that includes the partial template
+- [ ] Ensure wrapper view provides ALL context variables needed by the partial
+- [ ] Test both HTMX navigation and full page refresh to verify context is available
+- [ ] Use helper methods or shared logic to avoid duplication while maintaining consistency
+
+## Common Issues
+
+- **Missing context on page refresh**: Wrapper view doesn't provide context that partial view needs
+- **Inconsistent data**: Different calculations between wrapper and partial views
+- **Template errors**: Partial template references variables not in wrapper view's context
+
+## Best Practices
+
+1. **Extract shared logic**: Use helper methods or mixins to share context calculation logic
+2. **Test both paths**: Always test both HTMX navigation and full page refresh
+3. **Document dependencies**: Comment in wrapper views which partials they include and what context they need
+4. **Consistent naming**: Use clear naming like `DashboardXView` (wrapper) and `DashboardXPartialView` or `DashboardXView` (partial)

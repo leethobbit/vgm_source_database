@@ -1,0 +1,25 @@
+# Example Game fixtures
+# Note: These reference GameTag PKs from games_gametags.yaml
+# Note: These reference Person PKs from songs_people.yaml
+
+- model: vgm_source_database.games.Game
+  pk: 1
+  fields:
+    title: "Chrono Trigger"
+    release_date: "1995-03-11"
+    release_year: 1995
+    album_artists: [1, 2]  # Person PKs
+    tags: [1, 2]  # GameTag PKs (Action, RPG)
+    notes: |
+      Classic JRPG with an iconic soundtrack.
+      Composed by Yasunori Mitsuda and Nobuo Uematsu.
+
+- model: vgm_source_database.games.Game
+  pk: 2
+  fields:
+    title: "Final Fantasy VI"
+    release_date: "1994-04-02"
+    release_year: 1994
+    album_artists: [2]  # Nobuo Uematsu
+    tags: [2]  # RPG tag
+    notes: ""

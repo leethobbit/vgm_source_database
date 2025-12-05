@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ product.name }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">{{ product.name }}</h1>
+  <div class="flex gap-4">
+    <a href="{% url 'sources:product_list' %}" class="btn-primary">Back to List</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'sources:product_update' product.pk %}" class="btn-info">Edit</a>
+      <a href="{% url 'sources:bank_create' %}?product={{ product.pk }}" class="btn-success">Add Bank</a>
+      <a href="{% url 'sources:soundsource_create' %}?product={{ product.pk }}" class="btn-success">Add Sound Source</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="mb-6 card-neon">
+  <p class="font-mono"><span class="text-neon-cyan font-bold uppercase tracking-wider">Company:</span> <a href="{% url 'sources:company_detail' product.company.pk %}" class="text-neon-cyan hover:text-neon-pink transition-colors">{{ product.company.name }}</a></p>
+</div>
+
+{% if product.notes %}
+  <div class="mb-6 card-neon">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Notes</h3>
+    <p class="text-gray-100 font-mono whitespace-pre-line">{{ product.notes|linebreaks }}</p>
+  </div>
+{% endif %}
+
+{% if product.banks.all %}
+  <div class="mb-6">
+    <h3 class="text-xl font-mono uppercase tracking-wider text-neon-cyan mb-3">Banks</h3>
+    <div class="space-y-2">
+      {% for bank in product.banks.all %}
+        <a href="{% url 'sources:bank_detail' bank.pk %}" class="block bg-[#1a1a2e] border-2 border-[#0f3460] rounded-lg p-3 hover:border-neon-cyan transition-colors duration-300 font-mono text-neon-cyan">
+          {{ bank.name }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+<div class="text-gray-400 text-sm font-mono space-y-1">
+  <p>Created: {{ product.created_at|date:"F d, Y" }}</p>
+  <p>Last updated: {{ product.updated_at|date:"F d, Y" }}</p>
+</div>
+{% endblock content %}

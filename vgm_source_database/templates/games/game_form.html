@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n crispy_forms_tags %}
+
+{% block title %}{% if object.pk %}Update{% else %}Create{% endif %} Game{% endblock title %}
+
+{% block content %}
+<h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider mb-6 text-glow-cyan">{% if object.pk %}Update{% else %}Create{% endif %} Game</h1>
+
+<form method="post" class="card-neon">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <div class="mt-6 flex gap-4">
+    <button type="submit" class="{% if object.pk %}btn-info{% else %}btn-success{% endif %}">{% if object.pk %}Update{% else %}Create{% endif %}</button>
+    <a href="{% url 'games:game_list' %}" class="btn-neon-yellow">Cancel</a>
+  </div>
+</form>
+{% endblock content %}

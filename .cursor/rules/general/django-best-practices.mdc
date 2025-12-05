@@ -1,0 +1,18 @@
+---
+description: Applies best practices for Alpine.js, TailwindCSS, and Django integration, focusing on template usage within the 'templates' directory. It encourages using Django's templating engine with Alpine.js for interactivity and TailwindCSS for styling.
+globs: **/templates/**/*.*
+---
+- Use Django's template system with Alpine.js for client-side interactivity
+- Use TailwindCSS utility classes for styling instead of custom CSS
+- Implement proper CSRF protection with Django's built-in features
+- Use Django's form validation for form submissions
+- Implement proper error handling and logging
+- Use Django's template tags with Alpine.js directives
+- Use Alpine.js directives for interactive elements:
+  - `x-data` for component state
+  - `x-show` or `x-if` for conditional rendering
+  - `@click`, `@submit`, etc. for event handling
+  - `x-bind` for dynamic attributes
+- Prefer TailwindCSS utility classes over custom CSS classes
+- Use Alpine.js for modal dialogs, dropdowns, and other interactive UI components
+- Keep JavaScript usage minimal - use Alpine.js for most interactivity needs

@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+description: "Maintain test coverage standards."
+when: "implementing new features"
+---
+Create unit tests that:
+    - Cover all code paths
+    - Include edge cases
+    - Follow AAA pattern
+    - Use meaningful test names

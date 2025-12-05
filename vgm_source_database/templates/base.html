@@ -1,0 +1,509 @@
+
+{% load static i18n %}<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      {% block title %}
+      The VGM Sound Source Database
+    {% endblock title %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="A comprehensive database for tracking sound sources from popular video game soundtracks, written in Python with Django." />
+  <meta name="author"
+        content="Dan King" />
+  <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
+  {% block css %}
+    <!-- Tailwind CSS Play CDN (for testing) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        /* Modern dark theme colors */
+        --color-dark-bg: #111827;
+        --color-dark-surface: #1f2937;
+        --color-dark-card: #374151;
+        --color-dark-border: #4b5563;
+        
+        --color-accent-primary: #3b82f6;
+        --color-accent-success: #10b981;
+        --color-accent-info: #06b6d4;
+        --color-accent-danger: #ef4444;
+        --color-accent-warning: #f59e0b;
+      }
+      
+      /* Base styles */
+      html.dark {
+        color-scheme: dark;
+      }
+      
+      body {
+        background-color: #111827;
+        color: #f3f4f6;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Modern dark theme utilities */
+      .bg-dark-surface { background-color: #1f2937; }
+      .bg-dark-card { background-color: #374151; }
+      .bg-dark-border { background-color: #4b5563; }
+      
+      /* Modern dark theme components */
+      .btn-success {
+        padding: 0.5rem 1rem;
+        background-color: #10b981;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.375rem;
+        transition: background-color 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      
+      .btn-success:hover {
+        background-color: #059669;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+      
+      .btn-primary {
+        padding: 0.5rem 1rem;
+        background-color: #3b82f6;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.375rem;
+        transition: background-color 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      
+      .btn-primary:hover {
+        background-color: #2563eb;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+      
+      .btn-info {
+        padding: 0.5rem 1rem;
+        background-color: #06b6d4;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.375rem;
+        transition: background-color 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      
+      .btn-info:hover {
+        background-color: #0891b2;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+      
+      .btn-danger {
+        padding: 0.5rem 1rem;
+        background-color: #ef4444;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.375rem;
+        transition: background-color 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      
+      .btn-danger:hover {
+        background-color: #dc2626;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+      
+      /* Cards with modern styling */
+      .card-neon {
+        background-color: #374151;
+        border: 1px solid #4b5563;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      
+      /* Alerts with modern styling */
+      .alert {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid;
+      }
+      
+      .alert-debug {
+        background-color: #1f2937;
+        border-color: rgba(59, 130, 246, 0.5);
+        color: #60a5fa;
+      }
+      
+      .alert-info {
+        background-color: #1f2937;
+        border-color: rgba(6, 182, 212, 0.5);
+        color: #22d3ee;
+      }
+      
+      .alert-success {
+        background-color: #1f2937;
+        border-color: rgba(16, 185, 129, 0.5);
+        color: #34d399;
+      }
+      
+      .alert-warning {
+        background-color: #1f2937;
+        border-color: rgba(245, 158, 11, 0.5);
+        color: #fbbf24;
+      }
+      
+      .alert-error {
+        background-color: #1f2937;
+        border-color: rgba(239, 68, 68, 0.5);
+        color: #f87171;
+      }
+      
+      /* Navigation */
+      .nav-link {
+        color: #d1d5db;
+        transition: color 0.2s;
+      }
+      
+      .nav-link:hover {
+        color: #60a5fa;
+      }
+      
+      .nav-link.active {
+        color: #60a5fa;
+        border-bottom: 2px solid #3b82f6;
+      }
+      
+      /* Form styling for dark theme */
+      /* Bootstrap form controls */
+      .form-control,
+      .form-select,
+      select.form-control,
+      select.form-select {
+        background-color: #111827;
+        border: 1px solid #4b5563;
+        color: #f3f4f6;
+        border-radius: 0.375rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      
+      .form-control:focus,
+      .form-select:focus,
+      select.form-control:focus,
+      select.form-select:focus {
+        background-color: #111827;
+        border-color: #3b82f6;
+        color: #f3f4f6;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+      }
+      
+      .form-control::placeholder {
+        color: #9ca3af;
+        opacity: 1;
+      }
+      
+      /* Select dropdown options */
+      .form-select option,
+      select.form-control option,
+      select.form-select option {
+        background-color: #111827;
+        color: #f3f4f6;
+      }
+      
+      /* Textarea */
+      textarea.form-control {
+        min-height: calc(1.5em + 0.75rem + 2px);
+        resize: vertical;
+      }
+      
+      /* Form labels */
+      label,
+      .form-label {
+        color: #d1d5db;
+        font-weight: 500;
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+      
+      /* Form groups and rows */
+      .mb-3,
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      
+      /* Required field indicator */
+      .requiredField {
+        color: #f3f4f6;
+      }
+      
+      .requiredField label::after {
+        content: " *";
+        color: #ef4444;
+      }
+      
+      /* Form help text */
+      .form-text,
+      .help-block,
+      .help-text {
+        color: #9ca3af;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+      }
+      
+      /* Form errors */
+      .invalid-feedback,
+      .errorlist {
+        color: #f87171;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: block;
+      }
+      
+      .errorlist {
+        list-style: none;
+        padding: 0;
+        margin: 0.25rem 0 0 0;
+      }
+      
+      .errorlist li {
+        color: #f87171;
+      }
+      
+      /* Invalid form controls */
+      .form-control.is-invalid,
+      .form-select.is-invalid {
+        background-color: #111827;
+        border-color: #ef4444;
+      }
+      
+      .form-control.is-invalid:focus,
+      .form-select.is-invalid:focus {
+        background-color: #111827;
+        border-color: #ef4444;
+        box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.25);
+      }
+      
+      /* Valid form controls */
+      .form-control.is-valid,
+      .form-select.is-valid {
+        background-color: #111827;
+        border-color: #10b981;
+      }
+      
+      .form-control.is-valid:focus,
+      .form-select.is-valid:focus {
+        background-color: #111827;
+        border-color: #10b981;
+        box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.25);
+      }
+      
+      /* Checkboxes and radio buttons */
+      .form-check-input {
+        background-color: #111827;
+        border: 1px solid #4b5563;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.25em;
+        vertical-align: top;
+        cursor: pointer;
+      }
+      
+      .form-check-input:checked {
+        background-color: #3b82f6;
+        border-color: #3b82f6;
+      }
+      
+      .form-check-input:focus {
+        border-color: #3b82f6;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+      }
+      
+      .form-check-label {
+        color: #d1d5db;
+        cursor: pointer;
+        margin-left: 0.5rem;
+      }
+      
+      /* Form check wrapper */
+      .form-check {
+        display: block;
+        min-height: 1.5rem;
+        padding-left: 1.5em;
+        margin-bottom: 0.125rem;
+      }
+      
+      /* Input groups */
+      .input-group-text {
+        background-color: #1f2937;
+        border: 1px solid #4b5563;
+        color: #d1d5db;
+        padding: 0.5rem 0.75rem;
+      }
+      
+      /* Disabled form controls */
+      .form-control:disabled,
+      .form-select:disabled,
+      .form-control[readonly] {
+        background-color: #0f1419;
+        border-color: #374151;
+        color: #6b7280;
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+      
+      /* Crispy forms specific styling */
+      .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+      }
+      
+      .form-row > * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        margin-top: 0;
+      }
+    </style>
+  {% endblock css %}
+<!-- Le javascript
+    ================================================== -->
+{# Placed at the top of the document so pages load faster with defer #}
+{% block javascript %}
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Your stuff: Third-party javascript libraries go here -->
+  <!-- place project specific Javascript in this file -->
+  <script defer src="{% static 'js/project.js' %}"></script>
+{% endblock javascript %}
+</head>
+<body class="{% block bodyclass %}{% endblock bodyclass %}">
+  {% block body %}
+  <nav class="bg-dark-surface border-b border-[#4b5563]" x-data="{ open: false }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <a href="{% url 'home' %}" class="text-blue-400 text-xl font-semibold">
+            The VGM Sound Source Database
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="{% url 'home' %}" class="nav-link">Home</a>
+            <a href="{% url 'sources:soundsource_list' %}" class="nav-link">Sources</a>
+            <a href="{% url 'games:game_list' %}" class="nav-link">Games</a>
+            <a href="{% url 'songs:song_list' %}" class="nav-link">Songs</a>
+            <a href="{% url 'about' %}" class="nav-link">About</a>
+            {% if request.user.is_authenticated %}
+              <a href="{% url 'users:detail' request.user.username %}" class="nav-link">{% translate "My Profile" %}</a>
+              <a href="{% url 'account_logout' %}" class="nav-link">{% translate "Sign Out" %}</a>
+            {% else %}
+              {% if ACCOUNT_ALLOW_REGISTRATION %}
+                <a id="sign-up-link" href="{% url 'account_signup' %}" class="nav-link">{% translate "Sign Up" %}</a>
+              {% endif %}
+              <a id="log-in-link" href="{% url 'account_login' %}" class="nav-link">{% translate "Sign In" %}</a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button @click="open = !open" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div x-show="open" x-collapse class="md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark-card border-t border-[#4b5563]">
+        <a href="{% url 'home' %}" class="nav-link block px-3 py-2">Home</a>
+        <a href="{% url 'sources:soundsource_list' %}" class="nav-link block px-3 py-2">Sources</a>
+        <a href="{% url 'games:game_list' %}" class="nav-link block px-3 py-2">Games</a>
+        <a href="{% url 'songs:song_list' %}" class="nav-link block px-3 py-2">Songs</a>
+        <a href="{% url 'about' %}" class="nav-link block px-3 py-2">About</a>
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:detail' request.user.username %}" class="nav-link block px-3 py-2">{% translate "My Profile" %}</a>
+          <a href="{% url 'account_logout' %}" class="nav-link block px-3 py-2">{% translate "Sign Out" %}</a>
+        {% else %}
+          {% if ACCOUNT_ALLOW_REGISTRATION %}
+            <a id="sign-up-link" href="{% url 'account_signup' %}" class="nav-link block px-3 py-2">{% translate "Sign Up" %}</a>
+          {% endif %}
+          <a id="log-in-link" href="{% url 'account_login' %}" class="nav-link block px-3 py-2">{% translate "Sign In" %}</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-dark-surface border-r border-[#4b5563] min-h-[calc(100vh-4rem)] sticky top-16">
+      <div class="p-4">
+        <h2 class="text-xl font-mono uppercase tracking-wider text-blue-400 mb-4">Top Categories</h2>
+        {% if top_categories %}
+          <ul class="space-y-2">
+            {% for tag in top_categories %}
+              <li>
+                <a href="{% url 'games:gametag_detail' tag.slug %}" class="block px-3 py-2 bg-dark-card border border-[#4b5563] rounded hover:border-blue-400 transition-colors">
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-300 font-mono text-sm">{{ tag.name }}</span>
+                    <span class="text-gray-500 font-mono text-xs">({{ tag.game_count }})</span>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-gray-400 font-mono text-sm">No categories yet.</p>
+        {% endif %}
+      </div>
+    </aside>
+    <!-- Main Content -->
+    <main class="flex-1">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-{{ message.tags|default:'info' }} mb-4 flex justify-between items-center" x-data="{ show: true }" x-show="show" x-transition>
+              <span>{{ message }}</span>
+              <button type="button" @click="show = false" class="text-gray-400 hover:text-gray-300 ml-4">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          {% endfor %}
+        {% endif %}
+        {% block main %}
+          {% block content %}
+            <p>Use this document as a way to quick start any new project.</p>
+          {% endblock content %}
+        {% endblock main %}
+      </div>
+    </main>
+  </div>
+  {% endblock body %}
+  <!-- /container -->
+  {% block modal %}
+  {% endblock modal %}
+  {% block inline_javascript %}
+    {% comment %}
+    Script tags with only code, no src (defer by default). To run
+    with a "defer" so that you run inline code:
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        /* Run whatever you want */
+      });
+    </script>
+    {% endcomment %}
+  {% endblock inline_javascript %}
+</body>
+</html>
