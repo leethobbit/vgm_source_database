@@ -3,17 +3,12 @@
   "version": "0.1.0",
   "description": "A comprehensive database for tracking sound sources from popular video game soundtracks",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./vgm_source_database/static/css/input.css -o ./vgm_source_database/static/css/project.css --minify",
-    "watch:css": "npx tailwindcss -i ./vgm_source_database/static/css/input.css -o ./vgm_source_database/static/css/project.css --watch"
+    "build:css": "tailwindcss -i ./vgm_source_database/static/css/input.css -o ./vgm_source_database/static/css/project.css --minify",
+    "watch:css": "tailwindcss -i ./vgm_source_database/static/css/input.css -o ./vgm_source_database/static/css/project.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1",
     "autoprefixer": "^10.4.18",
-    "postcss": "^8.4.35",
-    "postcss-cli": "^11.0.0"
-  },
-  "scripts": {
-    "build:css": "tailwindcss -i ./vgm_source_database/static/css/input.css -o ./vgm_source_database/static/css/project.css --minify",
-    "watch:css": "tailwindcss -i ./vgm_source_database/static/css/input.css -o ./vgm_source_database/static/css/project.css --watch"
+    "postcss": "^8.4.35"
   }
 }

@@ -34,8 +34,17 @@ try:
         print("ERROR: No CSV files found!")
         sys.exit(1)
     
+    # Check for combined file option (can be set via environment or command line)
+    import os
+    combined = os.environ.get("COMBINED_FIXTURE", "false").lower() == "true"
+    
     print("\nCreating converter...")
-    converter = CSVConverter(csv_dir, output_dir)
+    converter = CSVConverter(csv_dir, output_dir, combined_file=combined)
+    
+    if combined:
+        print("Mode: Combined fixture file (all_fixtures.yaml)")
+    else:
+        print("Mode: Separate fixture files")
     
     print("Running conversion...")
     converter.convert()

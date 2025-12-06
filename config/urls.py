@@ -24,6 +24,8 @@ urlpatterns = [
     path("sources/", include("vgm_source_database.sources.urls", namespace="sources")),
     path("games/", include("vgm_source_database.games.urls", namespace="games")),
     path("songs/", include("vgm_source_database.songs.urls", namespace="songs")),
+    # Data Management
+    path("import/", include("vgm_source_database.urls")),
     # Your stuff: custom urls includes go here
     # ...
     # Media files

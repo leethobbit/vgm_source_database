@@ -3,7 +3,8 @@
 from pathlib import Path
 
 from django.core.management.base import BaseCommand, CommandError
-from django.core.management import call_command
+
+from vgm_source_database.import_utils import import_fixture_file
 
 
 class Command(BaseCommand):
@@ -46,6 +47,18 @@ class Command(BaseCommand):
             type=int,
             default=1,
             help="Verbosity level (0=minimal, 1=normal, 2=verbose, 3=very verbose)",
+        )
+        parser.add_argument(
+            "--duplicate-handling",
+            type=str,
+            choices=["skip", "overwrite"],
+            default="skip",
+            help="How to handle duplicates: 'skip' (keep existing) or 'overwrite' (update existing)",
+        )
+        parser.add_argument(
+            "--error-file",
+            type=str,
+            help="File path to write error details (if errors occur)",
         )
 
     def handle(self, *args, **options):
@@ -118,13 +131,58 @@ class Command(BaseCommand):
 
         try:
             verbosity = options.get("verbosity", 1)
-            call_command(
-                "loaddata",
+            duplicate_handling = options.get("duplicate_handling", "skip")
+            
+            stats = import_fixture_file(
                 str(fixture_file),
+                duplicate_handling=duplicate_handling,
                 verbosity=verbosity,
             )
+            
+            # Report statistics
             self.stdout.write(
-                self.style.SUCCESS(f"Successfully imported: {fixture_file}"),
+                self.style.SUCCESS(
+                    f"Imported: {fixture_file} - "
+                    f"Total: {stats['total']}, "
+                    f"Created: {stats['created']}, "
+                    f"{'Updated' if duplicate_handling == 'overwrite' else 'Skipped'}: "
+                    f"{stats['updated' if duplicate_handling == 'overwrite' else 'skipped']}"
+                ),
             )
+            
+            if stats["errors"]:
+                error_file = options.get("error_file")
+                if error_file:
+                    # Write errors to file
+                    with open(error_file, "w", encoding="utf-8") as f:
+                        f.write(f"Import Errors ({len(stats['errors'])} total)\n")
+                        f.write("=" * 80 + "\n\n")
+                        for error in stats["errors"]:
+                            f.write(f"{error}\n")
+                    self.stdout.write(
+                        self.style.WARNING(
+                            f"  {len(stats['errors'])} error(s) occurred. "
+                            f"Details written to: {error_file}"
+                        ),
+                    )
+                else:
+                    self.stdout.write(
+                        self.style.WARNING(
+                            f"  {len(stats['errors'])} error(s) occurred. "
+                            "Use --verbosity 2 to see details or --error-file to save to file."
+                        ),
+                    )
+                if verbosity >= 2:
+                    # Show first 50 errors in console
+                    for error in stats["errors"][:50]:
+                        self.stdout.write(self.style.ERROR(f"  - {error}"))
+                    if len(stats["errors"]) > 50:
+                        self.stdout.write(
+                            self.style.WARNING(
+                                f"  ... and {len(stats['errors']) - 50} more errors. "
+                                "Use --error-file to see all errors."
+                            ),
+                        )
+                        
         except Exception as e:
             raise CommandError(f"Error importing {fixture_file}: {e}") from e

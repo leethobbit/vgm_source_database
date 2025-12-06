@@ -1,0 +1,3463 @@
+SKIPPED LINES REPORT
+============================================================
+
+Total skipped lines: 1720
+
+
+File: NEWER VGM Sound Sources - Capcom.csv
+------------------------------------------------------------
+  Row 19: Section 1 - Street Fighter
+    Reason: Could not parse as sound source or game title
+  Row 22: Base Game - Arcade (CPS1) ★
+    Reason: Could not parse as sound source or game title
+  Row 30: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 44: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 47: Base Game - Arcade (CPS2) ★
+    Reason: Could not parse as sound source or game title
+  Row 79: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 102: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 103: ?
+    Reason: Could not parse as sound source or game title
+  Row 107: Base Game - Arcade (CPS2)
+    Reason: Could not parse as sound source or game title
+  Row 141: Base Game - Arcade (CPS2)
+    Reason: Could not parse as sound source or game title
+  Row 169: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 170: Roland
+    Reason: Could not parse as sound source or game title
+  Row 172: ?
+    Reason: Could not parse as sound source or game title
+  Row 213: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 214: ?
+    Reason: Could not parse as sound source or game title
+  Row 258: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 260: ?
+    Reason: Could not parse as sound source or game title
+  Row 266: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 277: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 297: Section 2 - Final Fight
+    Reason: Could not parse as sound source or game title
+  Row 300: Base Game - Arcade (CPS1)
+    Reason: Could not parse as sound source or game title
+  Row 308: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 317: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 318: ?
+    Reason: Could not parse as sound source or game title
+  Row 319: ?
+    Reason: Could not parse as sound source or game title
+  Row 320: ?
+    Reason: Could not parse as sound source or game title
+  Row 324: Section 3 - Disney/Marvel
+    Reason: Could not parse as sound source or game title
+  Row 336: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 338: ?
+    Reason: Could not parse as sound source or game title
+  Row 339: ?
+    Reason: Could not parse as sound source or game title
+  Row 340: ?
+    Reason: Could not parse as sound source or game title
+  Row 341: ?
+    Reason: Could not parse as sound source or game title
+  Row 355: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 357: ?
+    Reason: Could not parse as sound source or game title
+  Row 358: ?
+    Reason: Could not parse as sound source or game title
+  Row 359: ?
+    Reason: Could not parse as sound source or game title
+  Row 360: ?
+    Reason: Could not parse as sound source or game title
+  Row 361: ?
+    Reason: Could not parse as sound source or game title
+  Row 363: ?
+    Reason: Could not parse as sound source or game title
+  Row 364: ?
+    Reason: Could not parse as sound source or game title
+  Row 371: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 372: ?
+    Reason: Could not parse as sound source or game title
+  Row 373: ?
+    Reason: Could not parse as sound source or game title
+  Row 374: ?
+    Reason: Could not parse as sound source or game title
+  Row 384: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 387: ?
+    Reason: Could not parse as sound source or game title
+  Row 388: ?
+    Reason: Could not parse as sound source or game title
+  Row 389: ?
+    Reason: Could not parse as sound source or game title
+  Row 390: ?
+    Reason: Could not parse as sound source or game title
+  Row 399: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 401: ?
+    Reason: Could not parse as sound source or game title
+  Row 402: ?
+    Reason: Could not parse as sound source or game title
+  Row 403: ?
+    Reason: Could not parse as sound source or game title
+  Row 404: ?
+    Reason: Could not parse as sound source or game title
+  Row 405: ?
+    Reason: Could not parse as sound source or game title
+  Row 406: ?
+    Reason: Could not parse as sound source or game title
+  Row 407: ?
+    Reason: Could not parse as sound source or game title
+  Row 408: ?
+    Reason: Could not parse as sound source or game title
+  Row 409: ?
+    Reason: Could not parse as sound source or game title
+  Row 410: ?
+    Reason: Could not parse as sound source or game title
+  Row 411: ?
+    Reason: Could not parse as sound source or game title
+  Row 412: ?
+    Reason: Could not parse as sound source or game title
+  Row 413: ?
+    Reason: Could not parse as sound source or game title
+  Row 414: ?
+    Reason: Could not parse as sound source or game title
+  Row 415: ?
+    Reason: Could not parse as sound source or game title
+  Row 416: ?
+    Reason: Could not parse as sound source or game title
+  Row 417: ?
+    Reason: Could not parse as sound source or game title
+  Row 440: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 470: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 484: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 488: ?
+    Reason: Could not parse as sound source or game title
+  Row 489: ?
+    Reason: Could not parse as sound source or game title
+  Row 490: ?
+    Reason: Could not parse as sound source or game title
+  Row 491: ?
+    Reason: Could not parse as sound source or game title
+  Row 492: ?
+    Reason: Could not parse as sound source or game title
+  Row 493: ?
+    Reason: Could not parse as sound source or game title
+  Row 494: ?
+    Reason: Could not parse as sound source or game title
+  Row 495: ?
+    Reason: Could not parse as sound source or game title
+  Row 496: ?
+    Reason: Could not parse as sound source or game title
+  Row 497: ?
+    Reason: Could not parse as sound source or game title
+  Row 504: Section 4 - Mega Man
+    Reason: Could not parse as sound source or game title
+  Row 520: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 522: ?
+    Reason: Could not parse as sound source or game title
+  Row 523: ?
+    Reason: Could not parse as sound source or game title
+  Row 524: ?
+    Reason: Could not parse as sound source or game title
+  Row 525: ?
+    Reason: Could not parse as sound source or game title
+  Row 526: ?
+    Reason: Could not parse as sound source or game title
+  Row 527: ?
+    Reason: Could not parse as sound source or game title
+  Row 528: ?
+    Reason: Could not parse as sound source or game title
+  Row 529: ?
+    Reason: Could not parse as sound source or game title
+  Row 530: ?
+    Reason: Could not parse as sound source or game title
+  Row 537: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 540: ?
+    Reason: Could not parse as sound source or game title
+  Row 550: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 551: ?
+    Reason: Could not parse as sound source or game title
+  Row 552: ?
+    Reason: Could not parse as sound source or game title
+  Row 553: ?
+    Reason: Could not parse as sound source or game title
+  Row 554: ?
+    Reason: Could not parse as sound source or game title
+  Row 555: ?
+    Reason: Could not parse as sound source or game title
+  Row 556: ?
+    Reason: Could not parse as sound source or game title
+  Row 557: ?
+    Reason: Could not parse as sound source or game title
+  Row 558: ?
+    Reason: Could not parse as sound source or game title
+  Row 559: ?
+    Reason: Could not parse as sound source or game title
+  Row 560: ?
+    Reason: Could not parse as sound source or game title
+  Row 561: ?
+    Reason: Could not parse as sound source or game title
+  Row 571: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 577: ?
+    Reason: Could not parse as sound source or game title
+  Row 603: Base Game - Nintendo SNES
+    Reason: Could not parse as sound source or game title
+  Row 618: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 619: ?
+    Reason: Could not parse as sound source or game title
+  Row 620: ?
+    Reason: Could not parse as sound source or game title
+  Row 621: ?
+    Reason: Could not parse as sound source or game title
+  Row 622: ?
+    Reason: Could not parse as sound source or game title
+  Row 623: ?
+    Reason: Could not parse as sound source or game title
+  Row 624: ?
+    Reason: Could not parse as sound source or game title
+  Row 625: ?
+    Reason: Could not parse as sound source or game title
+  Row 626: ?
+    Reason: Could not parse as sound source or game title
+  Row 627: ?
+    Reason: Could not parse as sound source or game title
+  Row 628: ?
+    Reason: Could not parse as sound source or game title
+  Row 658: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 659: ?
+    Reason: Could not parse as sound source or game title
+  Row 663: Roland
+    Reason: Could not parse as sound source or game title
+  Row 665: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 693: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 696: ?
+    Reason: Could not parse as sound source or game title
+  Row 718: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 736: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 757: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 758: ?
+    Reason: Could not parse as sound source or game title
+  Row 759: ?
+    Reason: Could not parse as sound source or game title
+  Row 771: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 773: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 784: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 802: Section 5 - Resident Evil
+    Reason: Could not parse as sound source or game title
+  Row 834: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 865: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 866: ?
+    Reason: Could not parse as sound source or game title
+  Row 907: Section 6 - Marvel vs. Capcom
+    Reason: Could not parse as sound source or game title
+  Row 934: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 982: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 984: ?
+    Reason: Could not parse as sound source or game title
+  Row 985: ?
+    Reason: Could not parse as sound source or game title
+  Row 986: ?
+    Reason: Could not parse as sound source or game title
+  Row 987: ?
+    Reason: Could not parse as sound source or game title
+  Row 988: ?
+    Reason: Could not parse as sound source or game title
+  Row 989: ?
+    Reason: Could not parse as sound source or game title
+  Row 990: ?
+    Reason: Could not parse as sound source or game title
+  Row 991: ?
+    Reason: Could not parse as sound source or game title
+  Row 992: ?
+    Reason: Could not parse as sound source or game title
+  Row 993: ?
+    Reason: Could not parse as sound source or game title
+  Row 994: ?
+    Reason: Could not parse as sound source or game title
+  Row 995: ?
+    Reason: Could not parse as sound source or game title
+  Row 996: ?
+    Reason: Could not parse as sound source or game title
+  Row 997: ?
+    Reason: Could not parse as sound source or game title
+  Row 998: ?
+    Reason: Could not parse as sound source or game title
+  Row 999: ?
+    Reason: Could not parse as sound source or game title
+  Row 1000: ?
+    Reason: Could not parse as sound source or game title
+  Row 1001: ?
+    Reason: Could not parse as sound source or game title
+  Row 1002: ?
+    Reason: Could not parse as sound source or game title
+  Row 1003: ?
+    Reason: Could not parse as sound source or game title
+  Row 1031: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1036: ?
+    Reason: Could not parse as sound source or game title
+  Row 1045: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1053: Section 7 - Devil May Cry
+    Reason: Could not parse as sound source or game title
+  Row 1250: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1255: ?
+    Reason: Could not parse as sound source or game title
+  Row 1256: ?
+    Reason: Could not parse as sound source or game title
+  Row 1257: ?
+    Reason: Could not parse as sound source or game title
+  Row 1322: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1358: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1359: ?
+    Reason: Could not parse as sound source or game title
+  Row 1374: Zero-G
+    Reason: Could not parse as sound source or game title
+  Row 1380: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1385: Section 8 - Ace Attorney
+    Reason: Could not parse as sound source or game title
+  Row 1501: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1506: ?
+    Reason: Could not parse as sound source or game title
+  Row 1507: ?
+    Reason: Could not parse as sound source or game title
+  Row 1508: ?
+    Reason: Could not parse as sound source or game title
+  Row 1509: ?
+    Reason: Could not parse as sound source or game title
+  Row 1547: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1552: ?
+    Reason: Could not parse as sound source or game title
+  Row 1591: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1602: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1705: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1731: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1823: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1827: MOTU
+    Reason: Could not parse as sound source or game title
+  Row 1941: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1948: Section 9 - Monster Hunter
+    Reason: Could not parse as sound source or game title
+  Row 1956: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1960: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1970: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1976: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 1979: ?
+    Reason: Could not parse as sound source or game title
+  Row 1986: Section 10 - Dead Rising
+    Reason: Could not parse as sound source or game title
+  Row 2047: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2088: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2093: ?
+    Reason: Could not parse as sound source or game title
+  Row 2103: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2104: ?
+    Reason: Could not parse as sound source or game title
+  Row 2106: Section 11 - Other
+    Reason: Could not parse as sound source or game title
+  Row 2109: Base Game - Arcade (CPS1)
+    Reason: Could not parse as sound source or game title
+  Row 2110: -
+    Reason: Could not parse as sound source or game title
+  Row 2121: Base Game - Arcade (CPS1)
+    Reason: Could not parse as sound source or game title
+  Row 2122: -
+    Reason: Could not parse as sound source or game title
+  Row 2125: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2129: ?
+    Reason: Could not parse as sound source or game title
+  Row 2130: ?
+    Reason: Could not parse as sound source or game title
+  Row 2131: ?
+    Reason: Could not parse as sound source or game title
+  Row 2132: ?
+    Reason: Could not parse as sound source or game title
+  Row 2133: ?
+    Reason: Could not parse as sound source or game title
+  Row 2161: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2178: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2198: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2241: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2290: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2295: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2300: Base Game - Arcade (CPS2)
+    Reason: Could not parse as sound source or game title
+  Row 2352: Base Game - Arcade (CPS2)
+    Reason: Could not parse as sound source or game title
+  Row 2431: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2529: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2674: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2680: ?
+    Reason: Could not parse as sound source or game title
+  Row 2681: ?
+    Reason: Could not parse as sound source or game title
+  Row 2682: ?
+    Reason: Could not parse as sound source or game title
+  Row 2683: ?
+    Reason: Could not parse as sound source or game title
+  Row 2684: ?
+    Reason: Could not parse as sound source or game title
+  Row 2685: ?
+    Reason: Could not parse as sound source or game title
+  Row 2686: ?
+    Reason: Could not parse as sound source or game title
+  Row 2687: ?
+    Reason: Could not parse as sound source or game title
+  Row 2688: ?
+    Reason: Could not parse as sound source or game title
+  Row 2689: ?
+    Reason: Could not parse as sound source or game title
+  Row 2690: ?
+    Reason: Could not parse as sound source or game title
+  Row 2698: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2728: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2731: ?
+    Reason: Could not parse as sound source or game title
+  Row 2732: ?
+    Reason: Could not parse as sound source or game title
+  Row 2733: ?
+    Reason: Could not parse as sound source or game title
+  Row 2828: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2843: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2861: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2864: Stuff to Find
+    Reason: Could not parse as sound source or game title
+
+File: NEWER VGM Sound Sources - Mario.csv
+------------------------------------------------------------
+  Row 18: Section 1 - Main Series
+    Reason: Could not parse as sound source or game title
+  Row 21: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 30: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 31: ?
+    Reason: Could not parse as sound source or game title
+  Row 32: ?
+    Reason: Could not parse as sound source or game title
+  Row 33: ?
+    Reason: Could not parse as sound source or game title
+  Row 34: ?
+    Reason: Could not parse as sound source or game title
+  Row 43: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 57: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 58: Roland
+    Reason: Could not parse as sound source or game title
+  Row 59: ?
+    Reason: Could not parse as sound source or game title
+  Row 60: ?
+    Reason: Could not parse as sound source or game title
+  Row 61: ?
+    Reason: Could not parse as sound source or game title
+  Row 62: ?
+    Reason: Could not parse as sound source or game title
+  Row 63: ?
+    Reason: Could not parse as sound source or game title
+  Row 64: ?
+    Reason: Could not parse as sound source or game title
+  Row 65: ?
+    Reason: Could not parse as sound source or game title
+  Row 66: ?
+    Reason: Could not parse as sound source or game title
+  Row 87: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 164: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 190: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 191: ?
+    Reason: Could not parse as sound source or game title
+  Row 329: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 333: ?
+    Reason: Could not parse as sound source or game title
+  Row 334: ?
+    Reason: Could not parse as sound source or game title
+  Row 335: ?
+    Reason: Could not parse as sound source or game title
+  Row 336: ?
+    Reason: Could not parse as sound source or game title
+  Row 337: ?
+    Reason: Could not parse as sound source or game title
+  Row 338: ?
+    Reason: Could not parse as sound source or game title
+  Row 339: ?
+    Reason: Could not parse as sound source or game title
+  Row 340: ?
+    Reason: Could not parse as sound source or game title
+  Row 341: ?
+    Reason: Could not parse as sound source or game title
+  Row 342: ?
+    Reason: Could not parse as sound source or game title
+  Row 343: ?
+    Reason: Could not parse as sound source or game title
+  Row 344: ?
+    Reason: Could not parse as sound source or game title
+  Row 345: ?
+    Reason: Could not parse as sound source or game title
+  Row 368: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 369: ?
+    Reason: Could not parse as sound source or game title
+  Row 370: ?
+    Reason: Could not parse as sound source or game title
+  Row 506: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 517: ?
+    Reason: Could not parse as sound source or game title
+  Row 518: ?
+    Reason: Could not parse as sound source or game title
+  Row 519: ?
+    Reason: Could not parse as sound source or game title
+  Row 718: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 724: ?
+    Reason: Could not parse as sound source or game title
+  Row 725: ?
+    Reason: Could not parse as sound source or game title
+  Row 726: ?
+    Reason: Could not parse as sound source or game title
+  Row 774: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 775: ?
+    Reason: Could not parse as sound source or game title
+  Row 776: ?
+    Reason: Could not parse as sound source or game title
+  Row 777: ?
+    Reason: Could not parse as sound source or game title
+  Row 982: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 983: ?
+    Reason: Could not parse as sound source or game title
+  Row 988: ?
+    Reason: Could not parse as sound source or game title
+  Row 990: ?
+    Reason: Could not parse as sound source or game title
+  Row 1096: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1150: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1340: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1397: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1484: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1500: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1501: ?
+    Reason: Could not parse as sound source or game title
+  Row 1502: ?
+    Reason: Could not parse as sound source or game title
+  Row 1643: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1647: ?
+    Reason: Could not parse as sound source or game title
+  Row 1648: ?
+    Reason: Could not parse as sound source or game title
+  Row 1649: ?
+    Reason: Could not parse as sound source or game title
+  Row 1663: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1756: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 1760: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 1795: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1830: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1985: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 2002: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2126: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2138: ?
+    Reason: Could not parse as sound source or game title
+  Row 2247: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2269: Section 2 - Mario Kart
+    Reason: Could not parse as sound source or game title
+  Row 2288: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2341: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2388: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2464: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2467: ?
+    Reason: Could not parse as sound source or game title
+  Row 2468: ?
+    Reason: Could not parse as sound source or game title
+  Row 2469: ?
+    Reason: Could not parse as sound source or game title
+  Row 2470: ?
+    Reason: Could not parse as sound source or game title
+  Row 2529: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2531: ?
+    Reason: Could not parse as sound source or game title
+  Row 2532: ?
+    Reason: Could not parse as sound source or game title
+  Row 2533: ?
+    Reason: Could not parse as sound source or game title
+  Row 2534: ?
+    Reason: Could not parse as sound source or game title
+  Row 2535: ?
+    Reason: Could not parse as sound source or game title
+  Row 2626: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2629: ?
+    Reason: Could not parse as sound source or game title
+  Row 2630: ?
+    Reason: Could not parse as sound source or game title
+  Row 2631: ?
+    Reason: Could not parse as sound source or game title
+  Row 2632: ?
+    Reason: Could not parse as sound source or game title
+  Row 2633: ?
+    Reason: Could not parse as sound source or game title
+  Row 2634: ?
+    Reason: Could not parse as sound source or game title
+  Row 2635: ?
+    Reason: Could not parse as sound source or game title
+  Row 2636: ?
+    Reason: Could not parse as sound source or game title
+  Row 2637: ?
+    Reason: Could not parse as sound source or game title
+  Row 2638: ?
+    Reason: Could not parse as sound source or game title
+  Row 2639: ?
+    Reason: Could not parse as sound source or game title
+  Row 2640: ?
+    Reason: Could not parse as sound source or game title
+  Row 2641: ?
+    Reason: Could not parse as sound source or game title
+  Row 2643: ?
+    Reason: Could not parse as sound source or game title
+  Row 2644: ?
+    Reason: Could not parse as sound source or game title
+  Row 2645: ?
+    Reason: Could not parse as sound source or game title
+  Row 2646: ?
+    Reason: Could not parse as sound source or game title
+  Row 2647: ?
+    Reason: Could not parse as sound source or game title
+  Row 2648: ?
+    Reason: Could not parse as sound source or game title
+  Row 2649: ?
+    Reason: Could not parse as sound source or game title
+  Row 2670: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2671: ?
+    Reason: Could not parse as sound source or game title
+  Row 2672: ?
+    Reason: Could not parse as sound source or game title
+  Row 2969: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2972: ?
+    Reason: Could not parse as sound source or game title
+  Row 2973: ?
+    Reason: Could not parse as sound source or game title
+  Row 2974: ?
+    Reason: Could not parse as sound source or game title
+  Row 2978: ?
+    Reason: Could not parse as sound source or game title
+  Row 2980: ?
+    Reason: Could not parse as sound source or game title
+  Row 2981: ?
+    Reason: Could not parse as sound source or game title
+  Row 2983: ?
+    Reason: Could not parse as sound source or game title
+  Row 2984: ?
+    Reason: Could not parse as sound source or game title
+  Row 2985: ?
+    Reason: Could not parse as sound source or game title
+  Row 2986: ?
+    Reason: Could not parse as sound source or game title
+  Row 3038: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3039: ?
+    Reason: Could not parse as sound source or game title
+  Row 3040: ?
+    Reason: Could not parse as sound source or game title
+  Row 3041: ?
+    Reason: Could not parse as sound source or game title
+  Row 3042: ?
+    Reason: Could not parse as sound source or game title
+  Row 3044: Note: Every single Fantom-X finding here needs to be re-evaluated with Fantom-G sources. Research fo
+    Reason: Could not parse as sound source or game title
+  Row 3126: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3140: ?
+    Reason: Could not parse as sound source or game title
+  Row 3275: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3289: ?
+    Reason: Could not parse as sound source or game title
+  Row 3291: ?
+    Reason: Could not parse as sound source or game title
+  Row 3309: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3365: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3408: Scarbee
+    Reason: Could not parse as sound source or game title
+  Row 3409: Scarbee
+    Reason: Could not parse as sound source or game title
+  Row 3431: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3449: ?
+    Reason: Could not parse as sound source or game title
+  Row 3505: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3523: ?
+    Reason: Could not parse as sound source or game title
+  Row 3524: ?
+    Reason: Could not parse as sound source or game title
+  Row 3525: ?
+    Reason: Could not parse as sound source or game title
+  Row 3531: Section 3 - Mario RPGs
+    Reason: Could not parse as sound source or game title
+  Row 3592: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3691: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3698: ?
+    Reason: Could not parse as sound source or game title
+  Row 3742: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3743: ?
+    Reason: Could not parse as sound source or game title
+  Row 3745: ?
+    Reason: Could not parse as sound source or game title
+  Row 3746: ?
+    Reason: Could not parse as sound source or game title
+  Row 3747: ?
+    Reason: Could not parse as sound source or game title
+  Row 3748: ?
+    Reason: Could not parse as sound source or game title
+  Row 4202: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4352: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4354: ?
+    Reason: Could not parse as sound source or game title
+  Row 4355: ?
+    Reason: Could not parse as sound source or game title
+  Row 4356: ?
+    Reason: Could not parse as sound source or game title
+  Row 4357: ?
+    Reason: Could not parse as sound source or game title
+  Row 4358: ?
+    Reason: Could not parse as sound source or game title
+  Row 4518: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4650: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4711: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4816: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4870: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4952: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4990: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5040: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5122: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5166: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5245: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5246: ?
+    Reason: Could not parse as sound source or game title
+  Row 5247: ?
+    Reason: Could not parse as sound source or game title
+  Row 5248: ?
+    Reason: Could not parse as sound source or game title
+  Row 5249: ?
+    Reason: Could not parse as sound source or game title
+  Row 5250: ?
+    Reason: Could not parse as sound source or game title
+  Row 5251: ?
+    Reason: Could not parse as sound source or game title
+  Row 5283: Section 4 - Mario Party
+    Reason: Could not parse as sound source or game title
+  Row 5323: Roland
+    Reason: Could not parse as sound source or game title
+  Row 5335: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5340: Roland
+    Reason: Could not parse as sound source or game title
+  Row 5351: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5355: ?
+    Reason: Could not parse as sound source or game title
+  Row 5377: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5379: ?
+    Reason: Could not parse as sound source or game title
+  Row 5399: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5529: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5530: ?
+    Reason: Could not parse as sound source or game title
+  Row 5531: ?
+    Reason: Could not parse as sound source or game title
+  Row 5532: ?
+    Reason: Could not parse as sound source or game title
+  Row 5533: ?
+    Reason: Could not parse as sound source or game title
+  Row 5534: ?
+    Reason: Could not parse as sound source or game title
+  Row 5570: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5585: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5610: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5620: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5638: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5677: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5702: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5711: Section 5 - Mario Sports
+    Reason: Could not parse as sound source or game title
+  Row 5765: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5778: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5787: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5821: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5825: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5826: Steinberg
+    Reason: Could not parse as sound source or game title
+  Row 5827: Steinberg
+    Reason: Could not parse as sound source or game title
+  Row 5828: ?
+    Reason: Could not parse as sound source or game title
+  Row 5834: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5856: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5870: Roland
+    Reason: Could not parse as sound source or game title
+  Row 5897: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5900: ?
+    Reason: Could not parse as sound source or game title
+  Row 5901: ?
+    Reason: Could not parse as sound source or game title
+  Row 5902: ?
+    Reason: Could not parse as sound source or game title
+  Row 5903: ?
+    Reason: Could not parse as sound source or game title
+  Row 5904: ?
+    Reason: Could not parse as sound source or game title
+  Row 5905: ?
+    Reason: Could not parse as sound source or game title
+  Row 5906: ?
+    Reason: Could not parse as sound source or game title
+  Row 5907: ?
+    Reason: Could not parse as sound source or game title
+  Row 5914: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5921: MOTU
+    Reason: Could not parse as sound source or game title
+  Row 5939: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5943: ?
+    Reason: Could not parse as sound source or game title
+  Row 5951: Section 6 - Donkey Kong
+    Reason: Could not parse as sound source or game title
+  Row 6000: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6002: ?
+    Reason: Could not parse as sound source or game title
+  Row 6003: ?
+    Reason: Could not parse as sound source or game title
+  Row 6004: ?
+    Reason: Could not parse as sound source or game title
+  Row 6101: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6129: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6163: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6252: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6254: ?
+    Reason: Could not parse as sound source or game title
+  Row 6258: ?
+    Reason: Could not parse as sound source or game title
+  Row 6259: ?
+    Reason: Could not parse as sound source or game title
+  Row 6275: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6315: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6320: ?
+    Reason: Could not parse as sound source or game title
+  Row 6321: ?
+    Reason: Could not parse as sound source or game title
+  Row 6322: ?
+    Reason: Could not parse as sound source or game title
+  Row 6323: ?
+    Reason: Could not parse as sound source or game title
+  Row 6324: ?
+    Reason: Could not parse as sound source or game title
+  Row 6325: ?
+    Reason: Could not parse as sound source or game title
+  Row 6326: ?
+    Reason: Could not parse as sound source or game title
+  Row 6327: ?
+    Reason: Could not parse as sound source or game title
+  Row 6328: ?
+    Reason: Could not parse as sound source or game title
+  Row 6329: ?
+    Reason: Could not parse as sound source or game title
+  Row 6399: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6417: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6432: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 6450: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6454: Yamaha
+    Reason: Could not parse as sound source or game title
+  Row 6521: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6541: ?
+    Reason: Could not parse as sound source or game title
+  Row 6542: ?
+    Reason: Could not parse as sound source or game title
+  Row 6543: ?
+    Reason: Could not parse as sound source or game title
+  Row 6544: ?
+    Reason: Could not parse as sound source or game title
+  Row 6545: ?
+    Reason: Could not parse as sound source or game title
+  Row 6546: ?
+    Reason: Could not parse as sound source or game title
+  Row 6547: ?
+    Reason: Could not parse as sound source or game title
+  Row 6548: ?
+    Reason: Could not parse as sound source or game title
+  Row 6549: ?
+    Reason: Could not parse as sound source or game title
+  Row 6550: ?
+    Reason: Could not parse as sound source or game title
+  Row 6551: ?
+    Reason: Could not parse as sound source or game title
+  Row 6566: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6567: ?
+    Reason: Could not parse as sound source or game title
+  Row 6568: ?
+    Reason: Could not parse as sound source or game title
+  Row 6588: Section 7 - Yoshi
+    Reason: Could not parse as sound source or game title
+  Row 6600: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6604: ?
+    Reason: Could not parse as sound source or game title
+  Row 6605: ?
+    Reason: Could not parse as sound source or game title
+  Row 6622: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6625: ?
+    Reason: Could not parse as sound source or game title
+  Row 6633: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6665: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6673: ?
+    Reason: Could not parse as sound source or game title
+  Row 6674: ?
+    Reason: Could not parse as sound source or game title
+  Row 6675: ?
+    Reason: Could not parse as sound source or game title
+  Row 6676: ?
+    Reason: Could not parse as sound source or game title
+  Row 6677: ?
+    Reason: Could not parse as sound source or game title
+  Row 6678: ?
+    Reason: Could not parse as sound source or game title
+  Row 6679: ?
+    Reason: Could not parse as sound source or game title
+  Row 6680: ?
+    Reason: Could not parse as sound source or game title
+  Row 6681: ?
+    Reason: Could not parse as sound source or game title
+  Row 6691: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6716: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6724: ?
+    Reason: Could not parse as sound source or game title
+  Row 6725: ?
+    Reason: Could not parse as sound source or game title
+  Row 6726: ?
+    Reason: Could not parse as sound source or game title
+  Row 6727: ?
+    Reason: Could not parse as sound source or game title
+  Row 6766: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6768: ?
+    Reason: Could not parse as sound source or game title
+  Row 6769: ?
+    Reason: Could not parse as sound source or game title
+  Row 6770: ?
+    Reason: Could not parse as sound source or game title
+  Row 6771: ?
+    Reason: Could not parse as sound source or game title
+  Row 6772: ?
+    Reason: Could not parse as sound source or game title
+  Row 6773: ?
+    Reason: Could not parse as sound source or game title
+  Row 6829: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6854: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6873: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6922: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6924: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 6925: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 6942: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6952: Section 8 - Wario
+    Reason: Could not parse as sound source or game title
+  Row 6979: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7077: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7081: ?
+    Reason: Could not parse as sound source or game title
+  Row 7082: ?
+    Reason: Could not parse as sound source or game title
+  Row 7083: ?
+    Reason: Could not parse as sound source or game title
+  Row 7084: ?
+    Reason: Could not parse as sound source or game title
+  Row 7085: ?
+    Reason: Could not parse as sound source or game title
+  Row 7086: ?
+    Reason: Could not parse as sound source or game title
+  Row 7087: ?
+    Reason: Could not parse as sound source or game title
+  Row 7088: ?
+    Reason: Could not parse as sound source or game title
+  Row 7089: ?
+    Reason: Could not parse as sound source or game title
+  Row 7090: ?
+    Reason: Could not parse as sound source or game title
+  Row 7091: ?
+    Reason: Could not parse as sound source or game title
+  Row 7092: ?
+    Reason: Could not parse as sound source or game title
+  Row 7093: ?
+    Reason: Could not parse as sound source or game title
+  Row 7141: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7157: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7231: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7233: ?
+    Reason: Could not parse as sound source or game title
+  Row 7234: ?
+    Reason: Could not parse as sound source or game title
+  Row 7235: ?
+    Reason: Could not parse as sound source or game title
+  Row 7236: ?
+    Reason: Could not parse as sound source or game title
+  Row 7237: ?
+    Reason: Could not parse as sound source or game title
+  Row 7239: ?
+    Reason: Could not parse as sound source or game title
+  Row 7240: ?
+    Reason: Could not parse as sound source or game title
+  Row 7241: ?
+    Reason: Could not parse as sound source or game title
+  Row 7242: ?
+    Reason: Could not parse as sound source or game title
+  Row 7243: ?
+    Reason: Could not parse as sound source or game title
+  Row 7244: ?
+    Reason: Could not parse as sound source or game title
+  Row 7245: ?
+    Reason: Could not parse as sound source or game title
+  Row 7246: ?
+    Reason: Could not parse as sound source or game title
+  Row 7247: ?
+    Reason: Could not parse as sound source or game title
+  Row 7248: ?
+    Reason: Could not parse as sound source or game title
+  Row 7249: ?
+    Reason: Could not parse as sound source or game title
+  Row 7250: ?
+    Reason: Could not parse as sound source or game title
+  Row 7251: ?
+    Reason: Could not parse as sound source or game title
+  Row 7252: ?
+    Reason: Could not parse as sound source or game title
+  Row 7253: ?
+    Reason: Could not parse as sound source or game title
+  Row 7254: ?
+    Reason: Could not parse as sound source or game title
+  Row 7255: ?
+    Reason: Could not parse as sound source or game title
+  Row 7256: ?
+    Reason: Could not parse as sound source or game title
+  Row 7257: ?
+    Reason: Could not parse as sound source or game title
+  Row 7258: ?
+    Reason: Could not parse as sound source or game title
+  Row 7259: ?
+    Reason: Could not parse as sound source or game title
+  Row 7260: ?
+    Reason: Could not parse as sound source or game title
+  Row 7261: ?
+    Reason: Could not parse as sound source or game title
+  Row 7262: ?
+    Reason: Could not parse as sound source or game title
+  Row 7263: ?
+    Reason: Could not parse as sound source or game title
+  Row 7264: ?
+    Reason: Could not parse as sound source or game title
+  Row 7265: ?
+    Reason: Could not parse as sound source or game title
+  Row 7266: ?
+    Reason: Could not parse as sound source or game title
+  Row 7267: ?
+    Reason: Could not parse as sound source or game title
+  Row 7268: ?
+    Reason: Could not parse as sound source or game title
+  Row 7269: ?
+    Reason: Could not parse as sound source or game title
+  Row 7270: ?
+    Reason: Could not parse as sound source or game title
+  Row 7271: ?
+    Reason: Could not parse as sound source or game title
+  Row 7272: ?
+    Reason: Could not parse as sound source or game title
+  Row 7273: ?
+    Reason: Could not parse as sound source or game title
+  Row 7274: ?
+    Reason: Could not parse as sound source or game title
+  Row 7275: ?
+    Reason: Could not parse as sound source or game title
+  Row 7276: ?
+    Reason: Could not parse as sound source or game title
+  Row 7279: ?
+    Reason: Could not parse as sound source or game title
+  Row 7338: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7342: ?
+    Reason: Could not parse as sound source or game title
+  Row 7358: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7359: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7360: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7364: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7365: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7366: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7369: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7383: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7384: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 7404: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7432: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7434: ?
+    Reason: Could not parse as sound source or game title
+  Row 7436: ?
+    Reason: Could not parse as sound source or game title
+  Row 7437: ?
+    Reason: Could not parse as sound source or game title
+  Row 7438: ?
+    Reason: Could not parse as sound source or game title
+  Row 7439: ?
+    Reason: Could not parse as sound source or game title
+  Row 7440: ?
+    Reason: Could not parse as sound source or game title
+  Row 7441: ?
+    Reason: Could not parse as sound source or game title
+  Row 7483: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7501: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7532: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7539: Section 9 - Other
+    Reason: Could not parse as sound source or game title
+  Row 7563: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7565: ?
+    Reason: Could not parse as sound source or game title
+  Row 7566: ?
+    Reason: Could not parse as sound source or game title
+  Row 7567: ?
+    Reason: Could not parse as sound source or game title
+  Row 7568: ?
+    Reason: Could not parse as sound source or game title
+  Row 7569: ?
+    Reason: Could not parse as sound source or game title
+  Row 7570: ?
+    Reason: Could not parse as sound source or game title
+  Row 7571: ?
+    Reason: Could not parse as sound source or game title
+  Row 7572: ?
+    Reason: Could not parse as sound source or game title
+  Row 7573: ?
+    Reason: Could not parse as sound source or game title
+  Row 7574: ?
+    Reason: Could not parse as sound source or game title
+  Row 7575: ?
+    Reason: Could not parse as sound source or game title
+  Row 7587: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7605: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7607: ?
+    Reason: Could not parse as sound source or game title
+  Row 7646: Yamaha
+    Reason: Could not parse as sound source or game title
+  Row 7647: Yamaha
+    Reason: Could not parse as sound source or game title
+  Row 7648: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7649: KORG
+    Reason: Could not parse as sound source or game title
+  Row 7651: Casio
+    Reason: Could not parse as sound source or game title
+  Row 7652: Roland
+    Reason: Could not parse as sound source or game title
+  Row 7653: Roland
+    Reason: Could not parse as sound source or game title
+  Row 7658: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7660: ?
+    Reason: Could not parse as sound source or game title
+  Row 7661: ?
+    Reason: Could not parse as sound source or game title
+  Row 7662: ?
+    Reason: Could not parse as sound source or game title
+  Row 7663: ?
+    Reason: Could not parse as sound source or game title
+  Row 7664: ?
+    Reason: Could not parse as sound source or game title
+  Row 7665: ?
+    Reason: Could not parse as sound source or game title
+  Row 7666: ?
+    Reason: Could not parse as sound source or game title
+  Row 7667: ?
+    Reason: Could not parse as sound source or game title
+  Row 7668: ?
+    Reason: Could not parse as sound source or game title
+  Row 7669: ?
+    Reason: Could not parse as sound source or game title
+  Row 7670: ?
+    Reason: Could not parse as sound source or game title
+  Row 7681: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7688: ?
+    Reason: Could not parse as sound source or game title
+  Row 7689: ?
+    Reason: Could not parse as sound source or game title
+  Row 7690: ?
+    Reason: Could not parse as sound source or game title
+  Row 7691: ?
+    Reason: Could not parse as sound source or game title
+  Row 7694: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7759: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7790: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7791: ?
+    Reason: Could not parse as sound source or game title
+  Row 7808: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7809: ?
+    Reason: Could not parse as sound source or game title
+  Row 7810: ?
+    Reason: Could not parse as sound source or game title
+  Row 7920: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 7926: ?
+    Reason: Could not parse as sound source or game title
+  Row 7927: ?
+    Reason: Could not parse as sound source or game title
+  Row 7928: ?
+    Reason: Could not parse as sound source or game title
+  Row 7929: ?
+    Reason: Could not parse as sound source or game title
+  Row 7930: ?
+    Reason: Could not parse as sound source or game title
+  Row 7931: ?
+    Reason: Could not parse as sound source or game title
+  Row 7932: ?
+    Reason: Could not parse as sound source or game title
+  Row 7933: ?
+    Reason: Could not parse as sound source or game title
+  Row 7934: ?
+    Reason: Could not parse as sound source or game title
+  Row 7935: ?
+    Reason: Could not parse as sound source or game title
+  Row 7936: ?
+    Reason: Could not parse as sound source or game title
+  Row 7937: ?
+    Reason: Could not parse as sound source or game title
+  Row 7938: ?
+    Reason: Could not parse as sound source or game title
+  Row 7939: ?
+    Reason: Could not parse as sound source or game title
+  Row 7940: ?
+    Reason: Could not parse as sound source or game title
+  Row 7941: ?
+    Reason: Could not parse as sound source or game title
+  Row 7942: ?
+    Reason: Could not parse as sound source or game title
+  Row 7943: ?
+    Reason: Could not parse as sound source or game title
+  Row 7944: ?
+    Reason: Could not parse as sound source or game title
+  Row 7945: ?
+    Reason: Could not parse as sound source or game title
+  Row 7946: ?
+    Reason: Could not parse as sound source or game title
+  Row 7947: ?
+    Reason: Could not parse as sound source or game title
+  Row 7948: ?
+    Reason: Could not parse as sound source or game title
+  Row 7949: ?
+    Reason: Could not parse as sound source or game title
+  Row 7950: ?
+    Reason: Could not parse as sound source or game title
+  Row 7951: ?
+    Reason: Could not parse as sound source or game title
+  Row 7952: ?
+    Reason: Could not parse as sound source or game title
+  Row 7953: ?
+    Reason: Could not parse as sound source or game title
+  Row 7954: ?
+    Reason: Could not parse as sound source or game title
+  Row 7955: ?
+    Reason: Could not parse as sound source or game title
+  Row 7956: ?
+    Reason: Could not parse as sound source or game title
+  Row 7957: ?
+    Reason: Could not parse as sound source or game title
+  Row 7958: ?
+    Reason: Could not parse as sound source or game title
+  Row 7959: ?
+    Reason: Could not parse as sound source or game title
+  Row 7960: ?
+    Reason: Could not parse as sound source or game title
+  Row 7961: ?
+    Reason: Could not parse as sound source or game title
+  Row 7962: ?
+    Reason: Could not parse as sound source or game title
+  Row 7963: ?
+    Reason: Could not parse as sound source or game title
+  Row 7964: ?
+    Reason: Could not parse as sound source or game title
+  Row 7965: ?
+    Reason: Could not parse as sound source or game title
+  Row 7966: ?
+    Reason: Could not parse as sound source or game title
+  Row 7967: ?
+    Reason: Could not parse as sound source or game title
+  Row 8014: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8051: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8052: ?
+    Reason: Could not parse as sound source or game title
+  Row 8053: ?
+    Reason: Could not parse as sound source or game title
+  Row 8054: ?
+    Reason: Could not parse as sound source or game title
+  Row 8055: ?
+    Reason: Could not parse as sound source or game title
+  Row 8056: ?
+    Reason: Could not parse as sound source or game title
+  Row 8057: ?
+    Reason: Could not parse as sound source or game title
+  Row 8083: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8086: ?
+    Reason: Could not parse as sound source or game title
+  Row 8087: ?
+    Reason: Could not parse as sound source or game title
+  Row 8088: ?
+    Reason: Could not parse as sound source or game title
+  Row 8117: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 8118: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 8145: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8149: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8154: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8166: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 8182: Stuff to Find
+    Reason: Could not parse as sound source or game title
+
+File: NEWER VGM Sound Sources - Nintendo.csv
+------------------------------------------------------------
+  Row 20: Section 1 - Super Famicom/Advance Wars
+    Reason: Could not parse as sound source or game title
+  Row 34: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 65: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 122: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 160: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 173: Section 2 - Fire Emblem
+    Reason: Could not parse as sound source or game title
+  Row 192: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 194: ?
+    Reason: Could not parse as sound source or game title
+  Row 195: ?
+    Reason: Could not parse as sound source or game title
+  Row 196: ?
+    Reason: Could not parse as sound source or game title
+  Row 197: ?
+    Reason: Could not parse as sound source or game title
+  Row 198: ?
+    Reason: Could not parse as sound source or game title
+  Row 199: ?
+    Reason: Could not parse as sound source or game title
+  Row 213: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 218: ?
+    Reason: Could not parse as sound source or game title
+  Row 219: ?
+    Reason: Could not parse as sound source or game title
+  Row 224: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 245: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 263: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 275: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 303: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 307: ?
+    Reason: Could not parse as sound source or game title
+  Row 315: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 336: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 351: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 399: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 404: ?
+    Reason: Could not parse as sound source or game title
+  Row 405: ?
+    Reason: Could not parse as sound source or game title
+  Row 406: ?
+    Reason: Could not parse as sound source or game title
+  Row 407: ?
+    Reason: Could not parse as sound source or game title
+  Row 408: ?
+    Reason: Could not parse as sound source or game title
+  Row 410: Section 3 - F-Zero
+    Reason: Could not parse as sound source or game title
+  Row 436: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 444: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 484: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 491: ?
+    Reason: Could not parse as sound source or game title
+  Row 493: Section 4 - Star Fox
+    Reason: Could not parse as sound source or game title
+  Row 538: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 539: ?
+    Reason: Could not parse as sound source or game title
+  Row 540: ?
+    Reason: Could not parse as sound source or game title
+  Row 552: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 553: ?
+    Reason: Could not parse as sound source or game title
+  Row 554: ?
+    Reason: Could not parse as sound source or game title
+  Row 580: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 581: ?
+    Reason: Could not parse as sound source or game title
+  Row 597: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 601: ?
+    Reason: Could not parse as sound source or game title
+  Row 602: ?
+    Reason: Could not parse as sound source or game title
+  Row 603: ?
+    Reason: Could not parse as sound source or game title
+  Row 604: ?
+    Reason: Could not parse as sound source or game title
+  Row 621: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 624: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 637: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 641: Section 5 - Metroid
+    Reason: Could not parse as sound source or game title
+  Row 716: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 722: ?
+    Reason: Could not parse as sound source or game title
+  Row 723: ?
+    Reason: Could not parse as sound source or game title
+  Row 724: ?
+    Reason: Could not parse as sound source or game title
+  Row 735: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 759: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 766: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 802: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 814: Section 6 - Animal Crossing
+    Reason: Could not parse as sound source or game title
+  Row 891: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 894: ?
+    Reason: Could not parse as sound source or game title
+  Row 896: ?
+    Reason: Could not parse as sound source or game title
+  Row 897: ?
+    Reason: Could not parse as sound source or game title
+  Row 921: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 925: ?
+    Reason: Could not parse as sound source or game title
+  Row 926: ?
+    Reason: Could not parse as sound source or game title
+  Row 927: ?
+    Reason: Could not parse as sound source or game title
+  Row 928: ?
+    Reason: Could not parse as sound source or game title
+  Row 929: ?
+    Reason: Could not parse as sound source or game title
+  Row 938: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 992: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1003: ?
+    Reason: Could not parse as sound source or game title
+  Row 1004: ?
+    Reason: Could not parse as sound source or game title
+  Row 1005: ?
+    Reason: Could not parse as sound source or game title
+  Row 1006: ?
+    Reason: Could not parse as sound source or game title
+  Row 1007: ?
+    Reason: Could not parse as sound source or game title
+  Row 1008: ?
+    Reason: Could not parse as sound source or game title
+  Row 1009: ?
+    Reason: Could not parse as sound source or game title
+  Row 1046: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1050: Section 7 - Pikmin
+    Reason: Could not parse as sound source or game title
+  Row 1103: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1104: ?
+    Reason: Could not parse as sound source or game title
+  Row 1105: ?
+    Reason: Could not parse as sound source or game title
+  Row 1106: ?
+    Reason: Could not parse as sound source or game title
+  Row 1107: ?
+    Reason: Could not parse as sound source or game title
+  Row 1108: ?
+    Reason: Could not parse as sound source or game title
+  Row 1109: ?
+    Reason: Could not parse as sound source or game title
+  Row 1204: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1205: ?
+    Reason: Could not parse as sound source or game title
+  Row 1206: ?
+    Reason: Could not parse as sound source or game title
+  Row 1230: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1237: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 1256: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1291: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1344: Section 9 - Rhythm Heaven
+    Reason: Could not parse as sound source or game title
+  Row 1394: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1396: ?
+    Reason: Could not parse as sound source or game title
+  Row 1435: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1497: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1529: Section 9 - Wii/Mii-Series Games
+    Reason: Could not parse as sound source or game title
+  Row 1531: For more detailed track listings, click here to view the Wii-Series Games Sound Sources sheet.
+    Reason: Could not parse as sound source or game title
+  Row 1552: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1582: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1584: ?
+    Reason: Could not parse as sound source or game title
+  Row 1585: ?
+    Reason: Could not parse as sound source or game title
+  Row 1586: ?
+    Reason: Could not parse as sound source or game title
+  Row 1587: ?
+    Reason: Could not parse as sound source or game title
+  Row 1588: ?
+    Reason: Could not parse as sound source or game title
+  Row 1682: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1684: ?
+    Reason: Could not parse as sound source or game title
+  Row 1685: ?
+    Reason: Could not parse as sound source or game title
+  Row 1687: ?
+    Reason: Could not parse as sound source or game title
+  Row 1688: ?
+    Reason: Could not parse as sound source or game title
+  Row 1689: ?
+    Reason: Could not parse as sound source or game title
+  Row 1690: ?
+    Reason: Could not parse as sound source or game title
+  Row 1691: ?
+    Reason: Could not parse as sound source or game title
+  Row 1692: ?
+    Reason: Could not parse as sound source or game title
+  Row 1693: ?
+    Reason: Could not parse as sound source or game title
+  Row 1694: ?
+    Reason: Could not parse as sound source or game title
+  Row 1766: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1769: ?
+    Reason: Could not parse as sound source or game title
+  Row 1771: ?
+    Reason: Could not parse as sound source or game title
+  Row 1865: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1867: ?
+    Reason: Could not parse as sound source or game title
+  Row 1868: ?
+    Reason: Could not parse as sound source or game title
+  Row 1871: ?
+    Reason: Could not parse as sound source or game title
+  Row 1872: ?
+    Reason: Could not parse as sound source or game title
+  Row 1873: ?
+    Reason: Could not parse as sound source or game title
+  Row 1874: ?
+    Reason: Could not parse as sound source or game title
+  Row 1875: ?
+    Reason: Could not parse as sound source or game title
+  Row 1876: ?
+    Reason: Could not parse as sound source or game title
+  Row 1893: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1945: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2003: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2175: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2176: ?
+    Reason: Could not parse as sound source or game title
+  Row 2177: ?
+    Reason: Could not parse as sound source or game title
+  Row 2178: ?
+    Reason: Could not parse as sound source or game title
+  Row 2179: ?
+    Reason: Could not parse as sound source or game title
+  Row 2181: ?
+    Reason: Could not parse as sound source or game title
+  Row 2182: ?
+    Reason: Could not parse as sound source or game title
+  Row 2183: ?
+    Reason: Could not parse as sound source or game title
+  Row 2184: ?
+    Reason: Could not parse as sound source or game title
+  Row 2185: ?
+    Reason: Could not parse as sound source or game title
+  Row 2186: ?
+    Reason: Could not parse as sound source or game title
+  Row 2187: ?
+    Reason: Could not parse as sound source or game title
+  Row 2251: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2252: ?
+    Reason: Could not parse as sound source or game title
+  Row 2253: ?
+    Reason: Could not parse as sound source or game title
+  Row 2254: ?
+    Reason: Could not parse as sound source or game title
+  Row 2255: ?
+    Reason: Could not parse as sound source or game title
+  Row 2256: ?
+    Reason: Could not parse as sound source or game title
+  Row 2257: ?
+    Reason: Could not parse as sound source or game title
+  Row 2258: ?
+    Reason: Could not parse as sound source or game title
+  Row 2259: ?
+    Reason: Could not parse as sound source or game title
+  Row 2260: ?
+    Reason: Could not parse as sound source or game title
+  Row 2261: ?
+    Reason: Could not parse as sound source or game title
+  Row 2262: ?
+    Reason: Could not parse as sound source or game title
+  Row 2263: ?
+    Reason: Could not parse as sound source or game title
+  Row 2264: ?
+    Reason: Could not parse as sound source or game title
+  Row 2265: ?
+    Reason: Could not parse as sound source or game title
+  Row 2266: ?
+    Reason: Could not parse as sound source or game title
+  Row 2315: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2337: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2358: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2361: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 2363: ?
+    Reason: Could not parse as sound source or game title
+  Row 2468: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2470: ?
+    Reason: Could not parse as sound source or game title
+  Row 2486: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2506: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2515: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2575: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2722: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2723: MOTU
+    Reason: Could not parse as sound source or game title
+  Row 2724: MOTU
+    Reason: Could not parse as sound source or game title
+  Row 2725: MOTU
+    Reason: Could not parse as sound source or game title
+  Row 2741: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2744: Section 10 - Xenoblade
+    Reason: Could not parse as sound source or game title
+  Row 2825: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2867: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3022: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3025: Apple
+    Reason: Could not parse as sound source or game title
+  Row 3027: Apple
+    Reason: Could not parse as sound source or game title
+  Row 3048: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 3049: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 3058: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3060: ?
+    Reason: Could not parse as sound source or game title
+  Row 3061: ?
+    Reason: Could not parse as sound source or game title
+  Row 3102: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3138: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3153: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3157: Section 11 - Splatoon
+    Reason: Could not parse as sound source or game title
+  Row 3287: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3472: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3590: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4157: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4351: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4357: Section 12 - Other
+    Reason: Could not parse as sound source or game title
+  Row 4374: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4375: ?
+    Reason: Could not parse as sound source or game title
+  Row 4417: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4421: ?
+    Reason: Could not parse as sound source or game title
+  Row 4422: ?
+    Reason: Could not parse as sound source or game title
+  Row 4505: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4507: ?
+    Reason: Could not parse as sound source or game title
+  Row 4508: ?
+    Reason: Could not parse as sound source or game title
+  Row 4509: ?
+    Reason: Could not parse as sound source or game title
+  Row 4511: ?
+    Reason: Could not parse as sound source or game title
+  Row 4512: ?
+    Reason: Could not parse as sound source or game title
+  Row 4513: ?
+    Reason: Could not parse as sound source or game title
+  Row 4521: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4524: ?
+    Reason: Could not parse as sound source or game title
+  Row 4543: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4545: ?
+    Reason: Could not parse as sound source or game title
+  Row 4546: ?
+    Reason: Could not parse as sound source or game title
+  Row 4575: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4576: ?
+    Reason: Could not parse as sound source or game title
+  Row 4577: ?
+    Reason: Could not parse as sound source or game title
+  Row 4578: ?
+    Reason: Could not parse as sound source or game title
+  Row 4638: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4640: ?
+    Reason: Could not parse as sound source or game title
+  Row 4641: ?
+    Reason: Could not parse as sound source or game title
+  Row 4642: ?
+    Reason: Could not parse as sound source or game title
+  Row 4651: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4685: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4712: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4714: ?
+    Reason: Could not parse as sound source or game title
+  Row 4715: ?
+    Reason: Could not parse as sound source or game title
+  Row 4716: ?
+    Reason: Could not parse as sound source or game title
+  Row 4717: ?
+    Reason: Could not parse as sound source or game title
+  Row 4718: ?
+    Reason: Could not parse as sound source or game title
+  Row 4744: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4755: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4763: ?
+    Reason: Could not parse as sound source or game title
+  Row 4861: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4870: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4871: ?
+    Reason: Could not parse as sound source or game title
+  Row 4872: ?
+    Reason: Could not parse as sound source or game title
+  Row 4937: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4991: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5004: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5009: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5021: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5053: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5058: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5121: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5151: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5155: ?
+    Reason: Could not parse as sound source or game title
+  Row 5159: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5160: ?
+    Reason: Could not parse as sound source or game title
+  Row 5191: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5218: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5229: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5241: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5253: ProjectSAM
+    Reason: Could not parse as sound source or game title
+  Row 5254: ProjectSAM
+    Reason: Could not parse as sound source or game title
+  Row 5255: ?
+    Reason: Could not parse as sound source or game title
+  Row 5256: ?
+    Reason: Could not parse as sound source or game title
+  Row 5263: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5288: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5347: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5348: ?
+    Reason: Could not parse as sound source or game title
+  Row 5377: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5378: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5379: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5382: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5395: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5401: Section 13 - Console SDKs/BIOS
+    Reason: Could not parse as sound source or game title
+  Row 5441: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5452: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5453: ?
+    Reason: Could not parse as sound source or game title
+  Row 5464: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5467: ?
+    Reason: Could not parse as sound source or game title
+  Row 5520: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5526: ?
+    Reason: Could not parse as sound source or game title
+  Row 5527: ?
+    Reason: Could not parse as sound source or game title
+  Row 5529: ?
+    Reason: Could not parse as sound source or game title
+  Row 5530: ?
+    Reason: Could not parse as sound source or game title
+  Row 5531: ?
+    Reason: Could not parse as sound source or game title
+  Row 5532: ?
+    Reason: Could not parse as sound source or game title
+  Row 5533: ?
+    Reason: Could not parse as sound source or game title
+  Row 5591: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5592: ?
+    Reason: Could not parse as sound source or game title
+  Row 5631: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5650: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5651: ?
+    Reason: Could not parse as sound source or game title
+  Row 5652: ?
+    Reason: Could not parse as sound source or game title
+  Row 5653: ?
+    Reason: Could not parse as sound source or game title
+  Row 5654: ?
+    Reason: Could not parse as sound source or game title
+  Row 5655: ?
+    Reason: Could not parse as sound source or game title
+  Row 5656: ?
+    Reason: Could not parse as sound source or game title
+  Row 5692: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5693: ?
+    Reason: Could not parse as sound source or game title
+  Row 5694: ?
+    Reason: Could not parse as sound source or game title
+  Row 5695: E-MU Systems
+    Reason: Could not parse as sound source or game title
+  Row 5707: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5717: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5741: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5797: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5858: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5941: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5942: Apple
+    Reason: Could not parse as sound source or game title
+  Row 5943: Apple
+    Reason: Could not parse as sound source or game title
+  Row 5944: MOTU
+    Reason: Could not parse as sound source or game title
+  Row 5945: ?
+    Reason: Could not parse as sound source or game title
+  Row 5946: Apple
+    Reason: Could not parse as sound source or game title
+  Row 5947: ?
+    Reason: Could not parse as sound source or game title
+  Row 5948: Apple
+    Reason: Could not parse as sound source or game title
+  Row 5949: Apple
+    Reason: Could not parse as sound source or game title
+  Row 5950: Apple
+    Reason: Could not parse as sound source or game title
+  Row 5951: ?
+    Reason: Could not parse as sound source or game title
+  Row 5952: Yamaha?
+    Reason: Could not parse as sound source or game title
+  Row 5953: ?
+    Reason: Could not parse as sound source or game title
+
+File: NEWER VGM Sound Sources - Pokémon.csv
+------------------------------------------------------------
+  Row 14: amount of sound sources. FRLG and
+    Reason: Could not parse as sound source or game title
+  Row 15: Emerald sources are below Ruby &
+    Reason: Could not parse as sound source or game title
+  Row 16: Sapphire's, Platinum sources are
+    Reason: Could not parse as sound source or game title
+  Row 25: Section 1 - Main Series
+    Reason: Could not parse as sound source or game title
+  Row 61: Roland
+    Reason: Could not parse as sound source or game title
+  Row 81: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 107: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 108: ?
+    Reason: Could not parse as sound source or game title
+  Row 109: ?
+    Reason: Could not parse as sound source or game title
+  Row 115: ?
+    Reason: Could not parse as sound source or game title
+  Row 116: ?
+    Reason: Could not parse as sound source or game title
+  Row 135: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 136: ?
+    Reason: Could not parse as sound source or game title
+  Row 137: ?
+    Reason: Could not parse as sound source or game title
+  Row 138: ?
+    Reason: Could not parse as sound source or game title
+  Row 233: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 355: This section is VERY simplified. Please check the BW Section on the "Detailed Pokémon Sound Sources"
+    Reason: Could not parse as sound source or game title
+  Row 585: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 832: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1336: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1366: ?
+    Reason: Could not parse as sound source or game title
+  Row 1367: ?
+    Reason: Could not parse as sound source or game title
+  Row 1368: ?
+    Reason: Could not parse as sound source or game title
+  Row 1369: ?
+    Reason: Could not parse as sound source or game title
+  Row 1370: ?
+    Reason: Could not parse as sound source or game title
+  Row 1371: ?
+    Reason: Could not parse as sound source or game title
+  Row 1372: ?
+    Reason: Could not parse as sound source or game title
+  Row 1373: ?
+    Reason: Could not parse as sound source or game title
+  Row 1374: ?
+    Reason: Could not parse as sound source or game title
+  Row 1375: ?
+    Reason: Could not parse as sound source or game title
+  Row 1376: ?
+    Reason: Could not parse as sound source or game title
+  Row 1377: ?
+    Reason: Could not parse as sound source or game title
+  Row 1378: ?
+    Reason: Could not parse as sound source or game title
+  Row 1379: ?
+    Reason: Could not parse as sound source or game title
+  Row 1381: ?
+    Reason: Could not parse as sound source or game title
+  Row 1781: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1804: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 1805: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 1820: ?
+    Reason: Could not parse as sound source or game title
+  Row 1821: ?
+    Reason: Could not parse as sound source or game title
+  Row 1822: ?
+    Reason: Could not parse as sound source or game title
+  Row 1829: ?
+    Reason: Could not parse as sound source or game title
+  Row 1830: ?
+    Reason: Could not parse as sound source or game title
+  Row 1831: ?
+    Reason: Could not parse as sound source or game title
+  Row 1835: ?
+    Reason: Could not parse as sound source or game title
+  Row 1891: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1946: Discovery Firm
+    Reason: Could not parse as sound source or game title
+  Row 2407: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2449: ?
+    Reason: Could not parse as sound source or game title
+  Row 2450: ?
+    Reason: Could not parse as sound source or game title
+  Row 2453: ?
+    Reason: Could not parse as sound source or game title
+  Row 2454: ?
+    Reason: Could not parse as sound source or game title
+  Row 2455: ?
+    Reason: Could not parse as sound source or game title
+  Row 2456: ?
+    Reason: Could not parse as sound source or game title
+  Row 2457: ?
+    Reason: Could not parse as sound source or game title
+  Row 2458: ?
+    Reason: Could not parse as sound source or game title
+  Row 2459: ?
+    Reason: Could not parse as sound source or game title
+  Row 2461: ?
+    Reason: Could not parse as sound source or game title
+  Row 2462: ?
+    Reason: Could not parse as sound source or game title
+  Row 2463: ?
+    Reason: Could not parse as sound source or game title
+  Row 2464: ?
+    Reason: Could not parse as sound source or game title
+  Row 2465: ?
+    Reason: Could not parse as sound source or game title
+  Row 2466: ?
+    Reason: Could not parse as sound source or game title
+  Row 2467: ?
+    Reason: Could not parse as sound source or game title
+  Row 2468: ?
+    Reason: Could not parse as sound source or game title
+  Row 2727: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2754: ?
+    Reason: Could not parse as sound source or game title
+  Row 2755: ?
+    Reason: Could not parse as sound source or game title
+  Row 2757: ?
+    Reason: Could not parse as sound source or game title
+  Row 2758: ?
+    Reason: Could not parse as sound source or game title
+  Row 2759: ?
+    Reason: Could not parse as sound source or game title
+  Row 2760: ?
+    Reason: Could not parse as sound source or game title
+  Row 2761: ?
+    Reason: Could not parse as sound source or game title
+  Row 2762: ?
+    Reason: Could not parse as sound source or game title
+  Row 2764: ?
+    Reason: Could not parse as sound source or game title
+  Row 2765: ?
+    Reason: Could not parse as sound source or game title
+  Row 2766: ?
+    Reason: Could not parse as sound source or game title
+  Row 2767: ?
+    Reason: Could not parse as sound source or game title
+  Row 2768: ?
+    Reason: Could not parse as sound source or game title
+  Row 2770: ?
+    Reason: Could not parse as sound source or game title
+  Row 2824: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2828: ?
+    Reason: Could not parse as sound source or game title
+  Row 2851: Discovery Firm
+    Reason: Could not parse as sound source or game title
+  Row 3240: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3248: Heavyocity
+    Reason: Could not parse as sound source or game title
+  Row 3249: ?
+    Reason: Could not parse as sound source or game title
+  Row 3263: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 3279: ?
+    Reason: Could not parse as sound source or game title
+  Row 3287: ?
+    Reason: Could not parse as sound source or game title
+  Row 3288: ?
+    Reason: Could not parse as sound source or game title
+  Row 3289: ?
+    Reason: Could not parse as sound source or game title
+  Row 3290: ?
+    Reason: Could not parse as sound source or game title
+  Row 3291: ?
+    Reason: Could not parse as sound source or game title
+  Row 3292: ?
+    Reason: Could not parse as sound source or game title
+  Row 3293: ?
+    Reason: Could not parse as sound source or game title
+  Row 3294: ?
+    Reason: Could not parse as sound source or game title
+  Row 3295: ?
+    Reason: Could not parse as sound source or game title
+  Row 3296: ?
+    Reason: Could not parse as sound source or game title
+  Row 3297: ?
+    Reason: Could not parse as sound source or game title
+  Row 3298: ?
+    Reason: Could not parse as sound source or game title
+  Row 3299: ?
+    Reason: Could not parse as sound source or game title
+  Row 3300: ?
+    Reason: Could not parse as sound source or game title
+  Row 3301: ?
+    Reason: Could not parse as sound source or game title
+  Row 3302: ?
+    Reason: Could not parse as sound source or game title
+  Row 3303: ?
+    Reason: Could not parse as sound source or game title
+  Row 3304: ?
+    Reason: Could not parse as sound source or game title
+  Row 3305: ?
+    Reason: Could not parse as sound source or game title
+  Row 3306: ?
+    Reason: Could not parse as sound source or game title
+  Row 3307: ?
+    Reason: Could not parse as sound source or game title
+  Row 3308: ?
+    Reason: Could not parse as sound source or game title
+  Row 3309: ?
+    Reason: Could not parse as sound source or game title
+  Row 3310: ?
+    Reason: Could not parse as sound source or game title
+  Row 3311: ?
+    Reason: Could not parse as sound source or game title
+  Row 3312: ?
+    Reason: Could not parse as sound source or game title
+  Row 3347: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3349: ?
+    Reason: Could not parse as sound source or game title
+  Row 3421: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3434: ?
+    Reason: Could not parse as sound source or game title
+  Row 3435: ?
+    Reason: Could not parse as sound source or game title
+  Row 3436: ?
+    Reason: Could not parse as sound source or game title
+  Row 3437: ?
+    Reason: Could not parse as sound source or game title
+  Row 3438: ?
+    Reason: Could not parse as sound source or game title
+  Row 3521: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3544: ?
+    Reason: Could not parse as sound source or game title
+  Row 3545: ?
+    Reason: Could not parse as sound source or game title
+  Row 3546: ?
+    Reason: Could not parse as sound source or game title
+  Row 3547: ?
+    Reason: Could not parse as sound source or game title
+  Row 3548: ?
+    Reason: Could not parse as sound source or game title
+  Row 3549: ?
+    Reason: Could not parse as sound source or game title
+  Row 3550: ?
+    Reason: Could not parse as sound source or game title
+  Row 3659: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3682: Base Game / Early Battle Themes - v1.0.0
+    Reason: Could not parse as sound source or game title
+  Row 3722: Discovery Firm
+    Reason: Could not parse as sound source or game title
+  Row 3969: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3995: ?
+    Reason: Could not parse as sound source or game title
+  Row 4019: ?
+    Reason: Could not parse as sound source or game title
+  Row 4020: ?
+    Reason: Could not parse as sound source or game title
+  Row 4021: ?
+    Reason: Could not parse as sound source or game title
+  Row 4022: ?
+    Reason: Could not parse as sound source or game title
+  Row 4023: ?
+    Reason: Could not parse as sound source or game title
+  Row 4024: ?
+    Reason: Could not parse as sound source or game title
+  Row 4033: Discovery Firm
+    Reason: Could not parse as sound source or game title
+  Row 4374: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4413: ?
+    Reason: Could not parse as sound source or game title
+  Row 4431: ?
+    Reason: Could not parse as sound source or game title
+  Row 4432: ?
+    Reason: Could not parse as sound source or game title
+  Row 4433: ?
+    Reason: Could not parse as sound source or game title
+  Row 4434: ?
+    Reason: Could not parse as sound source or game title
+  Row 4435: ?
+    Reason: Could not parse as sound source or game title
+  Row 4436: ?
+    Reason: Could not parse as sound source or game title
+  Row 4438: ?
+    Reason: Could not parse as sound source or game title
+  Row 4439: ?
+    Reason: Could not parse as sound source or game title
+  Row 4440: ?
+    Reason: Could not parse as sound source or game title
+  Row 4441: ?
+    Reason: Could not parse as sound source or game title
+  Row 4442: ?
+    Reason: Could not parse as sound source or game title
+  Row 4532: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4561: Discovery Firm
+    Reason: Could not parse as sound source or game title
+  Row 4673: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4687: reFX
+    Reason: Could not parse as sound source or game title
+  Row 4713: ?
+    Reason: Could not parse as sound source or game title
+  Row 4714: ?
+    Reason: Could not parse as sound source or game title
+  Row 4715: ?
+    Reason: Could not parse as sound source or game title
+  Row 4716: ?
+    Reason: Could not parse as sound source or game title
+  Row 4717: ?
+    Reason: Could not parse as sound source or game title
+  Row 4793: Virharmonic
+    Reason: Could not parse as sound source or game title
+  Row 4799: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4830: ?
+    Reason: Could not parse as sound source or game title
+  Row 4831: ?
+    Reason: Could not parse as sound source or game title
+  Row 4839: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4849: Section 2 - Tie-In Games (Games that connect with the main series or share composers with main serie
+    Reason: Could not parse as sound source or game title
+  Row 4875: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4877: ?
+    Reason: Could not parse as sound source or game title
+  Row 4903: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4988: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5007: ?
+    Reason: Could not parse as sound source or game title
+  Row 5008: ?
+    Reason: Could not parse as sound source or game title
+  Row 5034: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5038: ?
+    Reason: Could not parse as sound source or game title
+  Row 5049: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5052: ?
+    Reason: Could not parse as sound source or game title
+  Row 5058: Section 3 - Misc.
+    Reason: Could not parse as sound source or game title
+  Row 5117: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5192: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5219: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5233: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5265: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5314: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5316: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 5317: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5318: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5319: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5320: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 5325: ?
+    Reason: Could not parse as sound source or game title
+  Row 5326: ?
+    Reason: Could not parse as sound source or game title
+  Row 5360: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 5380: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5411: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5474: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5508: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5541: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5544: ?
+    Reason: Could not parse as sound source or game title
+  Row 5545: ?
+    Reason: Could not parse as sound source or game title
+  Row 5546: ?
+    Reason: Could not parse as sound source or game title
+  Row 5550: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5611: FXpansion
+    Reason: Could not parse as sound source or game title
+  Row 5635: FXpansion
+    Reason: Could not parse as sound source or game title
+  Row 5666: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5671: ?
+    Reason: Could not parse as sound source or game title
+  Row 5672: ?
+    Reason: Could not parse as sound source or game title
+  Row 5673: ?
+    Reason: Could not parse as sound source or game title
+  Row 5674: ?
+    Reason: Could not parse as sound source or game title
+  Row 5677: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5685: Section 4 - Pokémon Mystery Dungeon
+    Reason: Could not parse as sound source or game title
+  Row 5729: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5735: ?
+    Reason: Could not parse as sound source or game title
+  Row 5736: ?
+    Reason: Could not parse as sound source or game title
+  Row 5737: ?
+    Reason: Could not parse as sound source or game title
+  Row 5738: ?
+    Reason: Could not parse as sound source or game title
+  Row 5776: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5779: ?
+    Reason: Could not parse as sound source or game title
+  Row 5780: ?
+    Reason: Could not parse as sound source or game title
+  Row 5781: ?
+    Reason: Could not parse as sound source or game title
+  Row 5782: ?
+    Reason: Could not parse as sound source or game title
+  Row 5783: ?
+    Reason: Could not parse as sound source or game title
+  Row 5784: ?
+    Reason: Could not parse as sound source or game title
+  Row 5785: ?
+    Reason: Could not parse as sound source or game title
+  Row 5786: ?
+    Reason: Could not parse as sound source or game title
+  Row 5860: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5959: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 5993: ?
+    Reason: Could not parse as sound source or game title
+  Row 5994: ?
+    Reason: Could not parse as sound source or game title
+  Row 5995: ?
+    Reason: Could not parse as sound source or game title
+  Row 6029: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6030: ?
+    Reason: Could not parse as sound source or game title
+  Row 6032: ?
+    Reason: Could not parse as sound source or game title
+  Row 6034: ?
+    Reason: Could not parse as sound source or game title
+  Row 6040: Section 5 - Genius Sonority
+    Reason: Could not parse as sound source or game title
+  Row 6091: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6093: ?
+    Reason: Could not parse as sound source or game title
+  Row 6094: ?
+    Reason: Could not parse as sound source or game title
+  Row 6211: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6249: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6349: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6358: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6385: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6403: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6409: ?
+    Reason: Could not parse as sound source or game title
+  Row 6416: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 6424: Section 6 - Animation / Anime
+    Reason: Could not parse as sound source or game title
+  Row 6427: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 6437: Stuff to Find
+    Reason: Could not parse as sound source or game title
+
+File: NEWER VGM Sound Sources - Square-Enix.csv
+------------------------------------------------------------
+  Row 17: Section 1 - Dragon Quest
+    Reason: Could not parse as sound source or game title
+  Row 19: For track-by-track information, click here to view the Dragon Quest Sound Sources (Detailed) sheet
+    Reason: Could not parse as sound source or game title
+  Row 29: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 38: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 61: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 75: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 105: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 107: ?
+    Reason: Could not parse as sound source or game title
+  Row 108: ?
+    Reason: Could not parse as sound source or game title
+  Row 109: ?
+    Reason: Could not parse as sound source or game title
+  Row 111: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 118: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 125: Section 2 - Final Fantasy
+    Reason: Could not parse as sound source or game title
+  Row 127: For track-by-track information, click here to view the Final Fantasy Sound Sources (Detailed) sheet
+    Reason: Could not parse as sound source or game title
+  Row 136: Roland
+    Reason: Could not parse as sound source or game title
+  Row 143: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 144: ?
+    Reason: Could not parse as sound source or game title
+  Row 145: ?
+    Reason: Could not parse as sound source or game title
+  Row 146: ?
+    Reason: Could not parse as sound source or game title
+  Row 147: ?
+    Reason: Could not parse as sound source or game title
+  Row 148: ?
+    Reason: Could not parse as sound source or game title
+  Row 158: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 159: ?
+    Reason: Could not parse as sound source or game title
+  Row 176: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 177: ?
+    Reason: Could not parse as sound source or game title
+  Row 178: ?
+    Reason: Could not parse as sound source or game title
+  Row 179: ?
+    Reason: Could not parse as sound source or game title
+  Row 180: ?
+    Reason: Could not parse as sound source or game title
+  Row 181: ?
+    Reason: Could not parse as sound source or game title
+  Row 182: ?
+    Reason: Could not parse as sound source or game title
+  Row 183: ?
+    Reason: Could not parse as sound source or game title
+  Row 184: ?
+    Reason: Could not parse as sound source or game title
+  Row 185: ?
+    Reason: Could not parse as sound source or game title
+  Row 186: ?
+    Reason: Could not parse as sound source or game title
+  Row 187: ?
+    Reason: Could not parse as sound source or game title
+  Row 188: ?
+    Reason: Could not parse as sound source or game title
+  Row 189: ?
+    Reason: Could not parse as sound source or game title
+  Row 215: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 217: ?
+    Reason: Could not parse as sound source or game title
+  Row 218: ?
+    Reason: Could not parse as sound source or game title
+  Row 219: ?
+    Reason: Could not parse as sound source or game title
+  Row 220: ?
+    Reason: Could not parse as sound source or game title
+  Row 221: ?
+    Reason: Could not parse as sound source or game title
+  Row 249: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 250: ?
+    Reason: Could not parse as sound source or game title
+  Row 251: ?
+    Reason: Could not parse as sound source or game title
+  Row 252: ?
+    Reason: Could not parse as sound source or game title
+  Row 253: ?
+    Reason: Could not parse as sound source or game title
+  Row 254: ?
+    Reason: Could not parse as sound source or game title
+  Row 255: ?
+    Reason: Could not parse as sound source or game title
+  Row 256: ?
+    Reason: Could not parse as sound source or game title
+  Row 257: ?
+    Reason: Could not parse as sound source or game title
+  Row 258: ?
+    Reason: Could not parse as sound source or game title
+  Row 259: ?
+    Reason: Could not parse as sound source or game title
+  Row 260: ?
+    Reason: Could not parse as sound source or game title
+  Row 261: ?
+    Reason: Could not parse as sound source or game title
+  Row 262: ?
+    Reason: Could not parse as sound source or game title
+  Row 263: ?
+    Reason: Could not parse as sound source or game title
+  Row 264: ?
+    Reason: Could not parse as sound source or game title
+  Row 265: ?
+    Reason: Could not parse as sound source or game title
+  Row 266: ?
+    Reason: Could not parse as sound source or game title
+  Row 267: ?
+    Reason: Could not parse as sound source or game title
+  Row 268: ?
+    Reason: Could not parse as sound source or game title
+  Row 269: ?
+    Reason: Could not parse as sound source or game title
+  Row 270: ?
+    Reason: Could not parse as sound source or game title
+  Row 271: ?
+    Reason: Could not parse as sound source or game title
+  Row 272: ?
+    Reason: Could not parse as sound source or game title
+  Row 273: ?
+    Reason: Could not parse as sound source or game title
+  Row 274: ?
+    Reason: Could not parse as sound source or game title
+  Row 275: ?
+    Reason: Could not parse as sound source or game title
+  Row 276: ?
+    Reason: Could not parse as sound source or game title
+  Row 321: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 327: ?
+    Reason: Could not parse as sound source or game title
+  Row 331: ?
+    Reason: Could not parse as sound source or game title
+  Row 332: ?
+    Reason: Could not parse as sound source or game title
+  Row 368: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 369: ?
+    Reason: Could not parse as sound source or game title
+  Row 370: ?
+    Reason: Could not parse as sound source or game title
+  Row 391: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 450: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 537: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 547: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 548: ?
+    Reason: Could not parse as sound source or game title
+  Row 553: Roland
+    Reason: Could not parse as sound source or game title
+  Row 554: Roland
+    Reason: Could not parse as sound source or game title
+  Row 565: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 566: ?
+    Reason: Could not parse as sound source or game title
+  Row 611: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 640: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 671: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 686: ?
+    Reason: Could not parse as sound source or game title
+  Row 690: Sequenced Soundbank (Base Game)
+    Reason: Could not parse as sound source or game title
+  Row 697: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 698: ?
+    Reason: Could not parse as sound source or game title
+  Row 708: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 722: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 728: ?
+    Reason: Could not parse as sound source or game title
+  Row 732: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 733: ?
+    Reason: Could not parse as sound source or game title
+  Row 734: ?
+    Reason: Could not parse as sound source or game title
+  Row 795: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 796: ?
+    Reason: Could not parse as sound source or game title
+  Row 819: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 845: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 866: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 883: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 909: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 933: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 937: ?
+    Reason: Could not parse as sound source or game title
+  Row 950: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 963: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 969: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 981: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 992: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1018: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1035: ?
+    Reason: Could not parse as sound source or game title
+  Row 1036: ?
+    Reason: Could not parse as sound source or game title
+  Row 1037: ?
+    Reason: Could not parse as sound source or game title
+  Row 1038: ?
+    Reason: Could not parse as sound source or game title
+  Row 1039: ?
+    Reason: Could not parse as sound source or game title
+  Row 1042: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1051: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1062: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1072: ?
+    Reason: Could not parse as sound source or game title
+  Row 1073: ?
+    Reason: Could not parse as sound source or game title
+  Row 1074: ?
+    Reason: Could not parse as sound source or game title
+  Row 1077: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1081: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1164: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1221: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1237: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1241: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1246: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1253: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1254: ?
+    Reason: Could not parse as sound source or game title
+  Row 1275: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1289: ?
+    Reason: Could not parse as sound source or game title
+  Row 1293: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1294: ?
+    Reason: Could not parse as sound source or game title
+  Row 1298: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1319: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1337: ?
+    Reason: Could not parse as sound source or game title
+  Row 1375: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1413: ?
+    Reason: Could not parse as sound source or game title
+  Row 1418: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1456: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1464: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1476: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1482: Section 2.5 - Animation/Anime/Suplementary Media
+    Reason: Could not parse as sound source or game title
+  Row 1492: Section 3 - Chrono
+    Reason: Could not parse as sound source or game title
+  Row 1535: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1541: ?
+    Reason: Could not parse as sound source or game title
+  Row 1542: ?
+    Reason: Could not parse as sound source or game title
+  Row 1543: ?
+    Reason: Could not parse as sound source or game title
+  Row 1544: ?
+    Reason: Could not parse as sound source or game title
+  Row 1545: ?
+    Reason: Could not parse as sound source or game title
+  Row 1546: ?
+    Reason: Could not parse as sound source or game title
+  Row 1547: ?
+    Reason: Could not parse as sound source or game title
+  Row 1548: ?
+    Reason: Could not parse as sound source or game title
+  Row 1572: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1637: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1654: Section 4 - Chocobo
+    Reason: Could not parse as sound source or game title
+  Row 1665: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1680: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1688: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1689: ?
+    Reason: Could not parse as sound source or game title
+  Row 1690: ?
+    Reason: Could not parse as sound source or game title
+  Row 1691: ?
+    Reason: Could not parse as sound source or game title
+  Row 1699: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1713: Section 5 - Kingdom Hearts
+    Reason: Could not parse as sound source or game title
+  Row 1829: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1842: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1910: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1924: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1962: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2029: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2040: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2094: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2102: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2129: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2145: ?
+    Reason: Could not parse as sound source or game title
+  Row 2155: Section 6 - Square Enix Europe / Crystal Dynamics / Eidos Interactive
+    Reason: Could not parse as sound source or game title
+  Row 2169: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2250: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2258: ?
+    Reason: Could not parse as sound source or game title
+  Row 2259: ?
+    Reason: Could not parse as sound source or game title
+  Row 2283: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2284: Best Service
+    Reason: Could not parse as sound source or game title
+  Row 2289: ?
+    Reason: Could not parse as sound source or game title
+  Row 2290: ?
+    Reason: Could not parse as sound source or game title
+  Row 2291: ?
+    Reason: Could not parse as sound source or game title
+  Row 2292: ?
+    Reason: Could not parse as sound source or game title
+  Row 2293: ?
+    Reason: Could not parse as sound source or game title
+  Row 2294: ?
+    Reason: Could not parse as sound source or game title
+  Row 2315: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2410: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2414: ?
+    Reason: Could not parse as sound source or game title
+  Row 2415: ?
+    Reason: Could not parse as sound source or game title
+  Row 2586: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2591: Sonic Foundry & Sounds Good
+    Reason: Could not parse as sound source or game title
+  Row 2592: Sonic Foundry & Sounds Good
+    Reason: Could not parse as sound source or game title
+  Row 2593: Sonic Foundry & Sounds Good
+    Reason: Could not parse as sound source or game title
+  Row 2594: Sonic Foundry & Sounds Good
+    Reason: Could not parse as sound source or game title
+  Row 2595: Sonic Foundry & Sounds Good
+    Reason: Could not parse as sound source or game title
+  Row 2596: Sounds Good
+    Reason: Could not parse as sound source or game title
+  Row 2597: ?
+    Reason: Could not parse as sound source or game title
+  Row 2598: ?
+    Reason: Could not parse as sound source or game title
+  Row 2599: ?
+    Reason: Could not parse as sound source or game title
+  Row 2601: ?
+    Reason: Could not parse as sound source or game title
+  Row 2602: ?
+    Reason: Could not parse as sound source or game title
+  Row 2634: Section 7 - Taito Corporation
+    Reason: Could not parse as sound source or game title
+  Row 2644: Roland
+    Reason: Could not parse as sound source or game title
+  Row 2649: Base Game - Arcade
+    Reason: Could not parse as sound source or game title
+  Row 2650: -
+    Reason: Could not parse as sound source or game title
+  Row 2656: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2675: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2678: Base Game - Arcade
+    Reason: Could not parse as sound source or game title
+  Row 2693: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2708: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2742: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2743: ?
+    Reason: Could not parse as sound source or game title
+  Row 2759: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2762: Base Game - Arcade
+    Reason: Could not parse as sound source or game title
+  Row 2764: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2776: Raystorm/Layersection II
+    Reason: Could not parse as sound source or game title
+  Row 2790: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2817: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2838: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2883: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2910: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2922: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2931: Section 8 - Other
+    Reason: Could not parse as sound source or game title
+  Row 2953: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2962: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 2966: ?
+    Reason: Could not parse as sound source or game title
+  Row 2990: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3001: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3080: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3125: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3163: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3168: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3188: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3225: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3228: ?
+    Reason: Could not parse as sound source or game title
+  Row 3229: ?
+    Reason: Could not parse as sound source or game title
+  Row 3230: ?
+    Reason: Could not parse as sound source or game title
+  Row 3231: ?
+    Reason: Could not parse as sound source or game title
+  Row 3232: ?
+    Reason: Could not parse as sound source or game title
+  Row 3233: ?
+    Reason: Could not parse as sound source or game title
+  Row 3234: ?
+    Reason: Could not parse as sound source or game title
+  Row 3235: ?
+    Reason: Could not parse as sound source or game title
+  Row 3236: ?
+    Reason: Could not parse as sound source or game title
+  Row 3237: ?
+    Reason: Could not parse as sound source or game title
+  Row 3238: ?
+    Reason: Could not parse as sound source or game title
+  Row 3258: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3260: ?
+    Reason: Could not parse as sound source or game title
+  Row 3265: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3266: ?
+    Reason: Could not parse as sound source or game title
+  Row 3267: ?
+    Reason: Could not parse as sound source or game title
+  Row 3268: ?
+    Reason: Could not parse as sound source or game title
+  Row 3269: ?
+    Reason: Could not parse as sound source or game title
+  Row 3270: ?
+    Reason: Could not parse as sound source or game title
+  Row 3388: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3401: ?
+    Reason: Could not parse as sound source or game title
+  Row 3402: ?
+    Reason: Could not parse as sound source or game title
+  Row 3403: ?
+    Reason: Could not parse as sound source or game title
+  Row 3404: ?
+    Reason: Could not parse as sound source or game title
+  Row 3451: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3459: ?
+    Reason: Could not parse as sound source or game title
+  Row 3460: ?
+    Reason: Could not parse as sound source or game title
+  Row 3461: ?
+    Reason: Could not parse as sound source or game title
+  Row 3462: ?
+    Reason: Could not parse as sound source or game title
+  Row 3488: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3493: ?
+    Reason: Could not parse as sound source or game title
+  Row 3513: iS: Internal Section
+    Reason: Could not parse as sound source or game title
+  Row 3582: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3595: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3598: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3618: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3642: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3673: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3758: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3789: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3797: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3822: Spectrasonics
+    Reason: Could not parse as sound source or game title
+  Row 3856: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3892: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3907: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3908: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3911: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3912: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3913: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3914: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3928: Ueberschall
+    Reason: Could not parse as sound source or game title
+  Row 3939: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 3957: ?
+    Reason: Could not parse as sound source or game title
+  Row 3958: ?
+    Reason: Could not parse as sound source or game title
+  Row 3959: ?
+    Reason: Could not parse as sound source or game title
+  Row 3960: ?
+    Reason: Could not parse as sound source or game title
+  Row 3961: ?
+    Reason: Could not parse as sound source or game title
+  Row 3962: ?
+    Reason: Could not parse as sound source or game title
+  Row 3963: ?
+    Reason: Could not parse as sound source or game title
+  Row 3964: ?
+    Reason: Could not parse as sound source or game title
+  Row 3965: ?
+    Reason: Could not parse as sound source or game title
+  Row 3966: ?
+    Reason: Could not parse as sound source or game title
+  Row 3967: ?
+    Reason: Could not parse as sound source or game title
+  Row 3968: ?
+    Reason: Could not parse as sound source or game title
+  Row 3969: ?
+    Reason: Could not parse as sound source or game title
+  Row 3970: ?
+    Reason: Could not parse as sound source or game title
+  Row 3971: ?
+    Reason: Could not parse as sound source or game title
+  Row 3972: ?
+    Reason: Could not parse as sound source or game title
+  Row 3973: ?
+    Reason: Could not parse as sound source or game title
+  Row 3974: ?
+    Reason: Could not parse as sound source or game title
+  Row 3975: ?
+    Reason: Could not parse as sound source or game title
+  Row 3976: ?
+    Reason: Could not parse as sound source or game title
+  Row 3977: ?
+    Reason: Could not parse as sound source or game title
+  Row 3978: ?
+    Reason: Could not parse as sound source or game title
+  Row 3979: ?
+    Reason: Could not parse as sound source or game title
+  Row 3980: ?
+    Reason: Could not parse as sound source or game title
+  Row 3981: ?
+    Reason: Could not parse as sound source or game title
+  Row 3982: ?
+    Reason: Could not parse as sound source or game title
+  Row 3983: ?
+    Reason: Could not parse as sound source or game title
+  Row 3984: ?
+    Reason: Could not parse as sound source or game title
+  Row 3985: ?
+    Reason: Could not parse as sound source or game title
+  Row 4006: [link to NieR:Automata in Platinum Games section]
+    Reason: Could not parse as sound source or game title
+  Row 4018: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4026: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4034: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4044: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 4061: Stuff to Find
+    Reason: Could not parse as sound source or game title
+
+File: NEWER VGM Sound Sources - Zelda.csv
+------------------------------------------------------------
+  Row 11: Section 1 - Main Series
+    Reason: Could not parse as sound source or game title
+  Row 94: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 96: ?
+    Reason: Could not parse as sound source or game title
+  Row 97: ?
+    Reason: Could not parse as sound source or game title
+  Row 98: ?
+    Reason: Could not parse as sound source or game title
+  Row 99: ?
+    Reason: Could not parse as sound source or game title
+  Row 100: ?
+    Reason: Could not parse as sound source or game title
+  Row 101: ?
+    Reason: Could not parse as sound source or game title
+  Row 102: ?
+    Reason: Could not parse as sound source or game title
+  Row 103: ?
+    Reason: Could not parse as sound source or game title
+  Row 105: Base Game - Nintendo 64
+    Reason: Could not parse as sound source or game title
+  Row 143: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 144: ?
+    Reason: Could not parse as sound source or game title
+  Row 145: ?
+    Reason: Could not parse as sound source or game title
+  Row 146: ?
+    Reason: Could not parse as sound source or game title
+  Row 147: ?
+    Reason: Could not parse as sound source or game title
+  Row 148: ?
+    Reason: Could not parse as sound source or game title
+  Row 149: ?
+    Reason: Could not parse as sound source or game title
+  Row 150: ?
+    Reason: Could not parse as sound source or game title
+  Row 156: Base Game - Nintendo GameCube
+    Reason: Could not parse as sound source or game title
+  Row 340: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 343: ?
+    Reason: Could not parse as sound source or game title
+  Row 345: ?
+    Reason: Could not parse as sound source or game title
+  Row 372: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 412: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 414: ?
+    Reason: Could not parse as sound source or game title
+  Row 416: ?
+    Reason: Could not parse as sound source or game title
+  Row 417: ?
+    Reason: Could not parse as sound source or game title
+  Row 418: ?
+    Reason: Could not parse as sound source or game title
+  Row 420: ?
+    Reason: Could not parse as sound source or game title
+  Row 421: ?
+    Reason: Could not parse as sound source or game title
+  Row 450: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 459: ?
+    Reason: Could not parse as sound source or game title
+  Row 748: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 749: ?
+    Reason: Could not parse as sound source or game title
+  Row 750: ?
+    Reason: Could not parse as sound source or game title
+  Row 751: ?
+    Reason: Could not parse as sound source or game title
+  Row 752: ?
+    Reason: Could not parse as sound source or game title
+  Row 753: ?
+    Reason: Could not parse as sound source or game title
+  Row 755: ?
+    Reason: Could not parse as sound source or game title
+  Row 757: ?
+    Reason: Could not parse as sound source or game title
+  Row 758: ?
+    Reason: Could not parse as sound source or game title
+  Row 759: ?
+    Reason: Could not parse as sound source or game title
+  Row 760: ?
+    Reason: Could not parse as sound source or game title
+  Row 761: ?
+    Reason: Could not parse as sound source or game title
+  Row 762: ?
+    Reason: Could not parse as sound source or game title
+  Row 763: ?
+    Reason: Could not parse as sound source or game title
+  Row 764: ?
+    Reason: Could not parse as sound source or game title
+  Row 765: ?
+    Reason: Could not parse as sound source or game title
+  Row 766: ?
+    Reason: Could not parse as sound source or game title
+  Row 767: ?
+    Reason: Could not parse as sound source or game title
+  Row 768: ?
+    Reason: Could not parse as sound source or game title
+  Row 769: ?
+    Reason: Could not parse as sound source or game title
+  Row 770: ?
+    Reason: Could not parse as sound source or game title
+  Row 771: ?
+    Reason: Could not parse as sound source or game title
+  Row 916: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 917: ?
+    Reason: Could not parse as sound source or game title
+  Row 918: ?
+    Reason: Could not parse as sound source or game title
+  Row 919: ?
+    Reason: Could not parse as sound source or game title
+  Row 922: ?
+    Reason: Could not parse as sound source or game title
+  Row 1077: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1089: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1150: EastWest
+    Reason: Could not parse as sound source or game title
+  Row 1206: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1279: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1289: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1296: Section 2 - Spinoffs
+    Reason: Could not parse as sound source or game title
+  Row 1303: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1314: Some string sections recorded live.
+    Reason: Could not parse as sound source or game title
+  Row 1325: Stuff to Find
+    Reason: Could not parse as sound source or game title
+  Row 1331: ?
+    Reason: Could not parse as sound source or game title
+  Row 1332: ?
+    Reason: Could not parse as sound source or game title
+  Row 1333: ?
+    Reason: Could not parse as sound source or game title
+  Row 1338: Stuff to Find
+    Reason: Could not parse as sound source or game title

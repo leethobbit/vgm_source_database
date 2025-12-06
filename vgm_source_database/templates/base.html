@@ -465,6 +465,20 @@
         {% else %}
           <p class="text-gray-400 font-mono text-sm">No categories yet.</p>
         {% endif %}
+        
+        <!-- Data Management Section -->
+        <div class="mt-8 pt-8 border-t border-[#4b5563]">
+          <h2 class="text-xl font-mono uppercase tracking-wider text-blue-400 mb-4">Data Management</h2>
+          <div class="space-y-2">
+            {% if user.is_authenticated %}
+              <a href="{% url 'data:import_data' %}" class="block px-3 py-2 bg-dark-card border border-[#4b5563] rounded hover:border-blue-400 transition-colors text-center">
+                <span class="text-gray-300 font-mono text-sm">Import YAML</span>
+              </a>
+            {% else %}
+              <p class="text-gray-400 font-mono text-sm text-center">Sign in to import data</p>
+            {% endif %}
+          </div>
+        </div>
       </div>
     </aside>
     <!-- Main Content -->

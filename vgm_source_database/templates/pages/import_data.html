@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Import Data{% endblock title %}
+
+{% block content %}
+<div class="card-neon">
+  <h1 class="text-2xl font-bold mb-4">Import YAML Fixtures</h1>
+  
+  <p class="text-gray-300 mb-6">
+    Upload a YAML fixture file to import data into the database. 
+    You can use the "Dry Run" option to validate the file before importing.
+  </p>
+
+  <form method="post" enctype="multipart/form-data" class="space-y-4">
+    {% csrf_token %}
+    {{ form|crispy }}
+    
+    <div class="flex gap-4">
+      <button type="submit" class="btn-primary">
+        Import Data
+      </button>
+      <a href="{% url 'home' %}" class="btn-info">
+        Cancel
+      </a>
+    </div>
+  </form>
+
+  <div class="mt-8 p-4 bg-dark-surface border border-[#4b5563] rounded">
+    <h2 class="text-lg font-semibold mb-2">Import Instructions</h2>
+    <ul class="list-disc list-inside space-y-1 text-gray-300 text-sm">
+      <li>Select a YAML fixture file (e.g., games_games.yaml, sources_soundsources.yaml)</li>
+      <li>Check "Dry Run" to validate the file without importing</li>
+      <li>Uncheck "Dry Run" to perform the actual import</li>
+      <li>Files are imported in dependency order automatically</li>
+    </ul>
+  </div>
+
+  {% if request.session.import_errors %}
+  <div id="errors" class="mt-8 p-4 bg-dark-surface border border-red-500 rounded">
+    <h2 class="text-lg font-semibold mb-2 text-red-400">Import Errors ({{ request.session.import_error_count }} total)</h2>
+    <p class="text-gray-300 text-sm mb-4">
+      Showing first {{ request.session.import_errors|length }} of {{ request.session.import_error_count }} errors.
+      {% if request.session.import_error_count > request.session.import_errors|length %}
+      <span class="text-yellow-400">(Additional errors not shown to prevent page overload)</span>
+      {% endif %}
+    </p>
+    <div class="max-h-96 overflow-y-auto space-y-2">
+      {% for error in request.session.import_errors %}
+      <div class="text-sm text-red-300 font-mono p-2 bg-dark-surface border border-red-800 rounded">
+        {{ error }}
+      </div>
+      {% endfor %}
+    </div>
+    <form method="post" action="{% url 'data:clear_errors' %}" class="mt-4">
+      {% csrf_token %}
+      <button type="submit" class="btn-info text-sm">Clear Error Display</button>
+    </form>
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}

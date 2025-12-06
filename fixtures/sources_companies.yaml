@@ -1,0 +1,3514 @@
+- model: sources.Company
+  pk: 419
+  fields:
+    name: (?)
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 330
+  fields:
+    name: 1-2 Switch
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 161
+  fields:
+    name: 1991-1992 Beta
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 220
+  fields:
+    name: 1994 Prototype
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 144
+  fields:
+    name: 1995-1996 Beta
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 217
+  fields:
+    name: 8Dio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 283
+  fields:
+    name: 8dio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 2
+  fields:
+    name: '?'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 174
+  fields:
+    name: '? (Alesis?)'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 273
+  fields:
+    name: '? (Apple?)'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 244
+  fields:
+    name: '? (Ensoniq?)'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 430
+  fields:
+    name: '? (Roland?)'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 149
+  fields:
+    name: '? Apple'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 127
+  fields:
+    name: ??
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 319
+  fields:
+    name: ???
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 207
+  fields:
+    name: AIR Music Technology
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 5
+  fields:
+    name: AKAI
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 347
+  fields:
+    name: AKAI Professional
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 17
+  fields:
+    name: AMG
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 205
+  fields:
+    name: AMG & Hit Music
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 331
+  fields:
+    name: ARMS
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 358
+  fields:
+    name: Aa6kHMGE0
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 368
+  fields:
+    name: Aaron Venture
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 367
+  fields:
+    name: Ableton
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 102
+  fields:
+    name: Access
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 468
+  fields:
+    name: ActRaiser
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 470
+  fields:
+    name: ActRaiser 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 239
+  fields:
+    name: Advance Wars
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 364
+  fields:
+    name: Air Music Tech
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 501
+  fields:
+    name: Akai
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 36
+  fields:
+    name: Aladdin
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 10
+  fields:
+    name: Alesis
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 223
+  fields:
+    name: Ample Sound
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 30
+  fields:
+    name: Apple
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 155
+  fields:
+    name: Arturia
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 72
+  fields:
+    name: Audio Adventures Inc.
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 404
+  fields:
+    name: Audio Factory
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 183
+  fields:
+    name: Audio Modeling
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 420
+  fields:
+    name: AudioBro
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 248
+  fields:
+    name: AudioNerdz
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 285
+  fields:
+    name: Audiobro
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 208
+  fields:
+    name: Audiomodeling
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 200
+  fields:
+    name: Audionerdz
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 385
+  fields:
+    name: BBC Enterprises
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 246
+  fields:
+    name: BOSS
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 79
+  fields:
+    name: Back in Time Records
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 475
+  fields:
+    name: Bahamut Lagoon
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 298
+  fields:
+    name: Battle Clash
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 54
+  fields:
+    name: Beatnik
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 12
+  fields:
+    name: Best Service
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 406
+  fields:
+    name: Best Service(?)
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 25
+  fields:
+    name: Big Fish Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 294
+  fields:
+    name: Blastwave FX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 37
+  fields:
+    name: Bonkers
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 345
+  fields:
+    name: Bonus Tracks
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 113
+  fields:
+    name: Breath of Fire
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 140
+  fields:
+    name: Brüse & Brüse AudioProduction
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 199
+  fields:
+    name: CD Release
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 43
+  fields:
+    name: CPS2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 459
+  fields:
+    name: Cameltry
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 232
+  fields:
+    name: Casio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 432
+  fields:
+    name: Chocobo GP
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 227
+  fields:
+    name: Chris Hein
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 428
+  fields:
+    name: Chrono Cross
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 413
+  fields:
+    name: CineSamples
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 286
+  fields:
+    name: Cinematic Studio Series
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 240
+  fields:
+    name: Cinesamples
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 107
+  fields:
+    name: Clavia
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 473
+  fields:
+    name: Club 50
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 401
+  fields:
+    name: Club50
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 115
+  fields:
+    name: Cyberbots
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 173
+  fields:
+    name: Cymatics
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 342
+  fields:
+    name: DS Soundware
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 467
+  fields:
+    name: Darius Burst
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 461
+  fields:
+    name: Darius Gaiden
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 458
+  fields:
+    name: Darius Twin
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 114
+  fields:
+    name: Darkstalkers ★
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 128
+  fields:
+    name: Data Becker & Masterbits
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 103
+  fields:
+    name: Databecker & Masterbits
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 100
+  fields:
+    name: Dead Rising
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 105
+  fields:
+    name: Dead Rising 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 109
+  fields:
+    name: Dead Rising 3
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 439
+  fields:
+    name: Deus Ex
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 77
+  fields:
+    name: Devil May Cry
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 142
+  fields:
+    name: Digidesign
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 129
+  fields:
+    name: Dirt Style
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 28
+  fields:
+    name: Discovery Firm
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 73
+  fields:
+    name: DiscoveryFirm
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 212
+  fields:
+    name: Donkey Kong 64
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 235
+  fields:
+    name: Dr. Mario 64
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 124
+  fields:
+    name: Dreamcast
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 194
+  fields:
+    name: Dublab Production
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 403
+  fields:
+    name: E-MU
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 4
+  fields:
+    name: E-MU Systems
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 320
+  fields:
+    name: E-MU(?)
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 216
+  fields:
+    name: E3 2005
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 38
+  fields:
+    name: EDIROL
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 13
+  fields:
+    name: EastWest
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 89
+  fields:
+    name: EastWest & Masterbits
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 328
+  fields:
+    name: Eastwest
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 431
+  fields:
+    name: Edirol
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 476
+  fields:
+    name: Einhänder
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 177
+  fields:
+    name: Emagic
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 370
+  fields:
+    name: Embertone
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 88
+  fields:
+    name: Ensoniq
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 166
+  fields:
+    name: Everything
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 247
+  fields:
+    name: F-ZERO GX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 245
+  fields:
+    name: F-Zero X
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 243
+  fields:
+    name: F-Zero ★★★
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 494
+  fields:
+    name: FANTASIAN
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 134
+  fields:
+    name: FXPansion
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 353
+  fields:
+    name: FXpansion
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 255
+  fields:
+    name: Fairlight
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 438
+  fields:
+    name: Fear Effect
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 32
+  fields:
+    name: Final Fight
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 33
+  fields:
+    name: Final Fight 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 325
+  fields:
+    name: FlingSmash
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 152
+  fields:
+    name: Fluffy Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 488
+  fields:
+    name: Fortune Street
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 421
+  fields:
+    name: Fracture Sounds
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 474
+  fields:
+    name: Front Mission
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 414
+  fields:
+    name: Fxpansion
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 463
+  fields:
+    name: G-Darius
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 112
+  fields:
+    name: GBA Version
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 133
+  fields:
+    name: GOD HAND
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 228
+  fields:
+    name: Game & Wario
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 181
+  fields:
+    name: Garritan
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 415
+  fields:
+    name: Garritian
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 123
+  fields:
+    name: Giga Wing
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 316
+  fields:
+    name: Golden Sun
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 35
+  fields:
+    name: Goof Troop
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 359
+  fields:
+    name: Gregjazz
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 63
+  fields:
+    name: Heavyocity
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 266
+  fields:
+    name: Hey! Pikmin
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 74
+  fields:
+    name: Hollywood Edge
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 231
+  fields:
+    name: Hotel Mario
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 55
+  fields:
+    name: IK Multimedia
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 84
+  fields:
+    name: ILIO
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 50
+  fields:
+    name: INIS/Sonic Foundry
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 371
+  fields:
+    name: Image Line
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 80
+  fields:
+    name: Image-Line
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 295
+  fields:
+    name: Impact Soundworks
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 90
+  fields:
+    name: InVision
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 402
+  fields:
+    name: InVision Interactive
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 221
+  fields:
+    name: 'Interpolation: Sound Ideas'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 398
+  fields:
+    name: 'Interpolation: Sounds Good'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 78
+  fields:
+    name: 'Interpolation: W.A. Mozart'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 122
+  fields:
+    name: JoJo's Venture
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 457
+  fields:
+    name: Just Cause
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 6
+  fields:
+    name: KORG
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 83
+  fields:
+    name: KORG or Zero-G
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 405
+  fields:
+    name: KORG(?)
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 214
+  fields:
+    name: Kaeru Cafe
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 136
+  fields:
+    name: Kaeru Café
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 426
+  fields:
+    name: Karsten Obarski
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 138
+  fields:
+    name: Kawai
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 139
+  fields:
+    name: King Records
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 44
+  fields:
+    name: Korg
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 120
+  fields:
+    name: Korg?
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 15
+  fields:
+    name: Kurzweil
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 119
+  fields:
+    name: Kurzweil?
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 491
+  fields:
+    name: Last Idea
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 482
+  fields:
+    name: Legend of Mana
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 287
+  fields:
+    name: Lennar Digital
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 376
+  fields:
+    name: LennarDigital
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 42
+  fields:
+    name: Linn
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 472
+  fields:
+    name: Live A Live
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 164
+  fields:
+    name: Live Recording
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 261
+  fields:
+    name: 'Live Recording: Saburo Tanooka'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 147
+  fields:
+    name: Loopmasters
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 348
+  fields:
+    name: MAGiX / Yellow Tools
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 455
+  fields:
+    name: MAZ
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 94
+  fields:
+    name: MOTU
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 230
+  fields:
+    name: Mario & Wario
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 198
+  fields:
+    name: Mario Golf
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 163
+  fields:
+    name: Mario Kart 7
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 168
+  fields:
+    name: Mario Kart 8
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 162
+  fields:
+    name: Mario Kart Wii
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 229
+  fields:
+    name: Mario Paint
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 185
+  fields:
+    name: Mario Party
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 197
+  fields:
+    name: Mario Party 10
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 187
+  fields:
+    name: Mario Party 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 188
+  fields:
+    name: Mario Party 3
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 189
+  fields:
+    name: Mario Party 4
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 190
+  fields:
+    name: Mario Party 5
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 191
+  fields:
+    name: Mario Party 6
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 192
+  fields:
+    name: Mario Party 7
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 193
+  fields:
+    name: Mario Party 8
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 196
+  fields:
+    name: Mario Party 9
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 18
+  fields:
+    name: Masterbits
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 372
+  fields:
+    name: Matt Montag
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 62
+  fields:
+    name: Mega Man 11
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 41
+  fields:
+    name: Mega Man 7
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 46
+  fields:
+    name: Mega Man 8
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 39
+  fields:
+    name: Mega Man X ★
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 40
+  fields:
+    name: Mega Man X2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 45
+  fields:
+    name: Mega Man X3
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 47
+  fields:
+    name: Mega Man X4
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 48
+  fields:
+    name: Mega Man X5
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 49
+  fields:
+    name: Mega Man X6
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 53
+  fields:
+    name: Mega Man X7
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 57
+  fields:
+    name: Mega Man X8
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 58
+  fields:
+    name: Mega Man ZX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 51
+  fields:
+    name: Mega Man Zero
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 259
+  fields:
+    name: Metroid Dread
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 256
+  fields:
+    name: Metroid Fusion
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 257
+  fields:
+    name: Metroid Prime
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 360
+  fields:
+    name: MezmerKaiser
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 176
+  fields:
+    name: Microsoft
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 19
+  fields:
+    name: Midi Mark Productions
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 281
+  fields:
+    name: Miitomo
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 282
+  fields:
+    name: Miitopia
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 186
+  fields:
+    name: Miroslav Vitous
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 150
+  fields:
+    name: Modartt
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 440
+  fields:
+    name: 'Module: Basehead'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 441
+  fields:
+    name: 'Module: Hunz'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 442
+  fields:
+    name: 'Module: Mellow-D'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 443
+  fields:
+    name: 'Module: Necros'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 444
+  fields:
+    name: 'Module: Radix'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 445
+  fields:
+    name: 'Module: Sybaris'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 446
+  fields:
+    name: 'Module: Tito'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 98
+  fields:
+    name: Monster Hunter
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 154
+  fields:
+    name: MusicLab
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 373
+  fields:
+    name: MusicalSampling
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 335
+  fields:
+    name: N64 SDK
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 336
+  fields:
+    name: N64DD SDK
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 26
+  fields:
+    name: Native Instruments
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 91
+  fields:
+    name: NemeSys
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 349
+  fields:
+    name: Nemesys
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 339
+  fields:
+    name: News Channel
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 490
+  fields:
+    name: NieR:Automata
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 284
+  fields:
+    name: Nine Volt Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 340
+  fields:
+    name: Nintendo 3DS
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 334
+  fields:
+    name: Nintendo 64
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 87
+  fields:
+    name: Nintendo DS
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 277
+  fields:
+    name: Nintendo Land
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 337
+  fields:
+    name: Nintendo Wii
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 343
+  fields:
+    name: Nintendo Wii U
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 137
+  fields:
+    name: 'Notice:'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 104
+  fields:
+    name: Novation
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 135
+  fields:
+    name: OKAMI
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 292
+  fields:
+    name: Octo Expansion
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 493
+  fields:
+    name: Oninaki
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 141
+  fields:
+    name: Optical Media International
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 416
+  fields:
+    name: Orchestral Tools
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 341
+  fields:
+    name: Original
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 462
+  fields:
+    name: PS1 Version
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 435
+  fields:
+    name: Pandemonium!
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 436
+  fields:
+    name: Pandemonium! 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 175
+  fields:
+    name: Paper Mario
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 480
+  fields:
+    name: Parasite Eve
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 153
+  fields:
+    name: Performance Samples
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 355
+  fields:
+    name: Pettinhouse
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 338
+  fields:
+    name: Photo Channel
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 263
+  fields:
+    name: Pikmin
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 264
+  fields:
+    name: Pikmin 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 265
+  fields:
+    name: Pikmin 3
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 267
+  fields:
+    name: Pikmin 4
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 297
+  fields:
+    name: Pilotwings
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 289
+  fields:
+    name: Plogue
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 218
+  fields:
+    name: PlugInGuru
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 130
+  fields:
+    name: Point 12
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 356
+  fields:
+    name: Pokemon Company
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 381
+  fields:
+    name: Pokémon Bank
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 387
+  fields:
+    name: Pokémon Dash
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 389
+  fields:
+    name: Pokémon Duel
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 382
+  fields:
+    name: Pokémon GO
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 384
+  fields:
+    name: Pokémon HOME
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 390
+  fields:
+    name: Pokémon Quest
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 392
+  fields:
+    name: Pokémon Ranger
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 388
+  fields:
+    name: Pokémon Rumble
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 395
+  fields:
+    name: Pokémon Sleep
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 393
+  fields:
+    name: Pokémon Smile
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 386
+  fields:
+    name: Pokémon Snap
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 399
+  fields:
+    name: Pokémon Trozei
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 394
+  fields:
+    name: Pokémon Unite
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 20
+  fields:
+    name: Polestar Magnetics
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 365
+  fields:
+    name: Premier Sound Factory
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 60
+  fields:
+    name: PrimeSounds
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 254
+  fields:
+    name: ProRec
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 108
+  fields:
+    name: Producer Loops
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 201
+  fields:
+    name: Profile Records
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 171
+  fields:
+    name: ProjectSAM
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 391
+  fields:
+    name: ProjectSam
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 75
+  fields:
+    name: Prominy
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 195
+  fields:
+    name: Propellerhead Software
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 116
+  fields:
+    name: Prosonus
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 324
+  fields:
+    name: Punch-Out!!
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 92
+  fields:
+    name: Q Up Arts
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 82
+  fields:
+    name: Q-Up Arts
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 21
+  fields:
+    name: Q-Up Arts & Sounds Amazing!
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 485
+  fields:
+    name: Q-Up Arts / Sonic Foundry
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 481
+  fields:
+    name: Racing Lagoon
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 296
+  fields:
+    name: Rankin Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 291
+  fields:
+    name: Rarefaction
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 143
+  fields:
+    name: Rarefaction / OSC
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 464
+  fields:
+    name: Raycrisis
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 269
+  fields:
+    name: ReFX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 237
+  fields:
+    name: Realitone
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 117
+  fields:
+    name: Red Earth
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 167
+  fields:
+    name: Retro
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 378
+  fields:
+    name: Reveal Sound
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 268
+  fields:
+    name: Rhythm Heaven
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 315
+  fields:
+    name: Ridge Racer 64
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 471
+  fields:
+    name: Robotrek
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 1
+  fields:
+    name: Roland
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 172
+  fields:
+    name: Roland Cloud
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 121
+  fields:
+    name: Roland?
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 460
+  fields:
+    name: SFC
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 159
+  fields:
+    name: SFX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 3
+  fields:
+    name: SNES
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 31
+  fields:
+    name: Sample Magic
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 314
+  fields:
+    name: 'Sample: ?'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 118
+  fields:
+    name: 'Sample: Acteurs Auteurs Associés'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 234
+  fields:
+    name: 'Sample: Alaska'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 306
+  fields:
+    name: 'Sample: Balatonia Gypsy Orchestra'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 202
+  fields:
+    name: 'Sample: Betty Moorer'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 66
+  fields:
+    name: 'Sample: Christopher Young'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 307
+  fields:
+    name: 'Sample: De La Soul'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 67
+  fields:
+    name: 'Sample: Dennis McCarthy'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 352
+  fields:
+    name: 'Sample: GAME FREAK'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 68
+  fields:
+    name: 'Sample: Gabriel Yared'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 447
+  fields:
+    name: 'Sample: Global Communication'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 308
+  fields:
+    name: 'Sample: Herbie Handcock'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 408
+  fields:
+    name: 'Sample: Hitoshi Sakimoto'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 489
+  fields:
+    name: 'Sample: James Brown'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 69
+  fields:
+    name: 'Sample: James Horner'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 309
+  fields:
+    name: 'Sample: Japan Air Lines'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 70
+  fields:
+    name: 'Sample: Jerry Goldsmith'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 236
+  fields:
+    name: 'Sample: Koji Kondo'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 262
+  fields:
+    name: 'Sample: Le Mystere Des'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 496
+  fields:
+    name: 'Sample: Le Mystere Des Voix Bulgares'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 310
+  fields:
+    name: 'Sample: Les Baxter'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 203
+  fields:
+    name: 'Sample: Les Baxter & 101 Strings'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 11
+  fields:
+    name: 'Sample: Lyn Collins'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 312
+  fields:
+    name: 'Sample: Malinké/Gilbert Rouget'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 106
+  fields:
+    name: 'Sample: Marika Suzuki'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 71
+  fields:
+    name: 'Sample: Mark Snow'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 311
+  fields:
+    name: 'Sample: Martin Denny'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 407
+  fields:
+    name: 'Sample: Masashi Hamauzu'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 211
+  fields:
+    name: 'Sample: Metro Goldwyn Mayer'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 16
+  fields:
+    name: 'Sample: Michael Jackson'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 497
+  fields:
+    name: 'Sample: Monks of Namgyal Monastery'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 429
+  fields:
+    name: 'Sample: Nils-Aslak Valkeapää'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 145
+  fields:
+    name: 'Sample: Nintendo'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 409
+  fields:
+    name: 'Sample: Nobuo Uematsu'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 326
+  fields:
+    name: 'Sample: Perrey and Kingsley'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 383
+  fields:
+    name: 'Sample: Pikachu Records'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 215
+  fields:
+    name: 'Sample: Pink Floyd'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 448
+  fields:
+    name: 'Sample: René Dupéré'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 213
+  fields:
+    name: 'Sample: Robin Beanland'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 101
+  fields:
+    name: 'Sample: Rush'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 449
+  fields:
+    name: 'Sample: Russell Mills / Undark'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 450
+  fields:
+    name: 'Sample: Snap!'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 204
+  fields:
+    name: 'Sample: The Ventures'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 451
+  fields:
+    name: 'Sample: Thomas Newman'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 313
+  fields:
+    name: 'Sample: Toraia Orchestra Of Algiers'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 452
+  fields:
+    name: 'Sample: Toto'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 498
+  fields:
+    name: 'Sample: Traditional Swiss Instruments'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 499
+  fields:
+    name: 'Sample: Twilight Princess'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 301
+  fields:
+    name: 'Sample: Vince Guaraldi'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 453
+  fields:
+    name: 'Sample: William Orbit'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 184
+  fields:
+    name: 'Sample: Y. Tsujiyoko & Y. Hirano'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 397
+  fields:
+    name: 'Sample: Yasunori Mitsuda'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 400
+  fields:
+    name: Sampleheads
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 99
+  fields:
+    name: Samplemodeling
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 500
+  fields:
+    name: Samplemodelling
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 157
+  fields:
+    name: Scarbee
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 469
+  fields:
+    name: Secret of Mana
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 417
+  fields:
+    name: Shamen Stems
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 361
+  fields:
+    name: Shan
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 362
+  fields:
+    name: Simon Harris
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 300
+  fields:
+    name: Snoopy Concert
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 322
+  fields:
+    name: Soma Bringer
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 56
+  fields:
+    name: Sonic Foundry
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 132
+  fields:
+    name: Sonic Foundry & Q-Up Arts
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 59
+  fields:
+    name: Sonic Foundry & Sounds Good
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 52
+  fields:
+    name: Sonic Foundry&Sounds Good
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 465
+  fields:
+    name: Sonic Foundry/INIS
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 466
+  fields:
+    name: Sonic Foundry/Voice Crystal
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 427
+  fields:
+    name: Sonic Images
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 241
+  fields:
+    name: Sonic Implants
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 165
+  fields:
+    name: Sonic Reality
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 366
+  fields:
+    name: Sonica Instruments
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 238
+  fields:
+    name: Soniccouture
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 418
+  fields:
+    name: Sonokinetic
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 253
+  fields:
+    name: Sony Records
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 7
+  fields:
+    name: Sound Ideas
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 502
+  fields:
+    name: SoundForest
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 148
+  fields:
+    name: Soundbytes
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 22
+  fields:
+    name: Sounds Good
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 125
+  fields:
+    name: Soundtrack
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 27
+  fields:
+    name: Spectrasonics
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 492
+  fields:
+    name: Spitfire
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 170
+  fields:
+    name: Spitfire Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 288
+  fields:
+    name: Splatoon
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 290
+  fields:
+    name: Splatoon 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 293
+  fields:
+    name: Splatoon 3
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 209
+  fields:
+    name: Splice Sounds
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 250
+  fields:
+    name: Star Fox 64 3D
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 252
+  fields:
+    name: Star Fox Guard
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 251
+  fields:
+    name: Star Fox Zero
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 249
+  fields:
+    name: Star Fox ★
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 329
+  fields:
+    name: Steel Diver
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 65
+  fields:
+    name: Steinberg
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 486
+  fields:
+    name: Steinberg & Sounds Good
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 487
+  fields:
+    name: Steinberg & Wizoo
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 410
+  fields:
+    name: 'Stems: Emi Evans'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 375
+  fields:
+    name: 'Stems: Go Ichinose'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 423
+  fields:
+    name: 'Stems: Hijiri Kuwano'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 424
+  fields:
+    name: 'Stems: Jason Charles Miller'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 242
+  fields:
+    name: 'Stems: Jill'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 206
+  fields:
+    name: 'Stems: Jun Senoue'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 425
+  fields:
+    name: 'Stems: Mary Kate Jiménez-Wall'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 411
+  fields:
+    name: 'Stems: Nami Nakagawa'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 412
+  fields:
+    name: 'Stems: Susan Calloway'
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 357
+  fields:
+    name: Steven Slate Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 146
+  fields:
+    name: Streamed Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 374
+  fields:
+    name: Strezov Sampling
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 126
+  fields:
+    name: Strider 2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 233
+  fields:
+    name: Studio Electronics
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 299
+  fields:
+    name: Stunt Race FX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 323
+  fields:
+    name: Style Savvy
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 304
+  fields:
+    name: Sutte Hakkun ★
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 93
+  fields:
+    name: Sweetwater
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 379
+  fields:
+    name: Synapse Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 95
+  fields:
+    name: Synthogy
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 169
+  fields:
+    name: Tapspace
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 332
+  fields:
+    name: Tetris 99
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 303
+  fields:
+    name: Tetrisphere
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 433
+  fields:
+    name: The Horde
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 327
+  fields:
+    name: The Last Story
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 456
+  fields:
+    name: The Mod Archive
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 305
+  fields:
+    name: The New Tetris
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 34
+  fields:
+    name: The Punisher
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 437
+  fields:
+    name: The Unholy War
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 260
+  fields:
+    name: Toei Music Publishing
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 434
+  fields:
+    name: Tomb Raider
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 278
+  fields:
+    name: Tomodachi Life
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 97
+  fields:
+    name: Toontrack
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 111
+  fields:
+    name: U.N. Squadron
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 422
+  fields:
+    name: UJAM
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 96
+  fields:
+    name: UVI
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 23
+  fields:
+    name: Ueberschall
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 131
+  fields:
+    name: UltimateSoundBank
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 484
+  fields:
+    name: Unlimited Saga
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 225
+  fields:
+    name: Unused
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 363
+  fields:
+    name: Unused Music
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 346
+  fields:
+    name: Unused Samples
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 483
+  fields:
+    name: Vagrant Story
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 495
+  fields:
+    name: Various
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 110
+  fields:
+    name: Vengeance
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 76
+  fields:
+    name: Vengeance Sound
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 321
+  fields:
+    name: Vengeance Sounds
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 160
+  fields:
+    name: Victor
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 151
+  fields:
+    name: Vienna Symphonic Library
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 182
+  fields:
+    name: Vir2
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 178
+  fields:
+    name: VirSyn
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 477
+  fields:
+    name: Voice Crystal
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 224
+  fields:
+    name: Wario Land 4
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 226
+  fields:
+    name: Wario World
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 302
+  fields:
+    name: Wave Race 64
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 380
+  fields:
+    name: Waves
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 272
+  fields:
+    name: Wii Fit
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 275
+  fields:
+    name: Wii Fit Plus
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 280
+  fields:
+    name: Wii Fit U
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 274
+  fields:
+    name: Wii Music
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 276
+  fields:
+    name: Wii Party
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 279
+  fields:
+    name: Wii Party U
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 271
+  fields:
+    name: Wii Play
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 270
+  fields:
+    name: Wii Sports
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 179
+  fields:
+    name: Wizoo
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 29
+  fields:
+    name: XLN Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 479
+  fields:
+    name: Xenogears
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 61
+  fields:
+    name: Xfer Records
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 156
+  fields:
+    name: YMCK
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 8
+  fields:
+    name: Yamaha
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 9
+  fields:
+    name: Yamaha?
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 180
+  fields:
+    name: Yellow Tools
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 219
+  fields:
+    name: Yoshi's Safari
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 222
+  fields:
+    name: Yoshi's Story
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 258
+  fields:
+    name: ZTime Audio
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 24
+  fields:
+    name: Zero-G
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 350
+  fields:
+    name: Zero-G?
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 396
+  fields:
+    name: anything
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 369
+  fields:
+    name: bigsquid2001
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 210
+  fields:
+    name: e-Instruments
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 14
+  fields:
+    name: e-LAB
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 478
+  fields:
+    name: e-Lab
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 317
+  fields:
+    name: e-Reader
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 158
+  fields:
+    name: e-instruments
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 351
+  fields:
+    name: eLAB
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 454
+  fields:
+    name: em:t
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 354
+  fields:
+    name: iZotope
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 81
+  fields:
+    name: inis
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 333
+  fields:
+    name: modartt
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 318
+  fields:
+    name: nintendogs
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 64
+  fields:
+    name: reFX
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 86
+  fields:
+    name: sonicprojects
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 344
+  fields:
+    name: that comes up)
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 85
+  fields:
+    name: u-he
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: sources.Company
+  pk: 377
+  fields:
+    name: xfer Records
+    notes: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'

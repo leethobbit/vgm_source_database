@@ -60,7 +60,10 @@ RUN chmod +x /start
 
 # Build Tailwind CSS
 RUN if [ -f "package.json" ]; then \
-  npm install && \
+  echo "Installing npm dependencies..." && \
+  npm install --legacy-peer-deps && \
+  echo "Building CSS..." && \
+  mkdir -p ./vgm_source_database/static/css && \
   npm run build:css; \
   fi
 

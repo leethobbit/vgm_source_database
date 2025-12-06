@@ -793,3 +793,203 @@ All Cursor rules have been updated to reflect the new tech stack: Django + Alpin
 - Maintains readability with light text (#f3f4f6) on dark background
 - Consistent styling across all form element types
 
+## 2024-12-19 - Added CSV to YAML Conversion Script
+
+**Created Files:**
+- `convert_csv_to_yaml.py` - CSV conversion script
+  - Processes CSV files matching `NEWER VGM Sound Sources - *.csv`
+  - Extracts GameTag names from filenames
+  - Detects game title rows and groups sound sources between them
+  - Handles release dates in Product column
+  - Generates YAML fixtures in dependency order
+  - Creates skipped lines report
+
+**Key Features:**
+- Game title detection from "Company/Manufacturer" column
+- Sound source parsing from "Program" column
+- Relationship resolution for Companies, Products, Banks, Games
+- Smart skipping of section headers and invalid rows
+
+## 2024-12-19 - Added Import Data Functionality to GUI
+
+**Created Files:**
+- `vgm_source_database/forms.py` - Import form with file upload
+  - `ImportDataForm` with YAML file upload field
+  - Dry-run checkbox for validation
+- `vgm_source_database/urls.py` - URL routing for data management
+  - Import route at `/import/` with namespace `data`
+- `vgm_source_database/templates/pages/import_data.html` - Import page template
+  - File upload form with instructions
+  - Dry-run validation option
+  - Success/error message display
+
+**Modified Files:**
+- `vgm_source_database/views.py` - Added `ImportDataView`
+  - FormView for handling file uploads
+  - Requires authentication (LoginRequiredMixin)
+  - Supports dry-run validation
+  - Performs actual import using `loaddata` command
+  - Shows success/error messages
+- `vgm_source_database/templates/base.html` - Added Data Management section
+  - New section below "Top Categories" in sidebar
+  - "Import YAML" button (authenticated users only)
+  - Consistent styling with existing sidebar
+- `config/urls.py` - Added import URL routing
+
+**Key Features:**
+- File upload through web interface
+- Dry-run validation before import
+- Authentication required
+- Clear error messages
+- Consistent dark theme styling
+
+## 2024-12-19 - Fixed Fixture Import Error: Model Reference Format
+
+**Problem:**
+Import was failing with "too many values to unpack (expected 2)" error. The dry-run validation passed, but actual import failed because Django's fixture loader expects model references in format `app_label.ModelName` (2 parts), but the converter was generating `vgm_source_database.app.ModelName` (3 parts).
+
+**Solution:**
+1. Fixed model reference format in `convert_csv_to_yaml.py`:
+   - All model references changed from `vgm_source_database.app.Model` to `app.Model`
+   - Updated 6 model references: GameTag, Game, Company, Product, Bank, SoundSource
+
+2. Enhanced dry-run validation in `ImportDataView`:
+   - Now validates Django fixture format, not just YAML syntax
+   - Checks for required keys (`model`, `pk`, `fields`)
+   - Validates model format (exactly 2 parts: `app_label.ModelName`)
+   - Validates `fields` is a dictionary
+   - Provides specific error messages with item index
+
+**Files Modified:**
+- `convert_csv_to_yaml.py` - Fixed model reference formats
+- `vgm_source_database/views.py` - Enhanced dry-run validation
+
+**Impact:**
+- Newly generated fixtures will use correct format and import successfully
+- Existing fixtures with wrong format need to be regenerated
+- Dry-run now catches format errors before attempting import
+
+## 2024-12-19 - Fixed Missing created_at and updated_at Fields in Fixtures
+
+**Problem:**
+Import was failing with "null value in column 'created_at' violates not-null constraint". Django's `loaddata` doesn't auto-populate `auto_now_add`/`auto_now` fields when missing from fixtures.
+
+**Solution:**
+1. Added `datetime` and `timezone` imports to converter
+2. Added `created_at` and `updated_at` fields to all model fixtures:
+   - GameTag, Game, Company, Product, Bank, SoundSource
+3. Used UTC timezone-aware datetime in ISO format
+
+**Files Modified:**
+- `convert_csv_to_yaml.py` - Added timestamp fields to all fixture generation
+
+**Impact:**
+- All generated fixtures now include required timestamp fields
+- Import works without constraint violations
+- Timestamps use proper ISO format with UTC timezone
+
+## 2024-12-19 - Fixed Unicode Characters in GameTag Slugs
+
+**Problem:**
+Import failed with URL reverse error because slug "pokémon" contains Unicode character (é) that doesn't match URL pattern `[-a-zA-Z0-9_]+`.
+
+**Solution:**
+1. Added `unicodedata` import for Unicode normalization
+2. Enhanced `slugify()` method to:
+   - Normalize Unicode to ASCII (NFKD normalization)
+   - Remove diacritics (é → e, ñ → n)
+   - Ensure only ASCII alphanumeric, underscore, hyphen characters
+
+**Files Modified:**
+- `convert_csv_to_yaml.py` - Enhanced slugify with Unicode normalization
+
+**Impact:**
+- Unicode characters converted to ASCII in slugs
+- "pokémon" → "pokemon" (matches URL pattern)
+- Slugs work with Django URL routing
+
+**Created Files:**
+- `config/management/commands/fix_gametag_slugs.py` - Management command to fix existing slugs
+- `fix_slugs_now.py` - Quick fix script for immediate use
+
+**Usage:**
+- Quick fix: `python fix_slugs_now.py`
+- Management command: `python manage.py fix_gametag_slugs [--dry-run]`
+
+## 2024-12-19 - Fixed Missing Fallback Products in Fixtures
+
+**Problem:**
+Sources import failed with foreign key constraint violation. SoundSource referenced Product pk=1719 that didn't exist because fallback products were created after products_yaml generation.
+
+**Solution:**
+1. Moved fallback product creation from `generate_yaml()` to `resolve_relationships()`
+2. Fallback products now created before products_yaml generation
+3. All products (including fallbacks) included in YAML fixture
+
+**Files Modified:**
+- `convert_csv_to_yaml.py` - Moved fallback product creation earlier in process
+
+**Impact:**
+- All fallback products included in fixtures
+- Foreign key constraints satisfied
+- SoundSources can reference fallback products that exist
+
+## 2024-12-19 - Added Combined Fixture File Option
+
+**Feature:**
+Added support for generating a single combined fixture file containing all models in dependency order.
+
+**Solution:**
+1. Added `combined_file` parameter to CSVConverter
+2. Modified generate_yaml() to combine all fixtures when enabled
+3. Added `--combined` command-line argument
+4. Combined file named `all_fixtures.yaml` with all models in order
+
+**Usage:**
+```bash
+python convert_csv_to_yaml.py --combined
+```
+
+**Files Modified:**
+- `convert_csv_to_yaml.py` - Added combined file support
+
+**Impact:**
+- Single file import instead of multiple files
+- All models in correct dependency order
+- Simplified import process
+
+## 2024-12-19 - Added Duplicate Handling to Importer
+
+**Feature:**
+Added duplicate handling options to prevent import failures when duplicates are encountered.
+
+**Solution:**
+1. Created custom import function in `import_utils.py`
+2. Added duplicate_handling option to form and command
+3. Supports "skip" (default) and "overwrite" modes
+4. Properly handles ManyToMany and ForeignKey relationships
+5. Provides detailed import statistics
+
+**Files Created:**
+- `vgm_source_database/import_utils.py` - Custom import with duplicate handling
+
+**Files Modified:**
+- `vgm_source_database/forms.py` - Added duplicate_handling field
+- `vgm_source_database/views.py` - Uses custom import function
+- `config/management/commands/import_data.py` - Added --duplicate-handling option
+
+**Usage:**
+```bash
+# Skip duplicates (default)
+python manage.py import_data --file fixtures/all_fixtures.yaml
+
+# Overwrite duplicates
+python manage.py import_data --file fixtures/all_fixtures.yaml --duplicate-handling overwrite
+```
+
+**Impact:**
+- Imports no longer fail on duplicates
+- Users can choose skip or overwrite behavior
+- Detailed statistics provided
+- Better error handling
+

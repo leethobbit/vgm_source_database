@@ -1,0 +1,13 @@
+Starting conversion...
+CSV directory: dev_reference
+Found 6 CSV files
+Processing 6 files...
+
+Conversion complete!
+  GameTags: 6
+  Companies: 502
+  Products: 1911
+  Banks: 6592
+  Games: 878
+  SoundSources: 25613
+  Skipped lines: 1720

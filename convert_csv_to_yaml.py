@@ -6,7 +6,9 @@ Game titles appear as rows, and sound sources appear as rows between game titles
 import csv
 import re
 import sys
+import unicodedata
 from collections import defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -20,16 +22,18 @@ except ImportError:
 class CSVConverter:
     """Convert CSV files to YAML fixtures."""
 
-    def __init__(self, csv_dir: str, output_dir: str = "fixtures"):
+    def __init__(self, csv_dir: str, output_dir: str = "fixtures", combined_file: bool = False):
         """Initialize converter.
 
         Args:
             csv_dir: Directory containing CSV files
             output_dir: Directory to write YAML files
+            combined_file: If True, generate a single combined fixture file instead of separate files
         """
         self.csv_dir = Path(csv_dir)
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.combined_file = combined_file
 
         # Track all objects for relationship resolution
         self.gametags: Dict[str, Dict] = {}  # name -> {pk, slug}
@@ -55,17 +59,27 @@ class CSVConverter:
         self.all_sound_sources: List[Dict] = []
 
     def slugify(self, text: str) -> str:
-        """Convert text to slug.
+        """Convert text to slug, normalizing Unicode characters to ASCII.
 
         Args:
             text: Text to slugify
 
         Returns:
-            Slugified text
+            Slugified text with Unicode characters normalized to ASCII
         """
+        # Normalize Unicode characters to their closest ASCII equivalents
+        # This converts é -> e, ñ -> n, etc.
+        text = unicodedata.normalize("NFKD", text)
+        # Remove combining characters (diacritics) and keep only ASCII
+        text = text.encode("ascii", "ignore").decode("ascii")
+        # Convert to lowercase and strip whitespace
         text = text.lower().strip()
+        # Remove any remaining non-word characters (keep only alphanumeric, underscore, hyphen)
         text = re.sub(r"[^\w\s-]", "", text)
+        # Replace whitespace and multiple hyphens with single hyphen
         text = re.sub(r"[-\s]+", "-", text)
+        # Remove leading/trailing hyphens
+        text = text.strip("-")
         return text
 
     def is_game_title_row(self, row: Dict[str, str]) -> bool:
@@ -364,18 +378,52 @@ class CSVConverter:
                     self.banks[key] = self.bank_pk
                     self.bank_pk += 1
 
+        # Create fallback products for sound sources that don't have a product or bank
+        # This must happen before generating YAML so all products are included
+        for ss in self.all_sound_sources:
+            # Check if this sound source has a valid bank or product
+            has_bank = False
+            has_product = False
+
+            # Check if it has a bank (requires bank, product, and company)
+            if ss["bank"] and ss["product"] and ss["company"]:
+                bank_key = (ss["bank"], ss["product"], ss["company"])
+                has_bank = bank_key in self.banks
+
+            # Check if it has a product (requires product and company)
+            if ss["product"] and ss["company"]:
+                product_key = (ss["product"], ss["company"])
+                has_product = product_key in self.products
+
+            # If no bank or product, create fallback product from company
+            if not has_bank and not has_product:
+                if ss["company"]:
+                    company_name = ss["company"]
+                    if company_name in self.companies:
+                        # Use company as product fallback
+                        product_key = (company_name, company_name)
+                        if product_key not in self.products:
+                            self.products[product_key] = self.product_pk
+                            self.product_pk += 1
+
     def generate_yaml(self) -> None:
         """Generate YAML fixture files."""
+        # Get current datetime for created_at and updated_at fields
+        # Use UTC timezone-aware datetime in ISO format (Django's preferred format)
+        now = datetime.now(timezone.utc).isoformat()
+        
         # 1. GameTags
         gametags_yaml = []
         for name, data in sorted(self.gametags.items()):
             gametags_yaml.append({
-                "model": "vgm_source_database.games.GameTag",
+                "model": "games.GameTag",
                 "pk": data["pk"],
                 "fields": {
                     "name": name,
                     "slug": data["slug"],
                     "description": "",
+                    "created_at": now,
+                    "updated_at": now,
                 },
             })
 
@@ -383,11 +431,13 @@ class CSVConverter:
         companies_yaml = []
         for name, pk in sorted(self.companies.items()):
             companies_yaml.append({
-                "model": "vgm_source_database.sources.Company",
+                "model": "sources.Company",
                 "pk": pk,
                 "fields": {
                     "name": name,
                     "notes": "",
+                    "created_at": now,
+                    "updated_at": now,
                 },
             })
 
@@ -397,12 +447,14 @@ class CSVConverter:
             company_pk = self.companies.get(company_name)
             if company_pk:
                 products_yaml.append({
-                    "model": "vgm_source_database.sources.Product",
+                    "model": "sources.Product",
                     "pk": pk,
                     "fields": {
                         "name": name,
                         "company": company_pk,
                         "notes": "",
+                        "created_at": now,
+                        "updated_at": now,
                     },
                 })
 
@@ -413,12 +465,14 @@ class CSVConverter:
             product_pk = self.products.get(product_key)
             if product_pk:
                 banks_yaml.append({
-                    "model": "vgm_source_database.sources.Bank",
+                    "model": "sources.Bank",
                     "pk": pk,
                     "fields": {
                         "name": name,
                         "product": product_pk,
                         "notes": "",
+                        "created_at": now,
+                        "updated_at": now,
                     },
                 })
 
@@ -435,7 +489,7 @@ class CSVConverter:
                         tag_pks.append(self.gametags[tag_name]["pk"])
 
                 games_yaml.append({
-                    "model": "vgm_source_database.games.Game",
+                    "model": "games.Game",
                     "pk": game_pk,
                     "fields": {
                         "title": title,
@@ -444,6 +498,8 @@ class CSVConverter:
                         "album_artists": [],
                         "tags": tag_pks,
                         "notes": game_data["notes"] or "",
+                        "created_at": now,
+                        "updated_at": now,
                     },
                 })
 
@@ -462,23 +518,16 @@ class CSVConverter:
                 product_key = (ss["product"], ss["company"])
                 product_pk = self.products.get(product_key)
 
-            # At least one must be set
-            if not bank_pk and not product_pk:
-                # Try to create product from company if available
-                if ss["company"]:
-                    company_name = ss["company"]
-                    if company_name in self.companies:
-                        # Use company as product fallback
-                        product_key = (company_name, company_name)
-                        if product_key not in self.products:
-                            self.products[product_key] = self.product_pk
-                            product_pk = self.product_pk
-                            self.product_pk += 1
-                        else:
-                            product_pk = self.products[product_key]
+            # If no product found, try fallback (should already exist from resolve_relationships)
+            if not product_pk and ss["company"]:
+                company_name = ss["company"]
+                if company_name in self.companies:
+                    # Use company as product fallback (already created in resolve_relationships)
+                    product_key = (company_name, company_name)
+                    product_pk = self.products.get(product_key)
 
             if not bank_pk and not product_pk:
-                # Skip this sound source - invalid
+                # Skip this sound source - invalid (no company to create fallback)
                 continue
 
             # Resolve game PKs
@@ -488,7 +537,7 @@ class CSVConverter:
                     game_pks.append(self.games[game_title])
 
             soundsources_yaml.append({
-                "model": "vgm_source_database.sources.SoundSource",
+                "model": "sources.SoundSource",
                 "pk": self.soundsource_pk,
                 "fields": {
                     "name": ss["name"],
@@ -498,25 +547,49 @@ class CSVConverter:
                     "games": game_pks,
                     "songs": [],
                     "notes": ss["notes"] or "",
+                    "created_at": now,
+                    "updated_at": now,
                 },
             })
             self.soundsource_pk += 1
 
         # Write YAML files
-        files_to_write = [
-            ("games_gametags.yaml", gametags_yaml),
-            ("sources_companies.yaml", companies_yaml),
-            ("sources_products.yaml", products_yaml),
-            ("sources_banks.yaml", banks_yaml),
-            ("games_games.yaml", games_yaml),
-            ("sources_soundsources.yaml", soundsources_yaml),
-        ]
-
-        for filename, data in files_to_write:
-            filepath = self.output_dir / filename
+        if self.combined_file:
+            # Generate single combined file with all fixtures in dependency order
+            combined_yaml = []
+            combined_yaml.extend(gametags_yaml)
+            combined_yaml.extend(companies_yaml)
+            combined_yaml.extend(products_yaml)
+            combined_yaml.extend(banks_yaml)
+            combined_yaml.extend(games_yaml)
+            combined_yaml.extend(soundsources_yaml)
+            
+            filepath = self.output_dir / "all_fixtures.yaml"
             with open(filepath, "w", encoding="utf-8") as f:
-                yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
-            print(f"Generated: {filepath} ({len(data)} entries)")
+                yaml.dump(combined_yaml, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+            print(f"Generated: {filepath} ({len(combined_yaml)} total entries)")
+            print(f"  - GameTags: {len(gametags_yaml)}")
+            print(f"  - Companies: {len(companies_yaml)}")
+            print(f"  - Products: {len(products_yaml)}")
+            print(f"  - Banks: {len(banks_yaml)}")
+            print(f"  - Games: {len(games_yaml)}")
+            print(f"  - SoundSources: {len(soundsources_yaml)}")
+        else:
+            # Generate separate files
+            files_to_write = [
+                ("games_gametags.yaml", gametags_yaml),
+                ("sources_companies.yaml", companies_yaml),
+                ("sources_products.yaml", products_yaml),
+                ("sources_banks.yaml", banks_yaml),
+                ("games_games.yaml", games_yaml),
+                ("sources_soundsources.yaml", soundsources_yaml),
+            ]
+
+            for filename, data in files_to_write:
+                filepath = self.output_dir / filename
+                with open(filepath, "w", encoding="utf-8") as f:
+                    yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+                print(f"Generated: {filepath} ({len(data)} entries)")
 
         # Write skipped lines report
         if self.skipped_lines:
@@ -598,14 +671,35 @@ class CSVConverter:
 
 
 if __name__ == "__main__":
+    import argparse
     import traceback
     
+    parser = argparse.ArgumentParser(
+        description="Convert CSV files to YAML fixtures for VGM Source Database"
+    )
+    parser.add_argument(
+        "--csv-dir",
+        type=str,
+        default="dev_reference",
+        help="Directory containing CSV files (default: dev_reference)",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default="fixtures",
+        help="Directory to write YAML files (default: fixtures)",
+    )
+    parser.add_argument(
+        "--combined",
+        action="store_true",
+        help="Generate a single combined fixture file (all_fixtures.yaml) instead of separate files",
+    )
+    
+    args = parser.parse_args()
+    
     try:
-        csv_dir = "dev_reference"
-        output_dir = "fixtures"
-        
         print("Initializing converter...")
-        converter = CSVConverter(csv_dir, output_dir)
+        converter = CSVConverter(args.csv_dir, args.output_dir, combined_file=args.combined)
         
         print("Starting conversion...")
         converter.convert()
@@ -617,7 +711,7 @@ if __name__ == "__main__":
         traceback.print_exc()
         
         # Write error to file
-        error_file = Path("fixtures") / "conversion_error.txt"
+        error_file = Path(args.output_dir) / "conversion_error.txt"
         error_file.parent.mkdir(exist_ok=True)
         with open(error_file, "w", encoding="utf-8") as f:
             f.write(f"ERROR: {e}\n")

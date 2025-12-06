@@ -81,6 +81,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    "config",  # Project config app (for management commands)
     "vgm_source_database.users",
     "vgm_source_database.sources",
     "vgm_source_database.games",

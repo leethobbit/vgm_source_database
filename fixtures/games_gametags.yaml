@@ -1,0 +1,48 @@
+- model: games.GameTag
+  pk: 1
+  fields:
+    name: Capcom
+    slug: capcom
+    description: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: games.GameTag
+  pk: 2
+  fields:
+    name: Mario
+    slug: mario
+    description: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: games.GameTag
+  pk: 3
+  fields:
+    name: Nintendo
+    slug: nintendo
+    description: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: games.GameTag
+  pk: 4
+  fields:
+    name: Pokémon
+    slug: pokémon
+    description: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: games.GameTag
+  pk: 5
+  fields:
+    name: Square-Enix
+    slug: square-enix
+    description: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
+- model: games.GameTag
+  pk: 6
+  fields:
+    name: Zelda
+    slug: zelda
+    description: ''
+    created_at: '2025-12-06T00:11:34.757513+00:00'
+    updated_at: '2025-12-06T00:11:34.757513+00:00'
