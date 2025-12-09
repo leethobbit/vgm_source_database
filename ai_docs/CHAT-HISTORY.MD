@@ -1294,3 +1294,53 @@ Added pagination (15 entries per page) and client-side search functionality with
 - Better user experience with instant search filtering
 - Consistent pagination and search UI across all list views
 
+## 2024-12-19 - Added Game-Specific Comments for Sound Sources
+
+### User Request
+The Sound Source model has a notes field. Realistically, we want that field (or another similar field) to be unique per Game. So if I have a SoundSource called Slap Bass 01, and it appears in 20 Games, there should be 20 unique Notes fields, one for each game. What can be done to accomplish this? A new field (Song Comments) is fine instead of replacing the current field.
+
+### Response
+Implemented a through model solution to allow game-specific comments for each SoundSource-Game relationship. This allows each SoundSource to have unique comments per Game while keeping the general `notes` field on SoundSource for overall notes.
+
+**Solution:**
+- Created `SoundSourceGame` through model with `comments` field (labeled as "Song Comments")
+- Updated `SoundSource.games` ManyToManyField to use the through model
+- Updated admin interface with inline admin for managing game relationships and comments
+- Updated templates to display game-specific comments
+- Maintained backward compatibility with existing `notes` field on SoundSource
+
+**Key Features:**
+- **Through Model**: `SoundSourceGame` links SoundSource and Game with unique comments per relationship
+- **Unique Constraint**: Each SoundSource-Game combination can only have one relationship (enforced by unique_together)
+- **Admin Interface**: TabularInline allows easy management of game relationships and comments
+- **Template Display**: SoundSource detail page shows each game with its specific comments
+- **Backward Compatible**: Existing `notes` field on SoundSource remains for general notes
+
+**Files Modified:**
+- `vgm_source_database/sources/models.py`
+  - Added `SoundSourceGame` through model with `comments` field
+  - Updated `SoundSource.games` to use `through="SoundSourceGame"`
+- `vgm_source_database/sources/admin.py`
+  - Added `SoundSourceGameInline` for managing relationships
+  - Updated `SoundSourceAdmin` to use inline instead of filter_horizontal for games
+  - Added `SoundSourceGameAdmin` for direct management of relationships
+- `vgm_source_database/templates/sources/soundsource_detail.html`
+  - Updated to display game-specific comments using `game_relationships` related name
+  - Shows comments below each game title when present
+
+**Database Changes:**
+- New `SoundSourceGame` table created via migration
+- Existing SoundSource-Game relationships need to be migrated (migration will handle this)
+- `comments` field stores game-specific notes/comments
+
+**Usage:**
+- In Django admin: Use the inline form on SoundSource edit page to add games and set comments
+- In templates: Access via `sound_source.game_relationships.all` to get relationships with comments
+- In code: Use `SoundSourceGame.objects.create(sound_source=ss, game=g, comments="...")` to create relationships with comments
+
+**Result:**
+- Each SoundSource can now have unique comments per Game
+- General `notes` field remains for overall SoundSource notes
+- Admin interface provides easy management of game relationships and comments
+- Templates display game-specific comments when viewing SoundSource details
+

@@ -96,6 +96,39 @@ class Bank(models.Model):
         return reverse("sources:bank_detail", kwargs={"pk": self.pk})
 
 
+class SoundSourceGame(models.Model):
+    """Through model for SoundSource-Game relationship with game-specific comments."""
+
+    sound_source = models.ForeignKey(
+        "SoundSource",
+        on_delete=models.CASCADE,
+        related_name="game_relationships",
+        verbose_name=_("Sound Source"),
+    )
+    game = models.ForeignKey(
+        "games.Game",
+        on_delete=models.CASCADE,
+        related_name="sound_source_relationships",
+        verbose_name=_("Game"),
+    )
+    comments = models.TextField(
+        _("Song Comments"),
+        blank=True,
+        help_text=_("Game-specific comments about this sound source."),
+    )
+    created_at = models.DateTimeField(_("Created at"), auto_now_add=True)
+    updated_at = models.DateTimeField(_("Updated at"), auto_now=True)
+
+    class Meta:
+        verbose_name = _("Sound Source Game")
+        verbose_name_plural = _("Sound Source Games")
+        unique_together = [["sound_source", "game"]]
+        ordering = ["game__title", "sound_source__name"]
+
+    def __str__(self) -> str:
+        return f"{self.sound_source.name} - {self.game.title}"
+
+
 class SoundSource(models.Model):
     """Sound source (sample, patch, etc.) from a bank or product."""
 
@@ -124,6 +157,7 @@ class SoundSource(models.Model):
     )
     games = models.ManyToManyField(
         "games.Game",
+        through="SoundSourceGame",
         related_name="sound_sources",
         blank=True,
         verbose_name=_("Games"),

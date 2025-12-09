@@ -1155,3 +1155,44 @@ Added pagination (15 entries per page) and client-side search functionality with
 - Reduced server load with client-side filtering
 - Enhanced usability for large datasets
 
+## 2024-12-19 - Added Game-Specific Comments for Sound Sources
+
+**Modified Files:**
+- `vgm_source_database/sources/models.py`
+  - Added `SoundSourceGame` through model with `comments` field (labeled "Song Comments")
+  - Updated `SoundSource.games` ManyToManyField to use `through="SoundSourceGame"`
+  - Through model includes: `sound_source`, `game`, `comments`, `created_at`, `updated_at`
+  - Unique constraint on `(sound_source, game)` ensures one relationship per pair
+- `vgm_source_database/sources/admin.py`
+  - Added `SoundSourceGameInline` (TabularInline) for managing game relationships
+  - Updated `SoundSourceAdmin` to use inline instead of `filter_horizontal` for games
+  - Added `SoundSourceGameAdmin` for direct management of relationships
+  - Inline allows setting comments when adding games to sound sources
+- `vgm_source_database/templates/sources/soundsource_detail.html`
+  - Updated Games section to use `game_relationships` related name
+  - Displays game-specific comments below each game title when present
+  - Maintains existing styling with enhanced layout for comments
+
+**Key Features:**
+- **Through Model**: `SoundSourceGame` enables game-specific comments per SoundSource
+- **Unique Comments**: Each SoundSource-Game pair can have unique comments
+- **Admin Interface**: Inline admin makes it easy to manage relationships and comments
+- **Template Display**: Shows game-specific comments on SoundSource detail page
+- **Backward Compatible**: Existing `notes` field on SoundSource remains unchanged
+
+**Database Schema:**
+- New `sources_soundsourcegame` table created
+- Fields: `id`, `sound_source_id`, `game_id`, `comments`, `created_at`, `updated_at`
+- Unique constraint: `(sound_source_id, game_id)`
+
+**Migration Required:**
+- Run `python manage.py makemigrations sources` to create migration
+- Run `python manage.py migrate` to apply changes
+- Existing SoundSource-Game relationships will be preserved in the new through table
+
+**Usage Notes:**
+- Access relationships: `sound_source.game_relationships.all` (returns SoundSourceGame instances)
+- Access games: `sound_source.games.all` (still works, returns Game instances)
+- Create with comments: `SoundSourceGame.objects.create(sound_source=ss, game=g, comments="...")`
+- Admin: Use inline form on SoundSource edit page to manage games and comments
+
