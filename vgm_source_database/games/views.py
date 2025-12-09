@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import models
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
 
@@ -11,6 +12,21 @@ class GameTagListView(ListView):
     model = GameTag
     context_object_name = "game_tags"
     template_name = "games/gametag_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered GameTag queryset.
+        """
+        queryset = super().get_queryset()
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search) | models.Q(description__icontains=search)
+            )
+        return queryset
 
 
 class GameTagDetailView(DetailView):
@@ -54,6 +70,34 @@ class GameListView(ListView):
     model = Game
     context_object_name = "games"
     template_name = "games/game_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered Game queryset with prefetched tags.
+        """
+        queryset = super().get_queryset().prefetch_related("tags")
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            # Try to convert search to integer for year search
+            try:
+                search_year = int(search)
+                queryset = queryset.filter(
+                    models.Q(title__icontains=search)
+                    | models.Q(release_year=search_year)
+                    | models.Q(notes__icontains=search)
+                    | models.Q(tags__name__icontains=search)
+                ).distinct()
+            except ValueError:
+                # If search is not a number, don't search by year
+                queryset = queryset.filter(
+                    models.Q(title__icontains=search)
+                    | models.Q(notes__icontains=search)
+                    | models.Q(tags__name__icontains=search)
+                ).distinct()
+        return queryset
 
 
 class GameDetailView(DetailView):

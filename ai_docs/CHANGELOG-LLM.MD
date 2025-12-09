@@ -993,3 +993,165 @@ python manage.py import_data --file fixtures/all_fixtures.yaml --duplicate-handl
 - Detailed statistics provided
 - Better error handling
 
+## 2025-01-XX - Fixed Foreign Key Resolution in YAML Import
+
+**Issue:**
+When importing YAML fixtures for products, the import was failing with errors like:
+```
+Item 1 (sources.Product pk=1485): [ValueError] Cannot assign "419": "Product.company" must be a "Company" instance.
+```
+
+**Root Cause:**
+The `import_utils.py` function was passing raw primary key values (integers) directly to Django's `create()` method for ForeignKey fields. Django requires actual model instances for ForeignKey fields, not just primary key values.
+
+**Solution:**
+Modified `import_fixture_file()` in `vgm_source_database/import_utils.py` to:
+1. Detect ForeignKey fields during field processing
+2. Look up the related model instance using the primary key value
+3. Replace the primary key value with the actual model instance before creating/updating objects
+4. Also properly resolve ManyToMany field primary keys to instances
+
+**Files Modified:**
+- `vgm_source_database/import_utils.py` - Added ForeignKey and ManyToMany resolution logic
+  - Added import for `ForeignKey` from `django.db.models`
+  - Added logic to detect ForeignKey fields and resolve them to model instances
+  - Updated ManyToMany handling to resolve primary keys to instances
+
+**Technical Details:**
+- ForeignKey fields are now resolved by looking up the related model instance: `related_model.objects.get(pk=value)`
+- ManyToMany fields are resolved using: `related_model.objects.filter(pk__in=value)`
+- Null foreign keys are properly handled (set to `None`)
+- If a related object doesn't exist, the original value is kept (Django will provide a proper error message)
+
+**Impact:**
+- YAML fixture imports now work correctly with ForeignKey relationships
+- Products can be imported with proper Company references
+- ManyToMany relationships are properly resolved
+- Better error handling for missing related objects
+
+**Follow-up Fix:**
+Changed ForeignKey detection from `isinstance(field, ForeignKey)` to `hasattr(field, 'related_model')` for more robust detection. This ensures all ForeignKey-like fields (including OneToOneField) are properly resolved, fixing issues with SoundSource imports where `bank` and `product` fields were not being resolved.
+
+## 2025-01-XX - Created CSV Template from Example YAML Fixtures
+
+**Feature:**
+Created a comprehensive CSV file containing all example fixture data in a single file, structured for easy conversion to YAML format.
+
+**Created Files:**
+- `fixtures/examples/all_fixtures.csv` - Single CSV file with all example fixtures
+  - Contains all 8 model types: GameTag, Company, Product, Bank, Person, Game, Song, SoundSource
+  - All columns for all models included
+  - Many-to-many fields use pipe-separated values (e.g., `1|2|3`)
+  - Multi-line notes use `\n` escape sequences
+  - Foreign keys are integer PKs
+  - Empty fields left blank (converted to null or omitted in YAML)
+- `fixtures/examples/CSV_TO_YAML_GUIDE.md` - Conversion guide
+  - Documents all CSV columns and their mappings
+  - Explains conversion rules for different field types
+  - Provides example conversion from CSV row to YAML
+  - Includes Python conversion script example
+
+**Key Features:**
+- Single CSV file for easy editing and data entry
+- Comprehensive column structure covering all model fields
+- Clear format for M2M relationships (pipe-separated)
+- Multi-line text support via escape sequences
+- Complete conversion documentation
+
+**Usage:**
+- Edit CSV file with fixture data
+- Use conversion guide to convert to YAML format
+- Import YAML fixtures using existing import system
+
+**Impact:**
+- Easier data entry and editing in CSV format
+- Clear template for creating new fixtures
+- Simplified workflow for bulk data creation
+- Ready-to-use conversion guide for automation
+
+## 2025-01-XX - Added Pagination and Search to All List Views
+
+**Feature:**
+Added pagination (15 entries per page) and client-side search functionality with debounced filtering to all List views.
+
+**Modified Files:**
+
+### Views
+- `vgm_source_database/games/views.py`
+  - Added `paginate_by = 15` to `GameListView`
+  - Added `paginate_by = 15` to `GameTagListView`
+- `vgm_source_database/songs/views.py`
+  - Added `paginate_by = 15` to `SongListView`
+  - Added `paginate_by = 15` to `PersonListView`
+- `vgm_source_database/sources/views.py`
+  - Added `paginate_by = 15` to `CompanyListView`
+  - Added `paginate_by = 15` to `ProductListView`
+  - Added `paginate_by = 15` to `BankListView`
+  - Added `paginate_by = 15` to `SoundSourceListView`
+
+### Templates
+- `templates/games/game_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/games/gametag_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/songs/song_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/songs/person_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/sources/company_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/sources/product_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/sources/bank_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+- `templates/sources/soundsource_list.html`
+  - Added search input with Alpine.js debounced filtering
+  - Added `data-search-text` attributes to table rows
+  - Added pagination controls
+
+**Key Features:**
+- **Pagination**: All list views show 15 entries per page
+- **Client-side Search**: Instant filtering without page reloads
+- **Debounced Input**: 0.5 second delay prevents excessive filtering during typing
+- **Multi-field Search**: Searches across all relevant fields for each model type
+- **Consistent UI**: Search bars and pagination controls match site styling
+
+**Search Fields by Model:**
+- **Games**: title, release year, tags, notes
+- **Songs**: title, game, track number, composers
+- **People**: name, notes
+- **Game Tags**: name, description
+- **Companies**: name, notes
+- **Products**: name, company, notes
+- **Banks**: name, product, notes
+- **Sound Sources**: name, bank/product, notes
+
+**Technical Implementation:**
+- Uses Alpine.js `x-data` for state management
+- `$watch` monitors search query changes
+- `setTimeout` implements 0.5 second debounce
+- `x-show` directive filters table rows based on search text
+- `data-search-text` attributes store searchable content on each row
+- Django's built-in pagination system for page navigation
+
+**Impact:**
+- Improved performance with smaller page loads (15 items per page)
+- Better user experience with instant search filtering
+- Consistent pagination and search UI across all list views
+- Reduced server load with client-side filtering
+- Enhanced usability for large datasets
+

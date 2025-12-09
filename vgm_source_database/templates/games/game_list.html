@@ -14,6 +14,26 @@
   {% endif %}
 </div>
 
+<form method="get" action="{% url 'games:game_list' %}" 
+      x-data="{ searchQuery: '{{ request.GET.search|default:"" }}', debounceTimer: null }" 
+      x-init="
+        $watch('searchQuery', value => {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => {
+            $el.submit();
+          }, 500);
+        });
+      "
+      class="mb-6">
+  <input 
+    type="text" 
+    name="search"
+    x-model="searchQuery"
+    placeholder="Search games by title, release year, tags, or notes..." 
+    class="form-control w-full max-w-md"
+  />
+</form>
+
 {% if games %}
   <div class="overflow-x-auto">
     <table class="min-w-full border-collapse">
@@ -72,5 +92,19 @@
   </div>
 {% else %}
   <p class="text-gray-400 font-mono">No games found.</p>
+{% endif %}
+
+{% if is_paginated %}
+  <div class="mt-8 flex justify-center items-center gap-4">
+    {% if page_obj.has_previous %}
+      <a href="?page={{ page_obj.previous_page_number }}{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}" class="btn-primary">Previous</a>
+    {% endif %}
+    <span class="text-gray-400 font-mono">
+      Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+    </span>
+    {% if page_obj.has_next %}
+      <a href="?page={{ page_obj.next_page_number }}{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}" class="btn-primary">Next</a>
+    {% endif %}
+  </div>
 {% endif %}
 {% endblock content %}

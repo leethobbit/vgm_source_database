@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import models
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
 
@@ -11,6 +12,21 @@ class PersonListView(ListView):
     model = Person
     context_object_name = "people"
     template_name = "songs/person_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered Person queryset.
+        """
+        queryset = super().get_queryset()
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search) | models.Q(notes__icontains=search)
+            )
+        return queryset
 
 
 class PersonDetailView(DetailView):
@@ -51,6 +67,34 @@ class SongListView(ListView):
     model = Song
     context_object_name = "songs"
     template_name = "songs/song_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered Song queryset with prefetched game and composers.
+        """
+        queryset = super().get_queryset().select_related("game").prefetch_related("composers")
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            # Try to convert search to integer for track number search
+            try:
+                search_track = int(search)
+                queryset = queryset.filter(
+                    models.Q(title__icontains=search)
+                    | models.Q(game__title__icontains=search)
+                    | models.Q(track_number=search_track)
+                    | models.Q(composers__name__icontains=search)
+                ).distinct()
+            except ValueError:
+                # If search is not a number, don't search by track number
+                queryset = queryset.filter(
+                    models.Q(title__icontains=search)
+                    | models.Q(game__title__icontains=search)
+                    | models.Q(composers__name__icontains=search)
+                ).distinct()
+        return queryset
 
 
 class SongDetailView(DetailView):

@@ -1,0 +1,24 @@
+model,pk,name,slug,description,title,release_date,release_year,track_number,company,product,bank,game,album_artists,tags,composers,arrangers,discoverers,games,songs,products,notes
+vgm_source_database.games.GameTag,1,Action,action,Action-oriented games with fast-paced gameplay,,,,,,,,,,,,,,
+vgm_source_database.games.GameTag,2,RPG,rpg,Role-playing games with character progression,,,,,,,,,,,,,,
+vgm_source_database.games.GameTag,3,Platformer,platformer,,,,,,,,,,,,,,,
+vgm_source_database.sources.Company,1,Roland Corporation,,,,,,,,,,,,,,,Japanese manufacturer of electronic musical instruments
+vgm_source_database.sources.Company,2,Yamaha Corporation,,,,,,,,,,,,,,,,
+vgm_source_database.sources.Product,1,SC-55,,,,,,,1,,,,,,,,,Sound Canvas 55, a popular MIDI sound module
+vgm_source_database.sources.Product,2,SC-88,,,,,,,1,,,,,,,,,Sound Canvas 88, successor to SC-55
+vgm_source_database.sources.Product,3,MU50,,,,,,,2,,,,,,,,,,
+vgm_source_database.sources.Bank,1,Preset A,,,,,,,1,,,,,,,,,Default preset bank
+vgm_source_database.sources.Bank,2,Preset B,,,,,,,1,,,,,,,,,,
+vgm_source_database.sources.Bank,3,GM,,,,,,,2,,,,,,,,,General MIDI bank
+vgm_source_database.songs.Person,1,Yasunori Mitsuda,,,,,,,,,,,,,,,Japanese composer known for Chrono Trigger and Xenogears
+vgm_source_database.songs.Person,2,Nobuo Uematsu,,,,,,,,,,,,,,,Composer of Final Fantasy series
+vgm_source_database.songs.Person,3,Koji Kondo,,,,,,,,,,,,,,,,
+vgm_source_database.games.Game,1,,,Chrono Trigger,1995-03-11,1995,,,,,1|2,1|2,,,,,"Classic JRPG with an iconic soundtrack.\nComposed by Yasunori Mitsuda and Nobuo Uematsu."
+vgm_source_database.games.Game,2,,,Final Fantasy VI,1994-04-02,1994,,,,,2,2,,,,,,
+vgm_source_database.songs.Song,1,,,Chrono Trigger,,,1,1,,,,,1,,,,"Main theme of Chrono Trigger"
+vgm_source_database.songs.Song,2,,,Corridors of Time,,,5,1,,,,,1,,,,
+vgm_source_database.songs.Song,3,,,Terra's Theme,,,1,2,,,,,2,,,,"Opening theme of Final Fantasy VI"
+vgm_source_database.sources.SoundSource,1,Piano 1,,,,,,,,,1,,1,1|2,1|2,,"Classic piano sound used in Chrono Trigger.\nIdentified in SC-55 Preset A bank."
+vgm_source_database.sources.SoundSource,2,Orchestra Hit,,,,,,,,,1,,1|2,,,,
+vgm_source_database.sources.SoundSource,3,Strings,,,,,,,,,3,,2,2,3,,"String section sound"
+

@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import models
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
 
@@ -11,6 +12,21 @@ class CompanyListView(ListView):
     model = Company
     context_object_name = "companies"
     template_name = "sources/company_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered Company queryset.
+        """
+        queryset = super().get_queryset()
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search) | models.Q(notes__icontains=search)
+            )
+        return queryset
 
 
 class CompanyDetailView(DetailView):
@@ -51,6 +67,23 @@ class ProductListView(ListView):
     model = Product
     context_object_name = "products"
     template_name = "sources/product_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered Product queryset with prefetched company.
+        """
+        queryset = super().get_queryset().select_related("company")
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search)
+                | models.Q(company__name__icontains=search)
+                | models.Q(notes__icontains=search)
+            )
+        return queryset
 
 
 class ProductDetailView(DetailView):
@@ -91,6 +124,23 @@ class BankListView(ListView):
     model = Bank
     context_object_name = "banks"
     template_name = "sources/bank_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered Bank queryset with prefetched product.
+        """
+        queryset = super().get_queryset().select_related("product")
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search)
+                | models.Q(product__name__icontains=search)
+                | models.Q(notes__icontains=search)
+            )
+        return queryset
 
 
 class BankDetailView(DetailView):
@@ -131,6 +181,24 @@ class SoundSourceListView(ListView):
     model = SoundSource
     context_object_name = "sound_sources"
     template_name = "sources/soundsource_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered SoundSource queryset with prefetched bank and product.
+        """
+        queryset = super().get_queryset().select_related("bank", "product")
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search)
+                | models.Q(bank__name__icontains=search)
+                | models.Q(product__name__icontains=search)
+                | models.Q(notes__icontains=search)
+            ).distinct()
+        return queryset
 
 
 class SoundSourceDetailView(DetailView):

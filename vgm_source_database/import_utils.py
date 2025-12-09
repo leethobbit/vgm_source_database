@@ -4,6 +4,7 @@ import yaml
 from django.apps import apps
 from django.core.exceptions import ValidationError
 from django.db import IntegrityError, transaction
+from django.db.models import ForeignKey
 
 
 def import_fixture_file(
@@ -58,20 +59,49 @@ def import_fixture_file(
             pk = item.get("pk")
             fields = item.get("fields", {})
 
-            # Separate ManyToMany fields from regular fields
+            # Separate ManyToMany fields from regular fields and resolve ForeignKeys
             many_to_many_fields = {}
             regular_fields = {}
             
             for field_name, value in fields.items():
                 try:
                     field = model_class._meta.get_field(field_name)
+                    
+                    # Handle ManyToMany fields
                     if field.many_to_many:
                         many_to_many_fields[field_name] = value
+                    # Handle ForeignKey fields - check for related_model attribute (more reliable than isinstance)
+                    elif hasattr(field, 'related_model') and field.related_model is not None:
+                        # Resolve ForeignKey: look up the related model instance
+                        if value is None:
+                            # Allow null foreign keys
+                            regular_fields[field_name] = None
+                        else:
+                            # Get the related model and look up the instance
+                            related_model = field.related_model
+                            try:
+                                related_instance = related_model.objects.get(pk=value)
+                                regular_fields[field_name] = related_instance
+                            except related_model.DoesNotExist:
+                                # Related object doesn't exist - this will cause an error
+                                # but we'll let Django handle it with a proper error message
+                                regular_fields[field_name] = value
+                            except Exception as e:
+                                # If there's an error looking up the instance, keep the original value
+                                # Django will provide a better error message
+                                if verbosity >= 2:
+                                    print(f"Warning: Could not resolve {field_name}={value} for {model_path}: {e}")
+                                regular_fields[field_name] = value
                     else:
+                        # Regular field (CharField, TextField, IntegerField, etc.)
                         regular_fields[field_name] = value
-                except Exception:
-                    # Field might not exist, skip it
-                    continue
+                except Exception as e:
+                    # Field might not exist or there's an error accessing it
+                    # Log it but don't fail the entire import
+                    if verbosity >= 2:
+                        print(f"Warning: Skipping field {field_name} for {model_path}: {e}")
+                    # Still add it as a regular field in case it's a custom field or something
+                    regular_fields[field_name] = value
 
             # Handle duplicates based on option
             if duplicate_handling == "overwrite":
@@ -88,7 +118,11 @@ def import_fixture_file(
                 # Update ManyToMany relationships
                 for field_name, value in many_to_many_fields.items():
                     if value:  # Only if not empty
-                        getattr(obj, field_name).set(value)
+                        # Resolve primary keys to instances
+                        field = model_class._meta.get_field(field_name)
+                        related_model = field.related_model
+                        instances = related_model.objects.filter(pk__in=value)
+                        getattr(obj, field_name).set(instances)
 
             else:  # skip
                 # Check if object with this PK already exists
@@ -106,7 +140,11 @@ def import_fixture_file(
                             # Set ManyToMany fields for newly created objects
                             for field_name, value in many_to_many_fields.items():
                                 if value:  # Only if not empty
-                                    getattr(obj, field_name).set(value)
+                                    # Resolve primary keys to instances
+                                    field = model_class._meta.get_field(field_name)
+                                    related_model = field.related_model
+                                    instances = related_model.objects.filter(pk__in=value)
+                                    getattr(obj, field_name).set(instances)
                 except IntegrityError as e:
                     # Handle unique constraint violations (e.g., duplicate name)
                     stats["skipped"] += 1

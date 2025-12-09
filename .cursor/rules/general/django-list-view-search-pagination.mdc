@@ -1,0 +1,257 @@
+# Django ListView Search and Pagination Requirements
+
+## Overview
+All ListView templates in this project must include:
+1. **Pagination**: Display 15 entries per page for performance
+2. **Server-side Search**: Search bar with 0.5 second debounce that searches across all entries, not just the current page
+
+## View Requirements
+
+### Pagination
+Every ListView class must include:
+```python
+paginate_by = 15
+```
+
+### Search Filtering
+Every ListView class must implement `get_queryset()` to filter based on the `search` query parameter:
+
+```python
+from django.db import models
+
+class MyListView(ListView):
+    model = MyModel
+    context_object_name = "my_objects"
+    template_name = "app/my_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered queryset.
+        """
+        queryset = super().get_queryset()
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(field1__icontains=search)
+                | models.Q(field2__icontains=search)
+                | models.Q(related__field__icontains=search)
+            ).distinct()  # Use .distinct() if filtering across relationships
+        return queryset
+```
+
+### Search Field Guidelines
+- Use `icontains` for text fields (case-insensitive partial matching)
+- For integer fields (like `release_year`, `track_number`), try to convert search to integer:
+  ```python
+  try:
+      search_int = int(search)
+      queryset = queryset.filter(
+          models.Q(field1__icontains=search) | models.Q(integer_field=search_int)
+      )
+  except ValueError:
+      queryset = queryset.filter(models.Q(field1__icontains=search))
+  ```
+- Use `.distinct()` when filtering across ManyToMany or reverse ForeignKey relationships
+- Use `.select_related()` and `.prefetch_related()` for performance when accessing related objects
+
+## Template Requirements
+
+### Search Form Structure
+The search form must be placed after the page header and before the list content:
+
+```django
+<form method="get" action="{% url 'app:list_view' %}" 
+      x-data="{ searchQuery: '{{ request.GET.search|default:"" }}', debounceTimer: null }" 
+      x-init="
+        $watch('searchQuery', value => {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => {
+            $el.submit();
+          }, 500);
+        });
+      "
+      class="mb-6">
+  <input 
+    type="text" 
+    name="search"
+    x-model="searchQuery"
+    placeholder="Search [objects] by [relevant fields]..." 
+    class="form-control w-full max-w-md"
+  />
+</form>
+```
+
+**Key Requirements:**
+- Form must use `method="get"` and `action` pointing to the list view URL
+- `x-data` must be on the `<form>` element (not a wrapper div)
+- `searchQuery` must be initialized with `{{ request.GET.search|default:"" }}` to preserve search on page load
+- Debounce timer set to 500ms (0.5 seconds)
+- Input must have `name="search"` and `x-model="searchQuery"`
+- Placeholder should describe what fields are searchable
+
+### Pagination Links
+All pagination links must preserve the search parameter:
+
+```django
+{% if is_paginated %}
+  <div class="mt-8 flex justify-center items-center gap-4">
+    {% if page_obj.has_previous %}
+      <a href="?page={{ page_obj.previous_page_number }}{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}" class="btn-primary">Previous</a>
+    {% endif %}
+    <span class="text-gray-400 font-mono">
+      Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+    </span>
+    {% if page_obj.has_next %}
+      <a href="?page={{ page_obj.next_page_number }}{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}" class="btn-primary">Next</a>
+    {% endif %}
+  </div>
+{% endif %}
+```
+
+**Key Requirements:**
+- All pagination links must include `{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}`
+- This ensures search is preserved when navigating between pages
+
+## Complete Example
+
+### View (views.py)
+```python
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import models
+from django.views.generic import ListView
+
+from .models import MyModel
+
+class MyModelListView(ListView):
+    """List view for my models."""
+
+    model = MyModel
+    context_object_name = "my_objects"
+    template_name = "app/mymodel_list.html"
+    paginate_by = 15
+
+    def get_queryset(self):
+        """Get queryset filtered by search query if provided.
+
+        Returns:
+            QuerySet: Filtered MyModel queryset.
+        """
+        queryset = super().get_queryset()
+        search = self.request.GET.get("search", "").strip()
+        if search:
+            queryset = queryset.filter(
+                models.Q(name__icontains=search)
+                | models.Q(description__icontains=search)
+                | models.Q(related_field__name__icontains=search)
+            ).distinct()
+        return queryset
+```
+
+### Template (mymodel_list.html)
+```django
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}My Models{% endblock title %}
+
+{% block content %}
+<div class="mb-4">
+  <a href="{% url 'home' %}" class="text-neon-cyan hover:text-neon-pink font-mono transition-colors">← Back to homepage</a>
+</div>
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-3xl font-bold text-neon-cyan font-mono uppercase tracking-wider text-glow-cyan">My Models</h1>
+  {% if user.is_authenticated %}
+    <a href="{% url 'app:mymodel_create' %}" class="btn-success">Create My Model</a>
+  {% endif %}
+</div>
+
+<form method="get" action="{% url 'app:mymodel_list' %}" 
+      x-data="{ searchQuery: '{{ request.GET.search|default:"" }}', debounceTimer: null }" 
+      x-init="
+        $watch('searchQuery', value => {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => {
+            $el.submit();
+          }, 500);
+        });
+      "
+      class="mb-6">
+  <input 
+    type="text" 
+    name="search"
+    x-model="searchQuery"
+    placeholder="Search my models by name, description, or related field..." 
+    class="form-control w-full max-w-md"
+  />
+</form>
+
+{% if my_objects %}
+  <div class="overflow-x-auto">
+    <table class="min-w-full border-collapse">
+      <thead>
+        <tr class="bg-[#1a1a2e] border-2 border-[#0f3460]">
+          <th class="px-4 py-3 text-left font-mono text-neon-cyan font-bold uppercase tracking-wider border-r border-[#0f3460]">Name</th>
+          <th class="px-4 py-3 text-left font-mono text-neon-cyan font-bold uppercase tracking-wider">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for obj in my_objects %}
+          <tr class="bg-[#1a1a2e] border-2 border-[#0f3460] hover:border-neon-cyan transition-colors duration-300">
+            <td class="px-4 py-3 border-r border-[#0f3460]">
+              <a href="{% url 'app:mymodel_detail' obj.pk %}" class="text-neon-cyan hover:text-neon-pink font-mono font-bold transition-colors">{{ obj.name }}</a>
+            </td>
+            <td class="px-4 py-3 text-center">
+              <!-- Actions -->
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p class="text-gray-400 font-mono">No my models found.</p>
+{% endif %}
+
+{% if is_paginated %}
+  <div class="mt-8 flex justify-center items-center gap-4">
+    {% if page_obj.has_previous %}
+      <a href="?page={{ page_obj.previous_page_number }}{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}" class="btn-primary">Previous</a>
+    {% endif %}
+    <span class="text-gray-400 font-mono">
+      Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+    </span>
+    {% if page_obj.has_next %}
+      <a href="?page={{ page_obj.next_page_number }}{% if request.GET.search %}&search={{ request.GET.search|urlencode }}{% endif %}" class="btn-primary">Next</a>
+    {% endif %}
+  </div>
+{% endif %}
+{% endblock content %}
+```
+
+## Important Notes
+
+1. **Server-side Search**: Search must be implemented server-side (in the view's `get_queryset()`), not client-side. This ensures:
+   - Search works across all entries in the database, not just the current page
+   - Pagination correctly handles filtered results
+   - Performance is maintained with proper database queries
+
+2. **Debounce Timing**: The 0.5 second (500ms) debounce prevents excessive form submissions while typing. This is a good balance between responsiveness and server load.
+
+3. **Search Parameter Preservation**: Always preserve the search parameter in pagination links to maintain search state when navigating between pages.
+
+4. **Performance**: Use `.select_related()` for ForeignKey relationships and `.prefetch_related()` for ManyToMany or reverse ForeignKey relationships to avoid N+1 queries.
+
+5. **Distinct Usage**: Use `.distinct()` when filtering across relationships (ManyToMany, reverse ForeignKey) to avoid duplicate results.
+
+## Enforcement
+
+When creating any new ListView:
+- ✅ Must include `paginate_by = 15`
+- ✅ Must implement `get_queryset()` with search filtering
+- ✅ Template must include the search form with Alpine.js debounce
+- ✅ Template must include pagination controls that preserve search parameter
+- ✅ Search must be server-side, not client-side
+- ✅ All searchable fields should be documented in the placeholder text

@@ -1142,3 +1142,155 @@ python manage.py import_data --file fixtures/all_fixtures.yaml --duplicate-handl
 - Detailed statistics show what was imported
 - Better error handling and reporting
 
+## 2025-01-XX - Fixed Foreign Key Resolution in YAML Import
+
+### User Request
+When I try to import the yaml fixture for products, I see this general error for each entry: Item 1 (sources.Product pk=1485): [ValueError] Cannot assign "419": "Product.company" must be a "Company" instance.
+
+### Response
+Fixed the YAML import functionality to properly resolve ForeignKey relationships. The issue was that the import utility was passing raw primary key values (integers) directly to Django's `create()` method, but Django requires actual model instances for ForeignKey fields.
+
+**Solution:**
+Modified the `import_fixture_file()` function in `vgm_source_database/import_utils.py` to:
+1. Detect ForeignKey fields during field processing
+2. Look up the related model instance using the primary key value from the YAML
+3. Replace the primary key value with the actual model instance before creating/updating objects
+4. Also properly resolve ManyToMany field primary keys to instances
+
+**Technical Changes:**
+- Added import for `ForeignKey` from `django.db.models`
+- Added logic in the field processing loop to detect ForeignKey fields
+- For ForeignKey fields, look up the related model instance: `related_model.objects.get(pk=value)`
+- For ManyToMany fields, resolve primary keys using: `related_model.objects.filter(pk__in=value)`
+- Properly handle null foreign keys (set to `None`)
+
+**Files Modified:**
+- `vgm_source_database/import_utils.py` - Added ForeignKey and ManyToMany resolution logic
+
+**Result:**
+- YAML fixture imports now work correctly with ForeignKey relationships
+- Products can be imported with proper Company references
+- ManyToMany relationships are properly resolved
+- Better error handling for missing related objects
+
+### Follow-up Issue
+User reported similar error for SoundSource imports: `Cannot assign "1": "SoundSource.bank" must be a "Bank" instance.`
+
+### Follow-up Fix
+Changed ForeignKey detection method from `isinstance(field, ForeignKey)` to `hasattr(field, 'related_model') and field.related_model is not None`. This more robust approach ensures all ForeignKey-like fields are properly detected and resolved, including OneToOneField and any custom field types. The change ensures that SoundSource fields like `bank` and `product` are correctly resolved to model instances.
+
+## 2025-01-XX - Created CSV Template from Example YAML Fixtures
+
+### User Request
+take the example yaml fixtures and create an all in one csv file that could easily be converted into our yaml format
+
+### Response
+Created a comprehensive CSV file (`fixtures/examples/all_fixtures.csv`) that contains all example fixture data in a single file, structured for easy conversion to YAML format. Also created a conversion guide (`fixtures/examples/CSV_TO_YAML_GUIDE.md`) explaining how to convert the CSV to YAML.
+
+**Solution:**
+- Created `fixtures/examples/all_fixtures.csv` with all example fixture data:
+  - Includes all 8 model types: GameTag, Company, Product, Bank, Person, Game, Song, SoundSource
+  - All columns for all models in a single CSV file
+  - Many-to-many fields use pipe-separated values (e.g., `1|2|3`)
+  - Multi-line notes use `\n` escape sequences
+  - Foreign keys are integer PKs
+  - Empty fields are left blank (will be converted to null or omitted in YAML)
+- Created `fixtures/examples/CSV_TO_YAML_GUIDE.md` conversion guide:
+  - Documents all CSV columns and their mappings
+  - Explains conversion rules for different field types
+  - Provides example conversion from CSV row to YAML
+  - Includes Python conversion script example
+
+**Key Features:**
+- **Single CSV File**: All fixture data in one file for easy editing
+- **Comprehensive Columns**: Includes all fields from all models
+- **M2M Field Format**: Pipe-separated values for many-to-many relationships
+- **Multi-line Support**: Newlines in notes represented as `\n` escape sequences
+- **Conversion Guide**: Complete documentation for converting CSV to YAML
+
+**Files Created:**
+- `fixtures/examples/all_fixtures.csv` - Single CSV file with all example fixtures
+- `fixtures/examples/CSV_TO_YAML_GUIDE.md` - Conversion guide with examples and script
+
+**Result:**
+- Easy-to-edit CSV format for fixture data
+- Clear documentation for conversion process
+- Ready-to-use template for creating new fixtures
+- Can be easily converted to YAML using provided guide
+
+## 2025-01-XX - Added Pagination and Search to All List Views
+
+### User Request
+All List views (like the list views for Games, Songs, etc. should do the following:
+- Paginate and show 15 entries at a time, for more performant loading
+- Feature a search bar at the top that filters the search after key presses with a half second delay
+
+### Response
+Added pagination (15 entries per page) and client-side search functionality with debounced filtering (0.5 second delay) to all 8 List views in the application.
+
+**Solution:**
+
+1. **Added Pagination to All ListViews:**
+   - Updated all 8 ListView classes to include `paginate_by = 15`
+   - Games: `GameListView`, `GameTagListView`
+   - Songs: `SongListView`, `PersonListView`
+   - Sources: `CompanyListView`, `ProductListView`, `BankListView`, `SoundSourceListView`
+
+2. **Added Search Functionality to All List Templates:**
+   - Added search input field at the top of each list template
+   - Implemented Alpine.js-based client-side filtering with 0.5 second debounce
+   - Search filters table rows based on relevant fields for each model:
+     - **Games**: title, release year, tags, notes
+     - **Songs**: title, game, track number, composers
+     - **People**: name, notes
+     - **Game Tags**: name, description
+     - **Companies**: name, notes
+     - **Products**: name, company, notes
+     - **Banks**: name, product, notes
+     - **Sound Sources**: name, bank/product, notes
+   - Uses `data-search-text` attributes on table rows for efficient filtering
+   - Debounced search prevents excessive filtering during typing
+
+3. **Added Pagination Controls:**
+   - Added pagination navigation at the bottom of each list template
+   - Shows "Previous" and "Next" buttons when applicable
+   - Displays current page number and total pages
+   - Uses `btn-primary` styling for consistency
+
+**Technical Details:**
+- Alpine.js `x-data` directive manages search state and debounce timer
+- `$watch` monitors search query changes and triggers debounced filtering
+- `x-show` directive on table rows filters based on search text
+- Search text is stored in `data-search-text` attributes on each row
+- All searchable fields are combined into a single searchable string (lowercased)
+- Pagination uses Django's built-in pagination system
+
+**Files Modified:**
+- `vgm_source_database/games/views.py` - Added `paginate_by = 15` to GameListView and GameTagListView
+- `vgm_source_database/songs/views.py` - Added `paginate_by = 15` to SongListView and PersonListView
+- `vgm_source_database/sources/views.py` - Added `paginate_by = 15` to all 4 ListViews
+- All 8 list templates updated with search bar and pagination controls:
+  - `templates/games/game_list.html`
+  - `templates/games/gametag_list.html`
+  - `templates/songs/song_list.html`
+  - `templates/songs/person_list.html`
+  - `templates/sources/company_list.html`
+  - `templates/sources/product_list.html`
+  - `templates/sources/bank_list.html`
+  - `templates/sources/soundsource_list.html`
+
+**Key Features:**
+- **Pagination**: 15 entries per page for better performance
+- **Client-side Search**: Instant filtering without page reloads
+- **Debounced Input**: 0.5 second delay prevents excessive filtering
+- **Multi-field Search**: Searches across all relevant fields for each model
+- **Consistent UI**: Search bars and pagination controls match site styling
+- **Performance**: Client-side filtering works on current page only (pagination still applies)
+
+**Result:**
+- All list views now paginate results (15 per page)
+- Search functionality available on all list views with debounced filtering
+- Improved performance with smaller page loads
+- Better user experience with instant search filtering
+- Consistent pagination and search UI across all list views
+
